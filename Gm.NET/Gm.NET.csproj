@@ -1,0 +1,984 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91EE9197-B13C-4B62-9B05-38F21BDF8DEC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Gm.NET</RootNamespace>
+    <AssemblyName>Gm.NET</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>GMm.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v18.2.UI, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dialogs.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Export, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Spreadsheet.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2.UI, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.2.UI, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.2.Wizard, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.2.Extensions, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accesos\SplashScreenWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\SplashScreenWelcome.Designer.cs">
+      <DependentUpon>SplashScreenWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\XuMarcas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administracion\XuMarcas.Designer.cs">
+      <DependentUpon>XuMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auditorias\XfAuditoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auditorias\XfAuditoria.Designer.cs">
+      <DependentUpon>XfAuditoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bodega\XfBodegaAnadirExistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bodega\XfBodegaAnadirExistencia.Designer.cs">
+      <DependentUpon>XfBodegaAnadirExistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bodega\XfBodegaCrearProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bodega\XfBodegaCrearProducto.Designer.cs">
+      <DependentUpon>XfBodegaCrearProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bodega\XfBodegaMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bodega\XfBodegaMovimiento.Designer.cs">
+      <DependentUpon>XfBodegaMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bodega\XfProductBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bodega\XfProductBodega.Designer.cs">
+      <DependentUpon>XfProductBodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClasesVarias\CenterForm.cs" />
+    <Compile Include="ClasesVarias\Encriptar.cs" />
+    <Compile Include="ClasesVarias\LecturaBase.cs" />
+    <Compile Include="Accesos\FrmCargaComponentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\FrmCargaComponentes.Designer.cs">
+      <DependentUpon>FrmCargaComponentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesos\xfCambiarConexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\xfCambiarConexion.Designer.cs">
+      <DependentUpon>xfCambiarConexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesos\xfCargaBasica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\xfCargaBasica.Designer.cs">
+      <DependentUpon>xfCargaBasica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesos\XtraFormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesos\XtraFormLogin.Designer.cs">
+      <DependentUpon>XtraFormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\XfDiseniadorReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\XfDiseniadorReportes.Designer.cs">
+      <DependentUpon>XfDiseniadorReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\XfCompraEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\XfCompraEditar.Designer.cs">
+      <DependentUpon>XfCompraEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\XfComprasListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\XfComprasListado.Designer.cs">
+      <DependentUpon>XfComprasListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\XfGrabadoCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\XfGrabadoCompra.Designer.cs">
+      <DependentUpon>XfGrabadoCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturas\XfDevolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturas\XfDevolucion.Designer.cs">
+      <DependentUpon>XfDevolucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturas\XfDevolucionesFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturas\XfDevolucionesFacturas.Designer.cs">
+      <DependentUpon>XfDevolucionesFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturas\XfFacturaDevolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturas\XfFacturaDevolucion.Designer.cs">
+      <DependentUpon>XfFacturaDevolucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturas\XfFacturasEmitidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturas\XfFacturasEmitidas.Designer.cs">
+      <DependentUpon>XfFacturasEmitidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CuentasXCobrar\XfCuentasXCobrarEditarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuentasXCobrar\XfCuentasXCobrarEditarCliente.Designer.cs">
+      <DependentUpon>XfCuentasXCobrarEditarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Complementos\xfMessageThankYou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Complementos\xfMessageThankYou.Designer.cs">
+      <DependentUpon>xfMessageThankYou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PermisosUsuarios\XfPermisosyUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PermisosUsuarios\XfPermisosyUsuarios.Designer.cs">
+      <DependentUpon>XfPermisosyUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personas\XfComprasProveedorEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personas\XfComprasProveedorEditar.Designer.cs">
+      <DependentUpon>XfComprasProveedorEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\XfCompraProductoAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\XfCompraProductoAyuda.Designer.cs">
+      <DependentUpon>XfCompraProductoAyuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\XfComprasProductoEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\XfComprasProductoEditar.Designer.cs">
+      <DependentUpon>XfComprasProductoEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personas\XfCompraProveedorBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personas\XfCompraProveedorBuscar.Designer.cs">
+      <DependentUpon>XfCompraProveedorBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\XUCCompraCabecera.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compras\XUCCompraCabecera.Designer.cs">
+      <DependentUpon>XUCCompraCabecera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\XUCCompraDetalle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compras\XUCCompraDetalle.Designer.cs">
+      <DependentUpon>XUCCompraDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas Reportes\XfVentasRealizadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas Reportes\XfVentasRealizadas.Designer.cs">
+      <DependentUpon>XfVentasRealizadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas Reportes\XfVentasVsCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas Reportes\XfVentasVsCompras.Designer.cs">
+      <DependentUpon>XfVentasVsCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas Reportes\XrFConsultasReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas Reportes\XrFConsultasReportes.Designer.cs">
+      <DependentUpon>XrFConsultasReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Complementos\XfFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Complementos\XfFecha.Designer.cs">
+      <DependentUpon>XfFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Inventario\XfVistaExistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Inventario\XfVistaExistencia.Designer.cs">
+      <DependentUpon>XfVistaExistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personas\XfProveedorListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personas\XfProveedorListado.Designer.cs">
+      <DependentUpon>XfProveedorListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personas\XfClientesListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personas\XfClientesListado.Designer.cs">
+      <DependentUpon>XfClientesListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas Reportes\XfMovimientoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas Reportes\XfMovimientoProducto.Designer.cs">
+      <DependentUpon>XfMovimientoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas Reportes\XfEstadisticasProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas Reportes\XfEstadisticasProducto.Designer.cs">
+      <DependentUpon>XfEstadisticasProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\XfAniadirInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\XfAniadirInventario.Designer.cs">
+      <DependentUpon>XfAniadirInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bodega\XfBodegaTraladoAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bodega\XfBodegaTraladoAlmacen.Designer.cs">
+      <DependentUpon>XfBodegaTraladoAlmacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\XfProductoUbicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\XfProductoUbicacion.Designer.cs">
+      <DependentUpon>XfProductoUbicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\XfProductoTrasladoBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\XfProductoTrasladoBodega.Designer.cs">
+      <DependentUpon>XfProductoTrasladoBodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\XtInventarioEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\XtInventarioEditar.Designer.cs">
+      <DependentUpon>XtInventarioEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reports\XfInventarioProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reports\XfInventarioProvider.Designer.cs">
+      <DependentUpon>XfInventarioProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reports\XtraFormKardex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reports\XtraFormKardex.Designer.cs">
+      <DependentUpon>XtraFormKardex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\XtProductoInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\XtProductoInventario.Designer.cs">
+      <DependentUpon>XtProductoInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\XfProductoActivaColumnas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\XfProductoActivaColumnas.Designer.cs">
+      <DependentUpon>XfProductoActivaColumnas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\XfProductoCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\XfProductoCategoria.Designer.cs">
+      <DependentUpon>XfProductoCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\XfProductoEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\XfProductoEditar.Designer.cs">
+      <DependentUpon>XfProductoEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\XfProductoMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\XfProductoMarca.Designer.cs">
+      <DependentUpon>XfProductoMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\XfProductoMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\XfProductoMedida.Designer.cs">
+      <DependentUpon>XfProductoMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Purchases\XfCompraOpciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Purchases\XfCompraOpciones.Designer.cs">
+      <DependentUpon>XfCompraOpciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Sales\XfVentaOpciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sales\XfVentaOpciones.Designer.cs">
+      <DependentUpon>XfVentaOpciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personas\XfFacturaClienteBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personas\XfFacturaClienteBuscar.Designer.cs">
+      <DependentUpon>XfFacturaClienteBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personas\XfFacturaClienteCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personas\XfFacturaClienteCrear.Designer.cs">
+      <DependentUpon>XfFacturaClienteCrear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personas\XfFacturaClienteEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personas\XfFacturaClienteEditar.Designer.cs">
+      <DependentUpon>XfFacturaClienteEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturas\XfFacturaPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturas\XfFacturaPagar.Designer.cs">
+      <DependentUpon>XfFacturaPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturas\XfFacturaProductoEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturas\XfFacturaProductoEditar.Designer.cs">
+      <DependentUpon>XfFacturaProductoEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturas\XfFacturaReservacioBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturas\XfFacturaReservacioBuscar.Designer.cs">
+      <DependentUpon>XfFacturaReservacioBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\xfrComprasCondenzado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\xfrComprasCondenzado.Designer.cs">
+      <DependentUpon>xfrComprasCondenzado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\xfrComprasDetallados.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\xfrComprasDetallados.Designer.cs">
+      <DependentUpon>xfrComprasDetallados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\xfrFacturaImpresionSecundaria.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\xfrFacturaImpresionSecundaria.Designer.cs">
+      <DependentUpon>xfrFacturaImpresionSecundaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\xfrFacturasCompras.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\xfrFacturasCompras.Designer.cs">
+      <DependentUpon>xfrFacturasCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\xfrFacturaVentaCondenzado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\xfrFacturaVentaCondenzado.Designer.cs">
+      <DependentUpon>xfrFacturaVentaCondenzado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\xfrFacturaVentaDetallada.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\xfrFacturaVentaDetallada.Designer.cs">
+      <DependentUpon>xfrFacturaVentaDetallada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\xfrResumenCompras.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\xfrResumenCompras.Designer.cs">
+      <DependentUpon>xfrResumenCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CuentasXCobrar\XfCuentasXCobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuentasXCobrar\XfCuentasXCobrar.Designer.cs">
+      <DependentUpon>XfCuentasXCobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personas\XfComprasProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personas\XfComprasProveedor.Designer.cs">
+      <DependentUpon>XfComprasProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\XfProductEditQuick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\XfProductEditQuick.Designer.cs">
+      <DependentUpon>XfProductEditQuick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\XfProductNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\XfProductNew.Designer.cs">
+      <DependentUpon>XfProductNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturas\XfFacturaPlantilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturas\XfFacturaPlantilla.Designer.cs">
+      <DependentUpon>XfFacturaPlantilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reports\XtraFormCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reports\XtraFormCaja.Designer.cs">
+      <DependentUpon>XtraFormCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\XfComprasPlantilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\XfComprasPlantilla.Designer.cs">
+      <DependentUpon>XfComprasPlantilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\XfParametrizacionFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\XfParametrizacionFactura.Designer.cs">
+      <DependentUpon>XfParametrizacionFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\XfConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\XfConfiguracion.Designer.cs">
+      <DependentUpon>XfConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reports\XtraFormAforo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reports\XtraFormAforo.Designer.cs">
+      <DependentUpon>XtraFormAforo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturas\XfFacturaProductoAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturas\XfFacturaProductoAyuda.Designer.cs">
+      <DependentUpon>XfFacturaProductoAyuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\XfProductAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos\XfProductAdmin.Designer.cs">
+      <DependentUpon>XfProductAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\XfCopiaBDD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\XfCopiaBDD.Designer.cs">
+      <DependentUpon>XfCopiaBDD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\XuGrupos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administracion\XuGrupos.Designer.cs">
+      <DependentUpon>XuGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\XuMedidas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administracion\XuMedidas.Designer.cs">
+      <DependentUpon>XuMedidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\XuModulos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administracion\XuModulos.Designer.cs">
+      <DependentUpon>XuModulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\XuTerminal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administracion\XuTerminal.Designer.cs">
+      <DependentUpon>XuTerminal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\XuUsuarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administracion\XuUsuarios.Designer.cs">
+      <DependentUpon>XuUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RibbonFormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RibbonFormMenu.Designer.cs">
+      <DependentUpon>RibbonFormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClasesVarias\LecturaArchivo.cs" />
+    <Compile Include="Menus\XfInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\XfInicio.Designer.cs">
+      <DependentUpon>XfInicio.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Accesos\SplashScreenWelcome.resx">
+      <DependentUpon>SplashScreenWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\XuMarcas.resx">
+      <DependentUpon>XuMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\FrmCargaComponentes.resx">
+      <DependentUpon>FrmCargaComponentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\xfCambiarConexion.resx">
+      <DependentUpon>xfCambiarConexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\xfCargaBasica.resx">
+      <DependentUpon>xfCargaBasica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesos\XtraFormLogin.resx">
+      <DependentUpon>XtraFormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\XfDiseniadorReportes.resx">
+      <DependentUpon>XfDiseniadorReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auditorias\XfAuditoria.resx">
+      <DependentUpon>XfAuditoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bodega\XfBodegaAnadirExistencia.resx">
+      <DependentUpon>XfBodegaAnadirExistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bodega\XfBodegaCrearProducto.resx">
+      <DependentUpon>XfBodegaCrearProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bodega\XfBodegaMovimiento.resx">
+      <DependentUpon>XfBodegaMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bodega\XfProductBodega.resx">
+      <DependentUpon>XfProductBodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\XfCompraEditar.resx">
+      <DependentUpon>XfCompraEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\XfComprasListado.resx">
+      <DependentUpon>XfComprasListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\XfGrabadoCompra.resx">
+      <DependentUpon>XfGrabadoCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturas\XfDevolucion.resx">
+      <DependentUpon>XfDevolucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturas\XfDevolucionesFacturas.resx">
+      <DependentUpon>XfDevolucionesFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturas\XfFacturaDevolucion.resx">
+      <DependentUpon>XfFacturaDevolucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturas\XfFacturasEmitidas.resx">
+      <DependentUpon>XfFacturasEmitidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuentasXCobrar\XfCuentasXCobrarEditarCliente.resx">
+      <DependentUpon>XfCuentasXCobrarEditarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Complementos\xfMessageThankYou.resx">
+      <DependentUpon>xfMessageThankYou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PermisosUsuarios\XfPermisosyUsuarios.resx">
+      <DependentUpon>XfPermisosyUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personas\XfComprasProveedorEditar.resx">
+      <DependentUpon>XfComprasProveedorEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\XfCompraProductoAyuda.resx">
+      <DependentUpon>XfCompraProductoAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\XfComprasProductoEditar.resx">
+      <DependentUpon>XfComprasProductoEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personas\XfCompraProveedorBuscar.resx">
+      <DependentUpon>XfCompraProveedorBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\XUCCompraCabecera.resx">
+      <DependentUpon>XUCCompraCabecera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\XUCCompraDetalle.resx">
+      <DependentUpon>XUCCompraDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas Reportes\XfVentasRealizadas.resx">
+      <DependentUpon>XfVentasRealizadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas Reportes\XfVentasVsCompras.resx">
+      <DependentUpon>XfVentasVsCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas Reportes\XrFConsultasReportes.resx">
+      <DependentUpon>XrFConsultasReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Complementos\XfFecha.resx">
+      <DependentUpon>XfFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Inventario\XfVistaExistencia.resx">
+      <DependentUpon>XfVistaExistencia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personas\XfProveedorListado.resx">
+      <DependentUpon>XfProveedorListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personas\XfClientesListado.resx">
+      <DependentUpon>XfClientesListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas Reportes\XfMovimientoProducto.resx">
+      <DependentUpon>XfMovimientoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas Reportes\XfEstadisticasProducto.resx">
+      <DependentUpon>XfEstadisticasProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\XfAniadirInventario.resx">
+      <DependentUpon>XfAniadirInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bodega\XfBodegaTraladoAlmacen.resx">
+      <DependentUpon>XfBodegaTraladoAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\XfProductoUbicacion.resx">
+      <DependentUpon>XfProductoUbicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\XfProductoTrasladoBodega.resx">
+      <DependentUpon>XfProductoTrasladoBodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\XtInventarioEditar.resx">
+      <DependentUpon>XtInventarioEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reports\XfInventarioProvider.resx">
+      <DependentUpon>XfInventarioProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reports\XtraFormKardex.resx">
+      <DependentUpon>XtraFormKardex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\XtProductoInventario.resx">
+      <DependentUpon>XtProductoInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\XfProductoActivaColumnas.resx">
+      <DependentUpon>XfProductoActivaColumnas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\XfProductoCategoria.resx">
+      <DependentUpon>XfProductoCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\XfProductoEditar.resx">
+      <DependentUpon>XfProductoEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\XfProductoMarca.resx">
+      <DependentUpon>XfProductoMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\XfProductoMedida.resx">
+      <DependentUpon>XfProductoMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Purchases\XfCompraOpciones.resx">
+      <DependentUpon>XfCompraOpciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sales\XfVentaOpciones.resx">
+      <DependentUpon>XfVentaOpciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personas\XfFacturaClienteBuscar.resx">
+      <DependentUpon>XfFacturaClienteBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personas\XfFacturaClienteCrear.resx">
+      <DependentUpon>XfFacturaClienteCrear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personas\XfFacturaClienteEditar.resx">
+      <DependentUpon>XfFacturaClienteEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturas\XfFacturaPagar.resx">
+      <DependentUpon>XfFacturaPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturas\XfFacturaProductoEditar.resx">
+      <DependentUpon>XfFacturaProductoEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturas\XfFacturaReservacioBuscar.resx">
+      <DependentUpon>XfFacturaReservacioBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\xfrComprasCondenzado.resx">
+      <DependentUpon>xfrComprasCondenzado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\xfrComprasDetallados.resx">
+      <DependentUpon>xfrComprasDetallados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\xfrFacturaImpresionSecundaria.resx">
+      <DependentUpon>xfrFacturaImpresionSecundaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\xfrFacturasCompras.resx">
+      <DependentUpon>xfrFacturasCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\xfrFacturaVentaCondenzado.resx">
+      <DependentUpon>xfrFacturaVentaCondenzado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\xfrFacturaVentaDetallada.resx">
+      <DependentUpon>xfrFacturaVentaDetallada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\xfrResumenCompras.resx">
+      <DependentUpon>xfrResumenCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuentasXCobrar\XfCuentasXCobrar.resx">
+      <DependentUpon>XfCuentasXCobrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personas\XfComprasProveedor.resx">
+      <DependentUpon>XfComprasProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\XfProductEditQuick.resx">
+      <DependentUpon>XfProductEditQuick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\XfProductNew.resx">
+      <DependentUpon>XfProductNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturas\XfFacturaPlantilla.resx">
+      <DependentUpon>XfFacturaPlantilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reports\XtraFormCaja.resx">
+      <DependentUpon>XtraFormCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\XfComprasPlantilla.resx">
+      <DependentUpon>XfComprasPlantilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\XfParametrizacionFactura.resx">
+      <DependentUpon>XfParametrizacionFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\XfConfiguracion.resx">
+      <DependentUpon>XfConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reports\XtraFormAforo.resx">
+      <DependentUpon>XtraFormAforo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturas\XfFacturaProductoAyuda.resx">
+      <DependentUpon>XfFacturaProductoAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos\XfProductAdmin.resx">
+      <DependentUpon>XfProductAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\XfCopiaBDD.resx">
+      <DependentUpon>XfCopiaBDD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\XuGrupos.resx">
+      <DependentUpon>XuGrupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\XuMedidas.resx">
+      <DependentUpon>XuMedidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\XuModulos.resx">
+      <DependentUpon>XuModulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\XuTerminal.resx">
+      <DependentUpon>XuTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\XuUsuarios.resx">
+      <DependentUpon>XuUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RibbonFormMenu.resx">
+      <DependentUpon>RibbonFormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\XfInicio.resx">
+      <DependentUpon>XfInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Gm.Core.Ajustes.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.AyudaCore.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.BillCore.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.BusquedaPorProveedor.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.DevolucionCore.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.EnFactura.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.EnRegistro.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.EnRegistro1.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.FacturaImpresion.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.FacturasReporte.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.InventarioBLL.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.InventarioTotalCore.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.MiAcceso.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.ProductoBuscado.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.ProveedorProducto.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.PurchasesAbvance.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.PurchasesBLL.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.PurchaseSubir.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.PurchaseSubirTodos.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.RegistroFacturas.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.ReservacionCore.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.TrasladoCore.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.VistaExistenciaCore.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.VistaVentaBLL.datasource" />
+    <None Include="Properties\DataSources\Gm.Core.VistaVentaCore.datasource" />
+    <None Include="Properties\DataSources\Gm.Entities.Cliente.datasource" />
+    <None Include="Properties\DataSources\Gm.Entities.Factura.datasource" />
+    <None Include="Properties\DataSources\Gm.Entities.FacturaDetalle.datasource" />
+    <None Include="Properties\DataSources\Gm.Entities.Grupo.datasource" />
+    <None Include="Properties\DataSources\Gm.Entities.Kardex.datasource" />
+    <None Include="Properties\DataSources\Gm.Entities.Marca.datasource" />
+    <None Include="Properties\DataSources\Gm.Entities.MedidaMetrica.datasource" />
+    <None Include="Properties\DataSources\Gm.Entities.Modulos.datasource" />
+    <None Include="Properties\DataSources\Gm.Entities.Producto.datasource" />
+    <None Include="Properties\DataSources\Gm.Entities.Reservacion.datasource" />
+    <None Include="Properties\DataSources\Gm.Entities.Sp_MovimientoFactura_Result.datasource" />
+    <None Include="Properties\DataSources\Gm.Entities.Traslados.datasource" />
+    <None Include="Properties\DataSources\Gm.Entities.VistaExistencia.datasource" />
+    <None Include="Properties\DataSources\Gm.Entities.VistaKardex.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GMm.ico" />
+    <None Include="Resources\access.txt" />
+    <None Include="Resources\verologo.png" />
+    <None Include="Resources\them.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Formularios\VentaCompra\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gm.Core\Gm.Core.csproj">
+      <Project>{08e8f0fa-1aa7-4004-9d2d-e6b1ef6dda18}</Project>
+      <Name>Gm.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Otavalo\Gm.Data\Gm.Data.csproj">
+      <Project>{6b114556-5e44-415d-86b4-1538d8ae129f}</Project>
+      <Name>Gm.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Otavalo\Gm.Entities\Gm.Entities.csproj">
+      <Project>{5a2c0219-0872-46fe-a11a-a921dd4b1ab7}</Project>
+      <Name>Gm.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

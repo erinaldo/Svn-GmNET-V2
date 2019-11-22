@@ -1,0 +1,42 @@
+CREATE view VistaFacturaCompra As
+	Select Factura.IDFactura, Cliente.Nombre, Cliente.Cedula, Factura.Numero,
+	sum(facturaDetalle.Costo*FacturaDetalle.Unidades) As Monto, Factura.Fecha, Factura.Estado,
+	(Select distinct Siclo from Kardex Where IDFactura= CONCAT('C',Factura.IDFactura)) as Siclo
+	From Factura Left Join FacturaDetalle
+	on Factura.IDFactura=FacturaDetalle.IDFactura
+	Left Join Cliente
+	on Factura.IDCliente=Cliente.IDCliente
+	Where CONCAT('C',Factura.IDFactura) in (Select IDFactura From Kardex Where Kardex.IDFactura like 'C%')
+	Group By Factura.IDFactura, Factura.Numero, Factura.Fecha, Factura.Estado, Cliente.Nombre, Cliente.Cedula
+GO
+
+
+CREATE view VistaFacturaVenta As
+	Select Factura.IDFactura, Cliente.Nombre, Cliente.Cedula, Factura.Numero,
+	sum(facturaDetalle.Costo*FacturaDetalle.Unidades) As Monto, Factura.Fecha, Factura.Estado
+	From Factura Left Join FacturaDetalle
+	on Factura.IDFactura=FacturaDetalle.IDFactura
+	Left Join Cliente
+	on Factura.IDCliente=Cliente.IDCliente
+	Where CONCAT('V',Factura.IDFactura) in (Select IDFactura From Kardex Where Kardex.IDFactura like 'V%')
+	Group By Factura.IDFactura, Factura.Numero, Factura.Fecha, Factura.Estado, Cliente.Nombre, Cliente.Cedula
+GO
+
+CREATE view VistaKardex As
+	Select IDKardex, Kardex.IDProducto, Producto.Nombre As Producto, Kardex.ProductoEntra, Kardex.ProductoEntraPrecio, Kardex.PrecioReal,
+	Kardex.ProductoSale, Kardex.ProductoSalePrecio, Kardex.IVA,Convert(date,Kardex.Fecha,112) As Fecha, Kardex.Estado,
+	(Select distinct Name from MedidaMetrica Where IdMedidaMetrica=Kardex.IdMedidaMetrica and IDKardex=Kardex.IDKardex) As Medida, Kardex.Siclo
+	from Kardex, Producto
+	where Kardex.IDProducto=Producto.IDProducto and Fecha > Convert(date,DATEADD(day,-15,Getdate()))
+GO
+
+--CREATE view VistaVenta As
+--	Select Producto.IDProducto, Producto.Nombre, sum(Kardex.ProductoSale) As Salio, convert(decimal(18,2),
+--	sum((ProductoSale*ProductoSalePrecio)/Producto.Equivalencia)) As Vendio, 
+--	Convert(decimal(18,2),sum(((Kardex.ProductoSalePrecio-Producto.PCompra)/Producto.Equivalencia)*Kardex.ProductoSale)) As Ganancia,
+--	Convert(date,Fecha) As Fecha
+--	From Producto inner join kardex
+--	on Producto.IDProducto=kardex.IDProducto
+--	Where kardex.IDFactura like 'V%' And Kardex.Referencia>=0 and Kardex.Estado='A' And Convert(date,Kardex.Fecha,112)= Convert(date,GETDATE(),112)
+--	group by Producto.IDProducto, Producto.Nombre, Fecha
+--GO

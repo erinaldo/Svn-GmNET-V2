@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_MMercadoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_MMercado.dbo.Acceso' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Acceso">
+    <Key>
+      <PropertyRef Name="IDUsuario" />
+      <PropertyRef Name="IDModulo" />
+    </Key>
+    <Property Name="IDUsuario" Type="bigint" Nullable="false" />
+    <Property Name="IDModulo" Type="bigint" Nullable="false" />
+    <Property Name="Estado" Type="bit" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="IDCliente" />
+    </Key>
+    <Property Name="IDCliente" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Cedula" Type="varchar" MaxLength="13" />
+    <Property Name="Direccion" Type="varchar" MaxLength="60" />
+    <Property Name="Telefono" Type="varchar" MaxLength="10" />
+    <Property Name="Correo" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+    <Property Name="FechaSistema" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Factura">
+    <Key>
+      <PropertyRef Name="IDFactura" />
+    </Key>
+    <Property Name="IDFactura" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Numero" Type="varchar" MaxLength="17" />
+    <Property Name="IDCliente" Type="bigint" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+    <Property Name="FechaSistema" Type="datetime" />
+    <Property Name="IDTerminal" Type="int" />
+  </EntityType>
+  <EntityType Name="FacturaDetalle">
+    <Key>
+      <PropertyRef Name="IDFacturaDetalle" />
+    </Key>
+    <Property Name="IDFacturaDetalle" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDProducto" Type="bigint" />
+    <Property Name="Costo" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Unidades" Type="int" />
+    <Property Name="IDFactura" Type="bigint" />
+    <Property Name="FechaSistema" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="IDGrupo" />
+    </Key>
+    <Property Name="IDGrupo" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+    <Property Name="FechaSistema" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Kardex">
+    <Key>
+      <PropertyRef Name="IDKardex" />
+    </Key>
+    <Property Name="IDKardex" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDProducto" Type="bigint" />
+    <Property Name="ProductoEntra" Type="int" />
+    <Property Name="ProductoEntraPrecio" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ProductoSale" Type="int" />
+    <Property Name="ProductoSalePrecio" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IDFactura" Type="varchar" MaxLength="10" />
+    <Property Name="IVA" Type="int" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+    <Property Name="FechaSistema" Type="datetime" />
+    <Property Name="Equivalencia" Type="int" />
+    <Property Name="Referencia" Type="int" />
+  </EntityType>
+  <EntityType Name="Modulos">
+    <Key>
+      <PropertyRef Name="IDModulo" />
+    </Key>
+    <Property Name="IDModulo" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Comando" Type="varchar" MaxLength="100" />
+    <Property Name="Imagen" Type="image" />
+    <Property Name="IsMDI" Type="bit" />
+    <Property Name="Estado" Type="bit" />
+    <Property Name="Color" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="IDProducto" />
+    </Key>
+    <Property Name="IDProducto" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" />
+    <Property Name="CodBarra" Type="varchar" MaxLength="50" />
+    <Property Name="IVASIoNO" Type="bit" />
+    <Property Name="PCompra" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="PVenta" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+    <Property Name="FechaSistema" Type="datetime" />
+    <Property Name="IDGrupo" Type="bigint" />
+    <Property Name="Equivalencia" Type="int" />
+    <Property Name="Referencia" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_MMercado.dbo.Proveedor' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Proveedor">
+    <Key>
+      <PropertyRef Name="IDCliente" />
+      <PropertyRef Name="IDProducto" />
+    </Key>
+    <Property Name="IDCliente" Type="bigint" Nullable="false" />
+    <Property Name="IDProducto" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Terminal">
+    <Key>
+      <PropertyRef Name="Mac" />
+    </Key>
+    <Property Name="IDTerminal" Type="int" />
+    <Property Name="Mac" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Maquina" Type="varchar" MaxLength="50" />
+    <Property Name="Oficina" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="IDUsuario" />
+    </Key>
+    <Property Name="IDUsuario" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Cedula" Type="varchar" MaxLength="10" />
+    <Property Name="Login" Type="varchar" MaxLength="20" />
+    <Property Name="Pasword" Type="varchar" MaxLength="20" />
+    <Property Name="Estado" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_MMercado.dbo.VistaExistencia' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VistaExistencia">
+    <Key>
+      <PropertyRef Name="IDProducto" />
+    </Key>
+    <Property Name="IDProducto" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" />
+    <Property Name="Existencia" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_MMercado.dbo.VistaFacturaCompra' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VistaFacturaCompra">
+    <Key>
+      <PropertyRef Name="IDFactura" />
+    </Key>
+    <Property Name="IDFactura" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Cedula" Type="varchar" MaxLength="13" />
+    <Property Name="Numero" Type="varchar" MaxLength="17" />
+    <Property Name="Monto" Type="decimal" Precision="38" Scale="2" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_MMercado.dbo.VistaFacturaVenta' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VistaFacturaVenta">
+    <Key>
+      <PropertyRef Name="IDFactura" />
+    </Key>
+    <Property Name="IDFactura" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Cedula" Type="varchar" MaxLength="13" />
+    <Property Name="Numero" Type="varchar" MaxLength="17" />
+    <Property Name="Monto" Type="decimal" Precision="38" Scale="2" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_MMercado.dbo.VistaKardex' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VistaKardex">
+    <Key>
+      <PropertyRef Name="IDKardex" />
+    </Key>
+    <Property Name="IDKardex" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDProducto" Type="bigint" />
+    <Property Name="Producto" Type="varchar" MaxLength="100" />
+    <Property Name="ProductoEntra" Type="int" />
+    <Property Name="ProductoEntraPrecio" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ProductoSale" Type="int" />
+    <Property Name="ProductoSalePrecio" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IVA" Type="int" />
+    <Property Name="Fecha" Type="date" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_MMercado.dbo.VistaVenta' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VistaVenta">
+    <Key>
+      <PropertyRef Name="IDProducto" />
+    </Key>
+    <Property Name="IDProducto" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" />
+    <Property Name="Salio" Type="int" />
+    <Property Name="Vendio" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Ganancia" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <Association Name="FK__Acceso__IDModulo__44CA3770">
+    <End Role="Modulos" Type="Self.Modulos" Multiplicity="1" />
+    <End Role="Acceso" Type="Self.Acceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Modulos">
+        <PropertyRef Name="IDModulo" />
+      </Principal>
+      <Dependent Role="Acceso">
+        <PropertyRef Name="IDModulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Acceso__IDUsuari__43D61337">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="1" />
+    <End Role="Acceso" Type="Self.Acceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="IDUsuario" />
+      </Principal>
+      <Dependent Role="Acceso">
+        <PropertyRef Name="IDUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Factura__IDClien__1BFD2C07">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="0..1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="IDCliente" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="IDCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FacturaDe__IDFac__20C1E124">
+    <End Role="Factura" Type="Self.Factura" Multiplicity="0..1" />
+    <End Role="FacturaDetalle" Type="Self.FacturaDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="IDFactura" />
+      </Principal>
+      <Dependent Role="FacturaDetalle">
+        <PropertyRef Name="IDFactura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FacturaDe__IDPro__1FCDBCEB">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="0..1" />
+    <End Role="FacturaDetalle" Type="Self.FacturaDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IDProducto" />
+      </Principal>
+      <Dependent Role="FacturaDetalle">
+        <PropertyRef Name="IDProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Kardex__IDProduc__15502E78">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="0..1" />
+    <End Role="Kardex" Type="Self.Kardex" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IDProducto" />
+      </Principal>
+      <Dependent Role="Kardex">
+        <PropertyRef Name="IDProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Producto__IDGrup__37A5467C">
+    <End Role="Grupo" Type="Self.Grupo" Multiplicity="0..1" />
+    <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="IDGrupo" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="IDGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="Sp_Existencia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Sp_FacturaDetalleGrabar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDProducto" Type="int" Mode="In" />
+    <Parameter Name="Costo" Type="decimal" Mode="In" />
+    <Parameter Name="Unidades" Type="int" Mode="In" />
+    <Parameter Name="IDFactura" Type="int" Mode="In" />
+    <Parameter Name="Tipo" Type="char" Mode="In" />
+  </Function>
+  <Function Name="Sp_ReinicioTablas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="DB_MMercadoModelStoreContainer">
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Factura" EntityType="Self.Factura" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FacturaDetalle" EntityType="Self.FacturaDetalle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Grupo" EntityType="Self.Grupo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kardex" EntityType="Self.Kardex" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Modulos" EntityType="Self.Modulos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Terminal" EntityType="Self.Terminal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Acceso" EntityType="Self.Acceso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Proveedor" EntityType="Self.Proveedor" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Proveedor].[IDCliente] AS [IDCliente], 
+    [Proveedor].[IDProducto] AS [IDProducto]
+    FROM [dbo].[Proveedor] AS [Proveedor]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VistaExistencia" EntityType="Self.VistaExistencia" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VistaExistencia].[IDProducto] AS [IDProducto], 
+    [VistaExistencia].[Nombre] AS [Nombre], 
+    [VistaExistencia].[Existencia] AS [Existencia]
+    FROM [dbo].[VistaExistencia] AS [VistaExistencia]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VistaFacturaCompra" EntityType="Self.VistaFacturaCompra" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VistaFacturaCompra].[IDFactura] AS [IDFactura], 
+    [VistaFacturaCompra].[Nombre] AS [Nombre], 
+    [VistaFacturaCompra].[Cedula] AS [Cedula], 
+    [VistaFacturaCompra].[Numero] AS [Numero], 
+    [VistaFacturaCompra].[Monto] AS [Monto], 
+    [VistaFacturaCompra].[Fecha] AS [Fecha], 
+    [VistaFacturaCompra].[Estado] AS [Estado]
+    FROM [dbo].[VistaFacturaCompra] AS [VistaFacturaCompra]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VistaFacturaVenta" EntityType="Self.VistaFacturaVenta" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VistaFacturaVenta].[IDFactura] AS [IDFactura], 
+    [VistaFacturaVenta].[Nombre] AS [Nombre], 
+    [VistaFacturaVenta].[Cedula] AS [Cedula], 
+    [VistaFacturaVenta].[Numero] AS [Numero], 
+    [VistaFacturaVenta].[Monto] AS [Monto], 
+    [VistaFacturaVenta].[Fecha] AS [Fecha], 
+    [VistaFacturaVenta].[Estado] AS [Estado]
+    FROM [dbo].[VistaFacturaVenta] AS [VistaFacturaVenta]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VistaKardex" EntityType="Self.VistaKardex" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VistaKardex].[IDKardex] AS [IDKardex], 
+    [VistaKardex].[IDProducto] AS [IDProducto], 
+    [VistaKardex].[Producto] AS [Producto], 
+    [VistaKardex].[ProductoEntra] AS [ProductoEntra], 
+    [VistaKardex].[ProductoEntraPrecio] AS [ProductoEntraPrecio], 
+    [VistaKardex].[ProductoSale] AS [ProductoSale], 
+    [VistaKardex].[ProductoSalePrecio] AS [ProductoSalePrecio], 
+    [VistaKardex].[IVA] AS [IVA], 
+    [VistaKardex].[Fecha] AS [Fecha], 
+    [VistaKardex].[Estado] AS [Estado]
+    FROM [dbo].[VistaKardex] AS [VistaKardex]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VistaVenta" EntityType="Self.VistaVenta" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VistaVenta].[IDProducto] AS [IDProducto], 
+    [VistaVenta].[Nombre] AS [Nombre], 
+    [VistaVenta].[Salio] AS [Salio], 
+    [VistaVenta].[Vendio] AS [Vendio], 
+    [VistaVenta].[Ganancia] AS [Ganancia]
+    FROM [dbo].[VistaVenta] AS [VistaVenta]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Acceso__IDModulo__44CA3770" Association="Self.FK__Acceso__IDModulo__44CA3770">
+      <End Role="Modulos" EntitySet="Modulos" />
+      <End Role="Acceso" EntitySet="Acceso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Acceso__IDUsuari__43D61337" Association="Self.FK__Acceso__IDUsuari__43D61337">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Acceso" EntitySet="Acceso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Factura__IDClien__1BFD2C07" Association="Self.FK__Factura__IDClien__1BFD2C07">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Factura" EntitySet="Factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FacturaDe__IDFac__20C1E124" Association="Self.FK__FacturaDe__IDFac__20C1E124">
+      <End Role="Factura" EntitySet="Factura" />
+      <End Role="FacturaDetalle" EntitySet="FacturaDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FacturaDe__IDPro__1FCDBCEB" Association="Self.FK__FacturaDe__IDPro__1FCDBCEB">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="FacturaDetalle" EntitySet="FacturaDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Kardex__IDProduc__15502E78" Association="Self.FK__Kardex__IDProduc__15502E78">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="Kardex" EntitySet="Kardex" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Producto__IDGrup__37A5467C" Association="Self.FK__Producto__IDGrup__37A5467C">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

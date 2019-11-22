@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="gm_mmercadoModelStoreContainer" CdmEntityContainer="gm_mmercadoEntities">
+    <EntitySetMapping Name="Cellar">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Cellar">
+        <MappingFragment StoreEntitySet="Cellar">
+          <ScalarProperty Name="IdCellar" ColumnName="IdCellar" />
+          <ScalarProperty Name="IDProducto" ColumnName="IDProducto" />
+          <ScalarProperty Name="IDFactura" ColumnName="IDFactura" />
+          <ScalarProperty Name="PorMayor" ColumnName="PorMayor" />
+          <ScalarProperty Name="PorMenor" ColumnName="PorMenor" />
+          <ScalarProperty Name="PrPorMayor" ColumnName="PrPorMayor" />
+          <ScalarProperty Name="PrPorMenor" ColumnName="PrPorMenor" />
+          <ScalarProperty Name="SalePorMayor" ColumnName="SalePorMayor" />
+          <ScalarProperty Name="SalePorMenor" ColumnName="SalePorMenor" />
+          <ScalarProperty Name="IdPorMayorMedida" ColumnName="IdPorMayorMedida" />
+          <ScalarProperty Name="IdPorMenorMedida" ColumnName="IdPorMenorMedida" />
+          <ScalarProperty Name="Sate" ColumnName="Sate" />
+          <ScalarProperty Name="PVentaMayor" ColumnName="PVentaMayor" />
+          <ScalarProperty Name="PVentaMenor" ColumnName="PVentaMenor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cliente">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Cliente">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="PrecioAplicado" ColumnName="PrecioAplicado" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="CreditoMaximo" ColumnName="CreditoMaximo" />
+          <ScalarProperty Name="DireccionContacto" ColumnName="DireccionContacto" />
+          <ScalarProperty Name="TelefonoContacto" ColumnName="TelefonoContacto" />
+          <ScalarProperty Name="NombreContacto" ColumnName="NombreContacto" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="IDCliente" ColumnName="IDCliente" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="FechaSistema" ColumnName="FechaSistema" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Credito">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Credito">
+        <MappingFragment StoreEntitySet="Credito">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Abonador" ColumnName="Abonador" />
+          <ScalarProperty Name="FechaVence" ColumnName="FechaVence" />
+          <ScalarProperty Name="IDCredito" ColumnName="IDCredito" />
+          <ScalarProperty Name="IDFactura" ColumnName="IDFactura" />
+          <ScalarProperty Name="IDUsaurio" ColumnName="IDUsaurio" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Abona" ColumnName="Abona" />
+          <ScalarProperty Name="State" ColumnName="State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Factura">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Factura">
+        <MappingFragment StoreEntitySet="Factura">
+          <ScalarProperty Name="Siclo" ColumnName="Siclo" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="IDFactura" ColumnName="IDFactura" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="IDCliente" ColumnName="IDCliente" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="FechaSistema" ColumnName="FechaSistema" />
+          <ScalarProperty Name="IDTerminal" ColumnName="IDTerminal" />
+          <ScalarProperty Name="Flete" ColumnName="Flete" />
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FacturaDetalle">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.FacturaDetalle">
+        <MappingFragment StoreEntitySet="FacturaDetalle">
+          <ScalarProperty Name="Movimiento" ColumnName="Movimiento" />
+          <ScalarProperty Name="EnDevolucion" ColumnName="EnDevolucion" />
+          <ScalarProperty Name="EnBodega" ColumnName="EnBodega" />
+          <ScalarProperty Name="EnAlmacen" ColumnName="EnAlmacen" />
+          <ScalarProperty Name="Siclo" ColumnName="Siclo" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="FleteAplicado" ColumnName="FleteAplicado" />
+          <ScalarProperty Name="Iva" ColumnName="Iva" />
+          <ScalarProperty Name="IDFacturaDetalle" ColumnName="IDFacturaDetalle" />
+          <ScalarProperty Name="IDProducto" ColumnName="IDProducto" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="Unidades" ColumnName="Unidades" />
+          <ScalarProperty Name="IDFactura" ColumnName="IDFactura" />
+          <ScalarProperty Name="FechaSistema" ColumnName="FechaSistema" />
+          <ScalarProperty Name="IdMedidaMetrica" ColumnName="IdMedidaMetrica" />
+          <ScalarProperty Name="IDKardex" ColumnName="IDKardex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grupo">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Grupo">
+        <MappingFragment StoreEntitySet="Grupo">
+          <ScalarProperty Name="IDGrupo" ColumnName="IDGrupo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="FechaSistema" ColumnName="FechaSistema" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kardex">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Kardex">
+        <MappingFragment StoreEntitySet="Kardex">
+          <ScalarProperty Name="Flete" ColumnName="Flete" />
+          <ScalarProperty Name="FacturaDevolucion" ColumnName="FacturaDevolucion" />
+          <ScalarProperty Name="IDUbicacion" ColumnName="IDUbicacion" />
+          <ScalarProperty Name="IDKardexBodega" ColumnName="IDKardexBodega" />
+          <ScalarProperty Name="PrecioReal" ColumnName="PrecioReal" />
+          <ScalarProperty Name="Movimiento" ColumnName="Movimiento" />
+          <ScalarProperty Name="Residuo" ColumnName="Residuo" />
+          <ScalarProperty Name="IDKardex" ColumnName="IDKardex" />
+          <ScalarProperty Name="IDProducto" ColumnName="IDProducto" />
+          <ScalarProperty Name="ProductoEntra" ColumnName="ProductoEntra" />
+          <ScalarProperty Name="ProductoEntraPrecio" ColumnName="ProductoEntraPrecio" />
+          <ScalarProperty Name="ProductoSale" ColumnName="ProductoSale" />
+          <ScalarProperty Name="ProductoSalePrecio" ColumnName="ProductoSalePrecio" />
+          <ScalarProperty Name="IDFactura" ColumnName="IDFactura" />
+          <ScalarProperty Name="IVA" ColumnName="IVA" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="FechaSistema" ColumnName="FechaSistema" />
+          <ScalarProperty Name="Equivalencia" ColumnName="Equivalencia" />
+          <ScalarProperty Name="Referencia" ColumnName="Referencia" />
+          <ScalarProperty Name="Siclo" ColumnName="Siclo" />
+          <ScalarProperty Name="IdMedidaMetrica" ColumnName="IdMedidaMetrica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedidaMetrica">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.MedidaMetrica">
+        <MappingFragment StoreEntitySet="MedidaMetrica">
+          <ScalarProperty Name="IdMedidaMetrica" ColumnName="IdMedidaMetrica" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Modulos">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Modulos">
+        <MappingFragment StoreEntitySet="Modulos">
+          <ScalarProperty Name="IDModulo" ColumnName="IDModulo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Comando" ColumnName="Comando" />
+          <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+          <ScalarProperty Name="IsMDI" ColumnName="IsMDI" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parametros">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Parametros">
+        <MappingFragment StoreEntitySet="Parametros">
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="Station" ColumnName="Station" />
+          <ScalarProperty Name="NumFactura" ColumnName="NumFactura" />
+          <ScalarProperty Name="Iva" ColumnName="Iva" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Terminal">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Terminal">
+        <MappingFragment StoreEntitySet="Terminal">
+          <ScalarProperty Name="IDTerminal" ColumnName="IDTerminal" />
+          <ScalarProperty Name="Mac" ColumnName="Mac" />
+          <ScalarProperty Name="Maquina" ColumnName="Maquina" />
+          <ScalarProperty Name="Oficina" ColumnName="Oficina" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="CEnBodega" ColumnName="CEnBodega" />
+          <ScalarProperty Name="CFechaExpiracion" ColumnName="CFechaExpiracion" />
+          <ScalarProperty Name="CMostraNotificar" ColumnName="CMostraNotificar" />
+          <ScalarProperty Name="CNotificar" ColumnName="CNotificar" />
+          <ScalarProperty Name="CPAnterior" ColumnName="CPAnterior" />
+          <ScalarProperty Name="CUltimaVentaA" ColumnName="CUltimaVentaA" />
+          <ScalarProperty Name="CFotoProducto" ColumnName="CFotoProducto" />
+          <ScalarProperty Name="CExistenciaActual" ColumnName="CExistenciaActual" />
+          <ScalarProperty Name="CEstado" ColumnName="CEstado" />
+          <ScalarProperty Name="CCategoria" ColumnName="CCategoria" />
+          <ScalarProperty Name="CMarca" ColumnName="CMarca" />
+          <ScalarProperty Name="CExistenciaMinima" ColumnName="CExistenciaMinima" />
+          <ScalarProperty Name="CCodigoRapido" ColumnName="CCodigoRapido" />
+          <ScalarProperty Name="CNombreAnterior" ColumnName="CNombreAnterior" />
+          <ScalarProperty Name="CPrecioAnteriorVenta3" ColumnName="CPrecioAnteriorVenta3" />
+          <ScalarProperty Name="CPrecioAnteriorVenta2" ColumnName="CPrecioAnteriorVenta2" />
+          <ScalarProperty Name="CPrecioAnteriorVenta1" ColumnName="CPrecioAnteriorVenta1" />
+          <ScalarProperty Name="CUltimaCompraA" ColumnName="CUltimaCompraA" />
+          <ScalarProperty Name="CActivo3A" ColumnName="CActivo3A" />
+          <ScalarProperty Name="CActivo2A" ColumnName="CActivo2A" />
+          <ScalarProperty Name="CEqui3A" ColumnName="CEqui3A" />
+          <ScalarProperty Name="CEqui2A" ColumnName="CEqui2A" />
+          <ScalarProperty Name="CEqui1A" ColumnName="CEqui1A" />
+          <ScalarProperty Name="CPv3A" ColumnName="CPv3A" />
+          <ScalarProperty Name="CPv2A" ColumnName="CPv2A" />
+          <ScalarProperty Name="CPCAnterior" ColumnName="CPCAnterior" />
+          <ScalarProperty Name="CIvaA" ColumnName="CIvaA" />
+          <ScalarProperty Name="CCodBarra" ColumnName="CCodBarra" />
+          <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Pasword" ColumnName="Pasword" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Proveedor">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Proveedor">
+        <MappingFragment StoreEntitySet="Proveedor">
+          <ScalarProperty Name="IDCliente" ColumnName="IDCliente" />
+          <ScalarProperty Name="IDProducto" ColumnName="IDProducto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VistaFacturaCompra">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.VistaFacturaCompra">
+        <MappingFragment StoreEntitySet="VistaFacturaCompra">
+          <ScalarProperty Name="IDFactura" ColumnName="IDFactura" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Siclo" ColumnName="Siclo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VistaFacturaVenta">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.VistaFacturaVenta">
+        <MappingFragment StoreEntitySet="VistaFacturaVenta">
+          <ScalarProperty Name="IDFactura" ColumnName="IDFactura" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VistaKardex">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.VistaKardex">
+        <MappingFragment StoreEntitySet="VistaKardex">
+          <ScalarProperty Name="Siclo" ColumnName="Siclo" />
+          <ScalarProperty Name="PrecioReal" ColumnName="PrecioReal" />
+          <ScalarProperty Name="IDKardex" ColumnName="IDKardex" />
+          <ScalarProperty Name="IDProducto" ColumnName="IDProducto" />
+          <ScalarProperty Name="Producto" ColumnName="Producto" />
+          <ScalarProperty Name="ProductoEntra" ColumnName="ProductoEntra" />
+          <ScalarProperty Name="ProductoEntraPrecio" ColumnName="ProductoEntraPrecio" />
+          <ScalarProperty Name="ProductoSale" ColumnName="ProductoSale" />
+          <ScalarProperty Name="ProductoSalePrecio" ColumnName="ProductoSalePrecio" />
+          <ScalarProperty Name="IVA" ColumnName="IVA" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Medida" ColumnName="Medida" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VistaVenta">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.VistaVenta">
+        <MappingFragment StoreEntitySet="VistaVenta">
+          <ScalarProperty Name="IDProducto" ColumnName="IDProducto" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Salio" ColumnName="Salio" />
+          <ScalarProperty Name="Vendio" ColumnName="Vendio" />
+          <ScalarProperty Name="Ganancia" ColumnName="Ganancia" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="p_ReinicioTablas" FunctionName="gm_mmercadoModel.Store.p_ReinicioTablas" />
+    <FunctionImportMapping FunctionImportName="Sp_Existencia" FunctionName="gm_mmercadoModel.Store.Sp_Existencia">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="gm_mmercadoModel.Sp_Existencia_Result">
+          <ScalarProperty Name="IDProducto" ColumnName="IDProducto" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Existencia" ColumnName="Existencia" />
+          <ScalarProperty Name="Actualizado" ColumnName="Actualizado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_FacturaDetalleGrabar" FunctionName="gm_mmercadoModel.Store.Sp_FacturaDetalleGrabar" />
+    <FunctionImportMapping FunctionImportName="UpdateAcceso" FunctionName="gm_mmercadoModel.Store.UpdateAcceso" />
+    <FunctionImportMapping FunctionImportName="Sp_AjusteKardex" FunctionName="gm_mmercadoModel.Store.Sp_AjusteKardex" />
+    <FunctionImportMapping FunctionImportName="Sp_ResumenVentas" FunctionName="gm_mmercadoModel.Store.Sp_ResumenVentas">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="gm_mmercadoModel.Sp_ResumenVentas_Result">
+          <ScalarProperty Name="IDFactura" ColumnName="IDFactura" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Detalle" ColumnName="Detalle" />
+          <ScalarProperty Name="Medida" ColumnName="Medida" />
+          <ScalarProperty Name="IVA" ColumnName="IVA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_ProcedureKardex" FunctionName="gm_mmercadoModel.Store.Sp_ProcedureKardex">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="gm_mmercadoModel.Sp_ProcedureKardex_Result">
+          <ScalarProperty Name="IDKardex" ColumnName="IDKardex" />
+          <ScalarProperty Name="IDProducto" ColumnName="IDProducto" />
+          <ScalarProperty Name="Producto" ColumnName="Producto" />
+          <ScalarProperty Name="ProductoEntra" ColumnName="ProductoEntra" />
+          <ScalarProperty Name="ProductoEntraPrecio" ColumnName="ProductoEntraPrecio" />
+          <ScalarProperty Name="ProductoSale" ColumnName="ProductoSale" />
+          <ScalarProperty Name="ProductoSalePrecio" ColumnName="ProductoSalePrecio" />
+          <ScalarProperty Name="IVA" ColumnName="IVA" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Medida" ColumnName="Medida" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_MovimientoFactura" FunctionName="gm_mmercadoModel.Store.Sp_MovimientoFactura">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="gm_mmercadoModel.Sp_MovimientoFactura_Result">
+          <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+          <ScalarProperty Name="Factura" ColumnName="Factura" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="Entro" ColumnName="Entro" />
+          <ScalarProperty Name="Salio" ColumnName="Salio" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Unidades" ColumnName="Unidades" />
+          <ScalarProperty Name="Medida" ColumnName="Medida" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Reservacion">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Reservacion">
+        <MappingFragment StoreEntitySet="Reservacion">
+          <ScalarProperty Name="IDMedida" ColumnName="IDMedida" />
+          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+          <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="IDCliente" ColumnName="IDCliente" />
+          <ScalarProperty Name="AplicaIva" ColumnName="AplicaIva" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="IDProducto" ColumnName="IDProducto" />
+          <ScalarProperty Name="IDReservacion" ColumnName="IDReservacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Marca">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Marca">
+        <MappingFragment StoreEntitySet="Marca">
+          <ScalarProperty Name="FechaSistema" ColumnName="FechaSistema" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="NombreMarca" ColumnName="NombreMarca" />
+          <ScalarProperty Name="IDMarca" ColumnName="IDMarca" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Acceso">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Acceso">
+        <MappingFragment StoreEntitySet="Acceso">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="IDModulo" ColumnName="IDModulo" />
+          <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KardexBodega">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.KardexBodega">
+        <MappingFragment StoreEntitySet="KardexBodega">
+          <ScalarProperty Name="FechaSystema" ColumnName="FechaSystema" />
+          <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+          <ScalarProperty Name="Movimiento" ColumnName="Movimiento" />
+          <ScalarProperty Name="Sale" ColumnName="Sale" />
+          <ScalarProperty Name="Entra" ColumnName="Entra" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="ManoDeObra" ColumnName="ManoDeObra" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="IDProducto" ColumnName="IDProducto" />
+          <ScalarProperty Name="IDKardexBodega" ColumnName="IDKardexBodega" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ubicacion">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Ubicacion">
+        <MappingFragment StoreEntitySet="Ubicacion">
+          <ScalarProperty Name="FechaSystema" ColumnName="FechaSystema" />
+          <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IDUbicacion" ColumnName="IDUbicacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Traslados">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Traslados">
+        <MappingFragment StoreEntitySet="Traslados">
+          <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+          <ScalarProperty Name="FechaSistema" ColumnName="FechaSistema" />
+          <ScalarProperty Name="TrasladoDe" ColumnName="TrasladoDe" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IDProducto" ColumnName="IDProducto" />
+          <ScalarProperty Name="IDTraslado" ColumnName="IDTraslado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Devolucion">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Devolucion">
+        <MappingFragment StoreEntitySet="Devolucion">
+          <ScalarProperty Name="IDKardex" ColumnName="IDKardex" />
+          <ScalarProperty Name="IDMedida" ColumnName="IDMedida" />
+          <ScalarProperty Name="IDFactura" ColumnName="IDFactura" />
+          <ScalarProperty Name="Unidad" ColumnName="Unidad" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="IDProducto" ColumnName="IDProducto" />
+          <ScalarProperty Name="IDDevolucion" ColumnName="IDDevolucion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Producto">
+      <EntityTypeMapping TypeName="gm_mmercadoModel.Producto">
+        <MappingFragment StoreEntitySet="Producto">
+          <ScalarProperty Name="MostraNotificar" ColumnName="MostraNotificar" />
+          <ScalarProperty Name="EdNombre" ColumnName="EdNombre" />
+          <ScalarProperty Name="Notificar" ColumnName="Notificar" />
+          <ScalarProperty Name="EnBodega" ColumnName="EnBodega" />
+          <ScalarProperty Name="IDUbicacion" ColumnName="IDUbicacion" />
+          <ScalarProperty Name="FechaExpiracion" ColumnName="FechaExpiracion" />
+          <ScalarProperty Name="FotoProducto" ColumnName="FotoProducto" />
+          <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+          <ScalarProperty Name="FechaSistema" ColumnName="FechaSistema" />
+          <ScalarProperty Name="ExistenciaActual" ColumnName="ExistenciaActual" />
+          <ScalarProperty Name="EdPVenta3" ColumnName="EdPVenta3" />
+          <ScalarProperty Name="EdPVenta2" ColumnName="EdPVenta2" />
+          <ScalarProperty Name="EdPVenta1" ColumnName="EdPVenta1" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="IDGrupo" ColumnName="IDGrupo" />
+          <ScalarProperty Name="IDMarca" ColumnName="IDMarca" />
+          <ScalarProperty Name="ExistenciaMinima" ColumnName="ExistenciaMinima" />
+          <ScalarProperty Name="CodRapido" ColumnName="CodRapido" />
+          <ScalarProperty Name="NombreAnterior" ColumnName="NombreAnterior" />
+          <ScalarProperty Name="PVAnterior3" ColumnName="PVAnterior3" />
+          <ScalarProperty Name="PVAnterior2" ColumnName="PVAnterior2" />
+          <ScalarProperty Name="PVAnterior1" ColumnName="PVAnterior1" />
+          <ScalarProperty Name="PCAnterior" ColumnName="PCAnterior" />
+          <ScalarProperty Name="IDUtimaCompra" ColumnName="IDUtimaCompra" />
+          <ScalarProperty Name="IDUltimaVenta" ColumnName="IDUltimaVenta" />
+          <ScalarProperty Name="FechaUltimaCompra" ColumnName="FechaUltimaCompra" />
+          <ScalarProperty Name="FechaUltimaVenta" ColumnName="FechaUltimaVenta" />
+          <ScalarProperty Name="IDMedidaMetrica" ColumnName="IDMedidaMetrica" />
+          <ScalarProperty Name="StateMedida3" ColumnName="StateMedida3" />
+          <ScalarProperty Name="StateMedida2" ColumnName="StateMedida2" />
+          <ScalarProperty Name="Equivalencia3" ColumnName="Equivalencia3" />
+          <ScalarProperty Name="Equivalencia2" ColumnName="Equivalencia2" />
+          <ScalarProperty Name="Equivalencia1" ColumnName="Equivalencia1" />
+          <ScalarProperty Name="PVenta4" ColumnName="PVenta4" />
+          <ScalarProperty Name="PVenta3" ColumnName="PVenta3" />
+          <ScalarProperty Name="PVenta2" ColumnName="PVenta2" />
+          <ScalarProperty Name="PVenta1" ColumnName="PVenta1" />
+          <ScalarProperty Name="Iva" ColumnName="Iva" />
+          <ScalarProperty Name="CodBarra" ColumnName="CodBarra" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IDProducto" ColumnName="IDProducto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

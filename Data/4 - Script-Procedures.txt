@@ -1,0 +1,451 @@
+Create procedure Sp_AjusteKardex
+@IdProducto int
+As
+	Begin
+
+		Declare @IdFacturaC varchar(10)
+		Declare @IdMedida1 int
+		Declare @IdMedida2 int
+		Declare @IdKardex int
+		Declare @Equivalencia int
+
+		--Select Top 1 @IdFacturaC = max(idFactura) From Kardex Where IDFactura Like 'C%' and IDProducto = @IdProducto
+		--Select  @IdMedida2 = IdMedida2, @Equivalencia = Equivalencia2, @IdMedida1 = IDMedida1 From Producto Where IDProducto = @IdProducto
+
+		--Select @IdKardex = ISNULL(max(IDKardex),0) From Kardex
+
+		--Insert Into Kardex(IDKardex, IDProducto, ProductoEntra, Fecha, FechaSistema, Siclo, IdMedidaMetrica)
+		--	Select @IdKardex+1, @IdProducto, -1, GETDATE(),GETDATE(),'A', @IdMedida2
+
+		--Select @IdKardex = ISNULL(max(IDKardex),0) From Kardex
+
+		--Insert Into Kardex(IDKardex, IDProducto, ProductoEntra, Fecha, FechaSistema, Siclo, IdMedidaMetrica)
+		--	Select @IdKardex+1, @IdProducto, @Equivalencia, GETDATE(),GETDATE(),'A', @IdMedida1
+
+	End
+	--Exec Sp_AjusteKardex 1
+go
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+create procedure Sp_Existencia
+As
+
+Declare @T table
+	(
+		IDProducto int,
+		Entra int,
+		Sale int,
+		Equivalencia int,
+		Referencia int,
+		Unidades int,
+		Actualizado bit
+	)
+
+
+Insert Into @T
+	Select
+		IDProducto,
+		Sum(ProductoEntra) As Entra, 
+		Sum(ProductoSale) As Sale,
+		Equivalencia,
+		Referencia,
+		IIF((Sum(ProductoEntra)-Sum(ProductoSale))<0,(Sum(ProductoEntra)-Sum(ProductoSale))*-1,Sum(ProductoEntra)-Sum(ProductoSale))*Equivalencia,
+		0
+	From Kardex
+	Where Estado!='E'
+	Group by IDProducto, Equivalencia, Referencia
+	Order by IDProducto
+
+
+declare @idProduct int
+declare @entra int
+declare @sale int
+declare @equi int
+declare @ref int
+declare @uni int
+
+declare c cursor for
+	Select IDProducto, Entra, Sale, Equivalencia, Referencia, Unidades from @T
+
+open c
+fetch next from c into @idProduct, @entra, @sale, @equi, @ref, @uni
+	WHILE @@FETCH_STATUS = 0  
+		BEGIN  
+		
+			if(@ref>0)
+			Begin
+				declare @padre int
+				declare @hijo int
+				declare @res int
+				declare @equii int
+				select @padre=Unidades, @equii=Equivalencia from @T where IDProducto=@ref
+				
+				set @res=@padre-@uni
+				set @padre = @res/@equii
+				set @hijo = @res%@equii
+
+				update @T set Unidades=@padre,Actualizado=1 where IDProducto=@ref
+				update @T set Unidades=@hijo, Actualizado=1 where IDProducto=@idProduct
+
+			end
+		FETCH NEXT FROM c   
+    INTO @idProduct, @entra, @sale, @equi, @ref, @uni
+END   
+CLOSE c;  
+DEALLOCATE c;
+
+update @T set Unidades=Unidades/Equivalencia where Actualizado=0
+
+
+Select t.IDProducto, p.Nombre, ISNULL(t.Unidades,0) As Existencia, Actualizado from @t As t, Producto as P
+	where t.IDProducto=p.IDProducto
+	order by p.Nombre
+
+-- exec Sp_Existencia
+go
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+create procedure Sp_FacturaDetalleGrabar
+@IDProducto int,
+@Costo decimal(18,2),
+@Unidades int,
+@IDFactura int,
+@Tipo char(1),
+@Iva int,
+@IdMedida int
+As
+	Begin
+		Declare @rowDetalle bigint
+		Select @rowDetalle = ISNULL(max(IDFacturaDetalle),0) From FacturaDetalle
+
+		set @rowDetalle= @rowDetalle+1
+
+		Insert into FacturaDetalle(IDFacturaDetalle, IDProducto,Costo,Unidades,IDFactura,FechaSistema,IdMedidaMetrica)
+			Select @rowDetalle, @IDProducto, @Costo, @Unidades,@IDFactura, getdate(), @IdMedida
+
+		Declare @Equivalencia int
+		Declare @Referencia bigint
+		Declare @ID bigint
+		Declare @IdKardex bigint
+
+		--Select @Referencia=Referencia From Producto Where IDProducto=@IDProducto
+		Select @IdKardex = ISNULL(max(IDKardex),0) From Kardex
+
+		set @IdKardex = @Idkardex + 1
+
+	End
+	-- exec Sp_FacturaDetalleGrabar '19', '0.05', '4', '40002', 'V'
+go
+
+
+---------------------------------------------------------------------------------------------------------------------------
+create procedure Sp_MovimientoFactura
+As
+Declare @T table (
+IdProducto int,
+Factura varchar(20),
+fecha date,
+Entro int,
+Salio int
+)
+
+Insert into @T
+
+	select a.IDProducto, a.Numero, a.Fecha, a.Equivalencia, b.Equivalencia From
+	(Select IDProducto, Factura.Numero, Equivalencia, Kardex.Fecha, Kardex.IDFactura From Kardex, Factura
+	Where ProductoEntra>0 And Kardex.IDFactura=CONCAT('C',Factura.IDFactura)) A left join
+
+	(Select Idproducto, sum(Equivalencia) As Equivalencia, Referencia From Kardex Where Equivalencia<0
+	group by IDProducto, Referencia) As B
+	on a.IDProducto=B.IDProducto And a.IDFactura=CONCAT('C',Referencia)
+	
+	Update @T set Salio=0 Where Salio is null
+ 
+	Select T.IdProducto, T.Factura, T.fecha, T.Entro, T.Salio * -1 As Salio, Producto.Nombre, (t.Entro+t.Salio) Unidades, 
+	(Select MedidaMetrica.Name From MedidaMetrica where MedidaMetrica.IdMedidaMetrica=Producto.IdMedidaMetrica) Medida 
+	From @T As T, Producto
+	Where T.IDProducto = Producto.IDProducto
+	Order by t.fecha desc
+
+--exec Sp_MovimientoFactura
+go
+
+
+---------------------------------------------------------------------------------------------------------------------------
+create procedure Sp_ProcedureKardex
+As
+Begin
+
+Declare @T Table(
+IDKardex int,
+IDProducto int,
+Producto varchar(50),
+ProductoEntra int,
+ProductoEntraPrecio decimal(18,4),
+ProductoSale int,
+ProductoSalePrecio decimal(18,4),
+IVA int,
+Fecha Date,
+Estado char(1),
+Medida char(10)
+)
+
+	Declare @con int = 0
+	Declare @dias int = 14
+
+	WHILE @con < @dias
+
+	BEGIN
+		Insert into @T
+		Select distinct 0, IDProducto, Producto, 0, 0, 0,
+		0, 0, Convert(date,DATEADD(day,-@con,Getdate())), 0, 0  From VistaKardex
+		 Where Fecha > Convert(date,DATEADD(day,-@dias,Getdate())) and ProductoSale > 0
+	set @con = @con + 1
+	
+	END
+
+	Select * From @T
+	union all
+	Select IDKardex,IDProducto, Producto,ProductoEntra, ProductoEntraPrecio, ProductoSale,ProductoSalePrecio,IVA,Fecha, Estado, Medida From VistaKardex Where Fecha > Convert(date,DATEADD(day,-@dias,Getdate()))
+
+End
+--exec Sp_ProcedureKardex
+go
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+Create Procedure Sp_ResumenVentas
+@Fecha date
+As
+Begin
+	Select VistaFacturaVenta.IDFactura, VistaFacturaVenta.Nombre As Cliente, VistaFacturaVenta.Cedula, VistaFacturaVenta.Numero, VistaFacturaVenta.Fecha, VistaFacturaVenta.Monto As Precio,
+	FacturaDetalle.Costo, FacturaDetalle.Unidades As Cantidad, Producto.Nombre As Detalle, MedidaMetrica.Name As Medida, Kardex.IVA
+	From VistaFacturaVenta, FacturaDetalle, Producto, MedidaMetrica, Kardex
+	Where VistaFacturaVenta.IDFactura = FacturaDetalle.IDFactura and Producto.IDProducto = FacturaDetalle.IDProducto 
+	and MedidaMetrica.IdMedidaMetrica = FacturaDetalle.IdMedidaMetrica and Kardex.IDKardex=FacturaDetalle.IDKardex
+	and Convert(date,VistaFacturaVenta.Fecha)=@Fecha
+End
+go
+
+---------------------------------------------------------------------------------------------------------------------------
+Create procedure UpdateAcceso
+(
+@IdUsuario bigint,
+@IDModulo bigint,
+@Estado bit
+)
+As
+	Update Acceso set Estado=@Estado Where IDUsuario=@IdUsuario and IDModulo=@IDModulo
+
+--exec UpdateAcceso 2,1,0
+go
+
+
+---------------------------------------------------------------------------------------------------------------------------
+create procedure p_ReinicioTablas
+As
+	Begin
+
+		--Limpiamos todas las tablas
+		delete Terminal;
+		delete Proveedor;
+		delete Parametros;
+		delete LogProducto;
+		delete Kardex;
+		delete Credito;
+		delete FacturaDetalle;
+		delete Factura;
+		delete Producto;
+		delete MedidaMetrica;
+		delete Grupo;
+		delete Cliente;
+		delete Acceso;
+		delete Modulos;
+		delete Usuarios;
+
+		--creamos datos generales
+		Insert into Cliente(IDCliente,Nombre,Cedula,Direccion,Telefono,Correo,Estado,FechaSistema) VALUES (1,'CONSUMIDOR FINAL','9999999999999','PEGUCHE','0000000','NINGUNO','A',GETDATE());
+
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(1,'Factura',0,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(2,'Guardar',1,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(3,'Imprimir',1,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(4,'Crear Cliente',1,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(5,'Editar Cliente',1,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(6,'Compra',0,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(7,'Guardar',6,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(8,'Crear',6,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(9,'Editar Producto',6,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(10,'Crear Proveedor',6,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(11,'Editar Proveedor',6,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(12,'Productos',0,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(13,'Crear',12,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(14,'Editar',12,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(15,'Eliminar',12,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(16,'Exportar',12,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(17,'Edicion Rapida',12,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(18,'Restablecer',12,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(19,'Quitar Marcas',12,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(20,'Cuentas por Cobrar',0,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(21,'Nuevo Abono',20,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(22,'Eliminar Abono',20,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(23,'Editar Abono',20,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(24,'Exportar',20,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(25,'Consultas & Reportes',0,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(26,'Facturas Realizadas',25,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(27,'Imprimir Todo',26,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(28,'Imprimir Seleccion',26,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(29,'Eliminar Factura',26,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(30,'Compras Realizadas',25,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(31,'Imprimir Todo',30,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(32,'Imprimir Seleccion',30,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(33,'Eliminar Compra',30,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(34,'Ventas Realizadas',25,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(35,'Compras vs Ventas',25,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(36,'Movimiento Producto',25,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(37,'Estadistica Producto',25,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(38,'Abrir Caja',25,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(39,'Clientes',0,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(40,'Crear',39,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(41,'Editar',39,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(42,'Proveedores',0,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(43,'Crear',42,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(44,'Editar',42,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(45,'Usuarios',65,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(46,'Nuevo',45,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(47,'Editar',45,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(48,'Eliminar',45,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(49,'Terminales',65,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(50,'Nuevo',49,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(51,'Editar',49,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(52,'Eliminar',49,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(53,'Categoria',65,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(54,'Nuevo',53,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(55,'Editar',53,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(56,'Eliminar',53,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(57,'Unidad de Medidas',65,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(58,'Nuevo',57,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(59,'Editar',57,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(60,'Eliminar',57,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(61,'Marcas',65,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(62,'Nuevo',61,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(63,'Editar',61,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(64,'Marcas Eliminar',61,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(65,'Administracion',0,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(66,'Disenio Reporte',65,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(67,'Cambiar Conexion',65,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(68,'Copia de Seguridad',65,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(69,'Estilos',65,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(70,'Eliminar',39,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(71,'Eliminar',42,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(72,'Exportar Excel',26,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(73,'Exportar Excel',30,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(74,'Poner en Reserva',1,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(75,'Buscar Reserva',1,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(76,'Modulos',65,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(77,'Nuevo',76,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(78,'Editar',76,1);
+Insert Into Modulos(IDModulo,Nombre,Comando,Estado)Values(79,'Eliminar',76,1);
+
+		
+Insert into Grupo(IDGrupo,Nombre,Estado,FechaSistema) VALUES (1,'GENERAL','A',GETDATE());
+
+Insert into Parametros(Station,NumFactura,Iva) VALUES (1,3,12);
+
+Insert into Terminal(IDTerminal,Mac,Maquina,Oficina,Estado) VALUES (1,'001A80F32841','ROBERTO','SISTEMAS','A');
+
+Insert into Usuarios(IDUsuario,Nombre,Cedula,Login,Pasword,Estado) VALUES (1,'GUAJAN LEMA ROBERTO RIVELINO','1002662136','rguajan','nofate',1);
+
+Insert into MedidaMetrica(IdMedidaMetrica,Name,State,Nivel) VALUES (1,'GENERAL',1,1);
+
+Insert into Marca(IDMarca,NombreMarca,Estado,IdUsuario,FechaSistema) VALUES (1,'GENERAL',1,1,GETDATE());
+
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,1,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,2,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,3,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,4,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,5,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,6,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,7,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,8,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,9,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,10,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,11,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,12,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,13,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,14,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,15,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,16,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,17,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,18,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,19,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,20,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,21,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,22,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,23,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,24,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,25,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,26,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,27,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,28,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,29,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,30,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,31,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,32,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,33,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,34,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,35,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,36,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,37,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,38,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,39,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,40,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,41,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,42,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,43,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,44,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,45,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,46,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,47,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,48,0);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,49,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,50,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,51,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,52,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,53,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,54,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,55,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,56,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,57,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,58,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,59,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,60,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,61,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,62,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,63,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,64,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,65,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,66,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,67,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,68,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,69,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,70,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,71,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,72,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,73,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,74,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,75,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,76,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,77,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,78,1);
+Insert into Acceso(IDUsuario,IDModulo,Estado)Values(1,79,1);
+
+end
+	-- exec Sp_ReinicioTablas
+go

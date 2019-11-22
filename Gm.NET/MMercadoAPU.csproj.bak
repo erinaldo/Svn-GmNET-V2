@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B92AA863-5535-4953-A183-5CF63A276FEE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MMercadoAPU</RootNamespace>
+    <AssemblyName>MMercadoAPU</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>GMm.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.UI, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\Accesos\SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Accesos\SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Accesos\XtraFormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Accesos\XtraFormLogin.Designer.cs">
+      <DependentUpon>XtraFormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Complementos\XtraFormFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Complementos\XtraFormFecha.Designer.cs">
+      <DependentUpon>XtraFormFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\XtraFormCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\XtraFormCaja.Designer.cs">
+      <DependentUpon>XtraFormCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\XtraFormMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\XtraFormMovimiento.Designer.cs">
+      <DependentUpon>XtraFormMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\XtraFormMovimientoProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\XtraFormMovimientoProduto.Designer.cs">
+      <DependentUpon>XtraFormMovimientoProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\XtraFormVistaExistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\XtraFormVistaExistencia.Designer.cs">
+      <DependentUpon>XtraFormVistaExistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Herramientas\xfConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Herramientas\xfConfiguracion.Designer.cs">
+      <DependentUpon>xfConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\XtraFormAforo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\XtraFormAforo.Designer.cs">
+      <DependentUpon>XtraFormAforo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Complementos\XtraFormAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Complementos\XtraFormAyuda.Designer.cs">
+      <DependentUpon>XtraFormAyuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\XtraFormCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\XtraFormCompra.Designer.cs">
+      <DependentUpon>XtraFormCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\XtraFormFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\XtraFormFactura.Designer.cs">
+      <DependentUpon>XtraFormFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\XtraFormKardex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\XtraFormKardex.Designer.cs">
+      <DependentUpon>XtraFormKardex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\XtraFormProductoAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\XtraFormProductoAdmin.Designer.cs">
+      <DependentUpon>XtraFormProductoAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\XtraFormProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\XtraFormProveedor.Designer.cs">
+      <DependentUpon>XtraFormProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\XtraFormVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\XtraFormVenta.Designer.cs">
+      <DependentUpon>XtraFormVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\XtraFormVistaVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\XtraFormVistaVenta.Designer.cs">
+      <DependentUpon>XtraFormVistaVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Herramientas\xuGrupos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Herramientas\xuGrupos.Designer.cs">
+      <DependentUpon>xuGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Herramientas\xuModulos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Herramientas\xuModulos.Designer.cs">
+      <DependentUpon>xuModulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Herramientas\xuTerminal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Herramientas\xuTerminal.Designer.cs">
+      <DependentUpon>xuTerminal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Herramientas\xuUsuarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Herramientas\xuUsuarios.Designer.cs">
+      <DependentUpon>xuUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RibbonFormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RibbonFormMenu.Designer.cs">
+      <DependentUpon>RibbonFormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraFormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraFormMain.Designer.cs">
+      <DependentUpon>XtraFormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraFormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraFormMenu.Designer.cs">
+      <DependentUpon>XtraFormMenu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Formularios\Accesos\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Accesos\XtraFormLogin.resx">
+      <DependentUpon>XtraFormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Complementos\XtraFormFecha.resx">
+      <DependentUpon>XtraFormFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\XtraFormCaja.resx">
+      <DependentUpon>XtraFormCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\XtraFormMovimiento.resx">
+      <DependentUpon>XtraFormMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\XtraFormMovimientoProduto.resx">
+      <DependentUpon>XtraFormMovimientoProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\XtraFormVistaExistencia.resx">
+      <DependentUpon>XtraFormVistaExistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Herramientas\xfConfiguracion.resx">
+      <DependentUpon>xfConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\XtraFormAforo.resx">
+      <DependentUpon>XtraFormAforo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Complementos\XtraFormAyuda.resx">
+      <DependentUpon>XtraFormAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\XtraFormCompra.resx">
+      <DependentUpon>XtraFormCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\XtraFormFactura.resx">
+      <DependentUpon>XtraFormFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\XtraFormKardex.resx">
+      <DependentUpon>XtraFormKardex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\XtraFormProductoAdmin.resx">
+      <DependentUpon>XtraFormProductoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\XtraFormProveedor.resx">
+      <DependentUpon>XtraFormProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\XtraFormVenta.resx">
+      <DependentUpon>XtraFormVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\XtraFormVistaVenta.resx">
+      <DependentUpon>XtraFormVistaVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Herramientas\xuGrupos.resx">
+      <DependentUpon>xuGrupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Herramientas\xuModulos.resx">
+      <DependentUpon>xuModulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Herramientas\xuTerminal.resx">
+      <DependentUpon>xuTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Herramientas\xuUsuarios.resx">
+      <DependentUpon>xuUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RibbonFormMenu.resx">
+      <DependentUpon>RibbonFormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraFormMain.resx">
+      <DependentUpon>XtraFormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraFormMenu.resx">
+      <DependentUpon>XtraFormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\MMercadoBLL.AforoBLL.datasource" />
+    <None Include="Properties\DataSources\MMercadoBLL.FacturaDetalleBLL.datasource" />
+    <None Include="Properties\DataSources\MMercadoBLL.MovimientoKardexBLL.datasource" />
+    <None Include="Properties\DataSources\MMercadoBLL.ProductoBLL.datasource" />
+    <None Include="Properties\DataSources\MMercadoBLL.ProveedorBLL.datasource" />
+    <None Include="Properties\DataSources\MMercadoBLL.TerminalBLL.datasource" />
+    <None Include="Properties\DataSources\MMercadoEntities.Acceso.datasource" />
+    <None Include="Properties\DataSources\MMercadoEntities.FacturaDetalle.datasource" />
+    <None Include="Properties\DataSources\MMercadoEntities.Grupo.datasource" />
+    <None Include="Properties\DataSources\MMercadoEntities.Kardex.datasource" />
+    <None Include="Properties\DataSources\MMercadoEntities.Modulos.datasource" />
+    <None Include="Properties\DataSources\MMercadoEntities.Producto.datasource" />
+    <None Include="Properties\DataSources\MMercadoEntities.Terminal.datasource" />
+    <None Include="Properties\DataSources\MMercadoEntities.Usuarios.datasource" />
+    <None Include="Properties\DataSources\MMercadoEntities.VistaExistencia.datasource" />
+    <None Include="Properties\DataSources\MMercadoEntities.VistaFacturaCompra.datasource" />
+    <None Include="Properties\DataSources\MMercadoEntities.VistaKardex.datasource" />
+    <None Include="Properties\DataSources\MMercadoEntities.vistaProveedor.datasource" />
+    <None Include="Properties\DataSources\MMercadoEntities.VistaVenta.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MMercadoBLL\MMercadoBLL.csproj">
+      <Project>{e99159a6-003c-4f06-a2dc-bad7b2881271}</Project>
+      <Name>MMercadoBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MMercadoDAL\MMercadoDAL.csproj">
+      <Project>{95583c3c-a62c-4e8b-aefb-2bcd670f67f5}</Project>
+      <Name>MMercadoDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MMercadoEntities\MMercadoEntities.csproj">
+      <Project>{f5a32622-7635-4d6b-8697-525c3819731f}</Project>
+      <Name>MMercadoEntities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GMm.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

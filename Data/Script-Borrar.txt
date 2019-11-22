@@ -1,0 +1,36 @@
+drop procedure Sp_Existencia;
+drop procedure Sp_FacturaDetalleGrabar;
+drop procedure p_ReinicioTablas;
+drop procedure Sp_AjusteKardex;
+drop procedure Sp_ResumenVentas;
+drop procedure UpdateAcceso;
+
+drop trigger UpdateFactura;
+drop trigger InserUsuario;
+drop trigger InsertCellar;
+
+
+drop View VistaExistencia;
+drop view VistaFacturaCompra;
+drop view VistaFacturaVenta;
+drop view VistaKardex;
+drop view VistaVenta;
+
+drop table Terminal;
+drop Table Proveedor;
+drop table Parametros;
+drop table LogProducto;
+drop table Kardex;
+drop table Credito;
+drop table FacturaDetalle;
+drop table Factura;
+drop table Producto;
+drop table MedidaMetrica;
+drop table Grupo;
+drop table Cliente;
+drop table Acceso;
+drop table Modulos;
+drop Table Usuarios;
+drop Table Cellar;
+
+

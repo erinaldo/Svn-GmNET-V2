@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4d8abae3b9474555b93cfb7e6af5599a" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="gm_mmercadoModel.Cellar" Width="1.5" PointX="5.375" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Cliente" Width="1.5" PointX="0.625" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Credito" Width="1.5" PointX="13" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Factura" Width="1.5" PointX="1.125" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.FacturaDetalle" Width="1.5" PointX="8.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Grupo" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Kardex" Width="1.5" PointX="5.25" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.MedidaMetrica" Width="1.5" PointX="3" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Modulos" Width="1.5" PointX="10.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Parametros" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Terminal" Width="1.5" PointX="7.5" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Usuarios" Width="1.5" PointX="10.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Proveedor" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.VistaFacturaCompra" Width="1.5" PointX="9.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.VistaFacturaVenta" Width="1.5" PointX="11.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.VistaKardex" Width="1.5" PointX="5.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.VistaVenta" Width="1.5" PointX="13.75" PointY="11.75" IsExpanded="true" />
+        <AssociationConnector Association="gm_mmercadoModel.FK_A_Factura" ManuallyRouted="false" />
+        <AssociationConnector Association="gm_mmercadoModel.FK_F_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="gm_mmercadoModel.FK_C_Factura" ManuallyRouted="false" />
+        <AssociationConnector Association="gm_mmercadoModel.FK_C_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="gm_mmercadoModel.FK_FD_Factura" ManuallyRouted="false" />
+        <AssociationConnector Association="gm_mmercadoModel.FK__FacturaDe__IdMed__3FD07829" ManuallyRouted="false" />
+        <AssociationConnector Association="gm_mmercadoModel.FK__Kardex__IdMedida__40C49C62" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Reservacion" Width="1.5" PointX="14.375" PointY="14.75" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Marca" Width="1.5" PointX="0.75" PointY="3.875" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Acceso" Width="1.5" PointX="13.375" PointY="0.75" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.KardexBodega" Width="1.5" PointX="15.375" PointY="0.75" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Ubicacion" Width="1.5" PointX="13.375" PointY="4" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Traslados" Width="1.5" PointX="16" PointY="9.125" />
+        <AssociationConnector Association="gm_mmercadoModel.FK_P_Usuario" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Devolucion" Width="1.5" PointX="15.375" PointY="4.75" />
+        <EntityTypeShape EntityType="gm_mmercadoModel.Producto" Width="1.5" PointX="2.875" PointY="7" />
+        <AssociationConnector Association="gm_mmercadoModel.FK_A_Producto" />
+        <AssociationConnector Association="gm_mmercadoModel.FK_FD_Producto" />
+        <AssociationConnector Association="gm_mmercadoModel.FK_P_Grupo" />
+        <AssociationConnector Association="gm_mmercadoModel.FK_K_Producto" />
+        <AssociationConnector Association="gm_mmercadoModel.FK__Producto__IDMarc__75035A77" />
+        <AssociationConnector Association="gm_mmercadoModel.FK__Producto__IDMedi__062DE679" />
+        <AssociationConnector Association="gm_mmercadoModel.FK__Producto__IDUbic__269AB60B" />
+        <AssociationConnector Association="gm_mmercadoModel.FK_P_Producto" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

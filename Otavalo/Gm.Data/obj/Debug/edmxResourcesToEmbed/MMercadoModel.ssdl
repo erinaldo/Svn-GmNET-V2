@@ -1,0 +1,767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="gm_mmercadoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Acceso">
+    <Key>
+      <PropertyRef Name="IDUsuario" />
+      <PropertyRef Name="IDModulo" />
+    </Key>
+    <Property Name="IDUsuario" Type="bigint" Nullable="false" />
+    <Property Name="IDModulo" Type="bigint" Nullable="false" />
+    <Property Name="Estado" Type="bit" />
+  </EntityType>
+  <EntityType Name="Cellar">
+    <Key>
+      <PropertyRef Name="IdCellar" />
+    </Key>
+    <Property Name="IdCellar" Type="bigint" Nullable="false" />
+    <Property Name="IDProducto" Type="bigint" Nullable="false" />
+    <Property Name="IDFactura" Type="bigint" Nullable="false" />
+    <Property Name="PorMayor" Type="int" />
+    <Property Name="PorMenor" Type="int" />
+    <Property Name="PrPorMayor" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="PrPorMenor" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="SalePorMayor" Type="int" />
+    <Property Name="SalePorMenor" Type="int" />
+    <Property Name="IdPorMayorMedida" Type="bigint" />
+    <Property Name="IdPorMenorMedida" Type="bigint" />
+    <Property Name="Sate" Type="bit" />
+    <Property Name="PVentaMayor" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="PVentaMenor" Type="decimal" Precision="18" Scale="4" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="IDCliente" />
+    </Key>
+    <Property Name="IDCliente" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Cedula" Type="varchar" MaxLength="13" />
+    <Property Name="Direccion" Type="varchar" MaxLength="60" />
+    <Property Name="Telefono" Type="varchar" MaxLength="10" />
+    <Property Name="Correo" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+    <Property Name="FechaSistema" Type="datetime" />
+    <Property Name="Tipo" Type="char" MaxLength="1" />
+    <Property Name="NombreContacto" Type="varchar" MaxLength="50" />
+    <Property Name="TelefonoContacto" Type="varchar" MaxLength="10" />
+    <Property Name="DireccionContacto" Type="varchar" MaxLength="50" />
+    <Property Name="CreditoMaximo" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="Observaciones" Type="varchar" MaxLength="50" />
+    <Property Name="PrecioAplicado" Type="int" />
+  </EntityType>
+  <EntityType Name="Credito">
+    <Key>
+      <PropertyRef Name="IDCredito" />
+    </Key>
+    <Property Name="IDCredito" Type="bigint" Nullable="false" />
+    <Property Name="IDFactura" Type="bigint" />
+    <Property Name="IDUsaurio" Type="bigint" />
+    <Property Name="Fecha" Type="date" />
+    <Property Name="Abona" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="State" Type="bit" />
+    <Property Name="FechaVence" Type="date" />
+    <Property Name="Abonador" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Devolucion">
+    <Key>
+      <PropertyRef Name="IDDevolucion" />
+      <PropertyRef Name="IDProducto" />
+      <PropertyRef Name="IDFactura" />
+    </Key>
+    <Property Name="IDDevolucion" Type="bigint" Nullable="false" />
+    <Property Name="IDProducto" Type="bigint" Nullable="false" />
+    <Property Name="Costo" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="Unidad" Type="int" />
+    <Property Name="IDFactura" Type="bigint" Nullable="false" />
+    <Property Name="IDMedida" Type="bigint" />
+    <Property Name="IDKardex" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Factura">
+    <Key>
+      <PropertyRef Name="IDFactura" />
+    </Key>
+    <Property Name="IDFactura" Type="bigint" Nullable="false" />
+    <Property Name="Numero" Type="varchar" MaxLength="17" />
+    <Property Name="IDCliente" Type="bigint" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+    <Property Name="FechaSistema" Type="datetime" />
+    <Property Name="IDTerminal" Type="int" />
+    <Property Name="Flete" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="Observacion" Type="varchar" MaxLength="100" />
+    <Property Name="Tipo" Type="char" MaxLength="1" />
+    <Property Name="Siclo" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="FacturaDetalle">
+    <Key>
+      <PropertyRef Name="IDFacturaDetalle" />
+    </Key>
+    <Property Name="IDFacturaDetalle" Type="bigint" Nullable="false" />
+    <Property Name="IDProducto" Type="bigint" />
+    <Property Name="Costo" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="Unidades" Type="int" />
+    <Property Name="IDFactura" Type="bigint" />
+    <Property Name="FechaSistema" Type="datetime" />
+    <Property Name="IdMedidaMetrica" Type="bigint" />
+    <Property Name="IDKardex" Type="bigint" />
+    <Property Name="Iva" Type="int" />
+    <Property Name="FleteAplicado" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="Estado" Type="bit" />
+    <Property Name="Siclo" Type="char" MaxLength="1" />
+    <Property Name="EnAlmacen" Type="int" />
+    <Property Name="EnBodega" Type="int" />
+    <Property Name="EnDevolucion" Type="int" />
+    <Property Name="Movimiento" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="IDGrupo" />
+    </Key>
+    <Property Name="IDGrupo" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+    <Property Name="FechaSistema" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Kardex">
+    <Key>
+      <PropertyRef Name="IDKardex" />
+    </Key>
+    <Property Name="IDKardex" Type="bigint" Nullable="false" />
+    <Property Name="IDProducto" Type="bigint" />
+    <Property Name="ProductoEntra" Type="int" />
+    <Property Name="ProductoEntraPrecio" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="ProductoSale" Type="int" />
+    <Property Name="ProductoSalePrecio" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="IDFactura" Type="varchar" MaxLength="10" />
+    <Property Name="IVA" Type="int" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+    <Property Name="FechaSistema" Type="datetime" />
+    <Property Name="Equivalencia" Type="int" />
+    <Property Name="Referencia" Type="bigint" />
+    <Property Name="Siclo" Type="char" MaxLength="1" />
+    <Property Name="IdMedidaMetrica" Type="bigint" />
+    <Property Name="Residuo" Type="int" />
+    <Property Name="Movimiento" Type="char" MaxLength="1" />
+    <Property Name="PrecioReal" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="IDKardexBodega" Type="bigint" />
+    <Property Name="IDUbicacion" Type="bigint" />
+    <Property Name="FacturaDevolucion" Type="bigint" />
+    <Property Name="Flete" Type="decimal" Precision="18" Scale="4" />
+  </EntityType>
+  <EntityType Name="KardexBodega">
+    <Key>
+      <PropertyRef Name="IDKardexBodega" />
+    </Key>
+    <Property Name="IDKardexBodega" Type="bigint" Nullable="false" />
+    <Property Name="IDProducto" Type="bigint" />
+    <Property Name="Cantidad" Type="int" />
+    <Property Name="ManoDeObra" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="Precio" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="Entra" Type="int" />
+    <Property Name="Sale" Type="int" />
+    <Property Name="Movimiento" Type="char" MaxLength="1" />
+    <Property Name="IDUsuario" Type="bigint" />
+    <Property Name="FechaSystema" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Marca">
+    <Key>
+      <PropertyRef Name="IDMarca" />
+    </Key>
+    <Property Name="IDMarca" Type="bigint" Nullable="false" />
+    <Property Name="NombreMarca" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="bit" />
+    <Property Name="IdUsuario" Type="bigint" />
+    <Property Name="FechaSistema" Type="datetime" />
+  </EntityType>
+  <EntityType Name="MedidaMetrica">
+    <Key>
+      <PropertyRef Name="IdMedidaMetrica" />
+    </Key>
+    <Property Name="IdMedidaMetrica" Type="bigint" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" />
+    <Property Name="State" Type="bit" />
+    <Property Name="Nivel" Type="int" />
+  </EntityType>
+  <EntityType Name="Modulos">
+    <Key>
+      <PropertyRef Name="IDModulo" />
+    </Key>
+    <Property Name="IDModulo" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Comando" Type="varchar" MaxLength="100" />
+    <Property Name="Imagen" Type="image" />
+    <Property Name="IsMDI" Type="bit" />
+    <Property Name="Estado" Type="bit" />
+    <Property Name="Color" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Parametros">
+    <Key>
+      <PropertyRef Name="Station" />
+    </Key>
+    <Property Name="Station" Type="bigint" Nullable="false" />
+    <Property Name="NumFactura" Type="int" />
+    <Property Name="Iva" Type="decimal" Precision="8" Scale="3" />
+    <Property Name="Foto" Type="image" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="IDProducto" />
+    </Key>
+    <Property Name="IDProducto" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" />
+    <Property Name="CodBarra" Type="varchar" MaxLength="50" />
+    <Property Name="Iva" Type="bit" />
+    <Property Name="PVenta1" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="PVenta2" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="PVenta3" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="PVenta4" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="Equivalencia1" Type="int" />
+    <Property Name="Equivalencia2" Type="int" />
+    <Property Name="Equivalencia3" Type="int" />
+    <Property Name="StateMedida2" Type="bit" />
+    <Property Name="StateMedida3" Type="bit" />
+    <Property Name="IDMedidaMetrica" Type="bigint" />
+    <Property Name="FechaUltimaVenta" Type="datetime" />
+    <Property Name="FechaUltimaCompra" Type="datetime" />
+    <Property Name="IDUltimaVenta" Type="bigint" />
+    <Property Name="IDUtimaCompra" Type="bigint" />
+    <Property Name="PCAnterior" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="PVAnterior1" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="PVAnterior2" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="PVAnterior3" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="NombreAnterior" Type="varchar" MaxLength="50" />
+    <Property Name="CodRapido" Type="varchar" MaxLength="10" />
+    <Property Name="ExistenciaMinima" Type="int" />
+    <Property Name="IDMarca" Type="bigint" />
+    <Property Name="IDGrupo" Type="bigint" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+    <Property Name="EdPVenta1" Type="bit" />
+    <Property Name="EdPVenta2" Type="bit" />
+    <Property Name="EdPVenta3" Type="bit" />
+    <Property Name="ExistenciaActual" Type="int" />
+    <Property Name="FechaSistema" Type="datetime" />
+    <Property Name="IDUsuario" Type="bigint" />
+    <Property Name="FotoProducto" Type="image" />
+    <Property Name="FechaExpiracion" Type="date" />
+    <Property Name="IDUbicacion" Type="bigint" />
+    <Property Name="EnBodega" Type="int" />
+    <Property Name="Notificar" Type="bit" />
+    <Property Name="EdNombre" Type="bit" />
+    <Property Name="MostraNotificar" Type="bit" />
+  </EntityType>
+  <EntityType Name="Proveedor">
+    <Key>
+      <PropertyRef Name="IDCliente" />
+      <PropertyRef Name="IDProducto" />
+    </Key>
+    <Property Name="IDCliente" Type="bigint" Nullable="false" />
+    <Property Name="IDProducto" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Reservacion">
+    <Key>
+      <PropertyRef Name="IDReservacion" />
+      <PropertyRef Name="IDProducto" />
+      <PropertyRef Name="AplicaIva" />
+      <PropertyRef Name="IDCliente" />
+    </Key>
+    <Property Name="IDReservacion" Type="bigint" Nullable="false" />
+    <Property Name="IDProducto" Type="bigint" Nullable="false" />
+    <Property Name="Precio" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="Cantidad" Type="int" />
+    <Property Name="AplicaIva" Type="bit" Nullable="false" />
+    <Property Name="IDCliente" Type="bigint" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+    <Property Name="IDUsuario" Type="bigint" />
+    <Property Name="Comentario" Type="varchar" MaxLength="30" />
+    <Property Name="IDMedida" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Terminal">
+    <Key>
+      <PropertyRef Name="Mac" />
+    </Key>
+    <Property Name="IDTerminal" Type="int" />
+    <Property Name="Mac" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Maquina" Type="varchar" MaxLength="50" />
+    <Property Name="Oficina" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Traslados">
+    <Key>
+      <PropertyRef Name="IDTraslado" />
+    </Key>
+    <Property Name="IDTraslado" Type="bigint" Nullable="false" />
+    <Property Name="IDProducto" Type="bigint" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Cantidad" Type="int" />
+    <Property Name="TrasladoDe" Type="varchar" MaxLength="50" />
+    <Property Name="FechaSistema" Type="datetime" />
+    <Property Name="IDUsuario" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Ubicacion">
+    <Key>
+      <PropertyRef Name="IDUbicacion" />
+    </Key>
+    <Property Name="IDUbicacion" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Direccion" Type="varchar" MaxLength="100" />
+    <Property Name="Estado" Type="bit" />
+    <Property Name="IDUsuario" Type="bigint" />
+    <Property Name="FechaSystema" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="IDUsuario" />
+    </Key>
+    <Property Name="IDUsuario" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Cedula" Type="varchar" MaxLength="10" />
+    <Property Name="Login" Type="varchar" MaxLength="20" />
+    <Property Name="Pasword" Type="varchar" MaxLength="20" />
+    <Property Name="Estado" Type="bit" />
+    <Property Name="CCodBarra" Type="bit" />
+    <Property Name="CIvaA" Type="bit" />
+    <Property Name="CPCAnterior" Type="bit" />
+    <Property Name="CPv2A" Type="bit" />
+    <Property Name="CPv3A" Type="bit" />
+    <Property Name="CEqui1A" Type="bit" />
+    <Property Name="CEqui2A" Type="bit" />
+    <Property Name="CEqui3A" Type="bit" />
+    <Property Name="CActivo2A" Type="bit" />
+    <Property Name="CActivo3A" Type="bit" />
+    <Property Name="CUltimaCompraA" Type="bit" />
+    <Property Name="CPrecioAnteriorVenta1" Type="bit" />
+    <Property Name="CPrecioAnteriorVenta2" Type="bit" />
+    <Property Name="CPrecioAnteriorVenta3" Type="bit" />
+    <Property Name="CNombreAnterior" Type="bit" />
+    <Property Name="CCodigoRapido" Type="bit" />
+    <Property Name="CExistenciaMinima" Type="bit" />
+    <Property Name="CMarca" Type="bit" />
+    <Property Name="CCategoria" Type="bit" />
+    <Property Name="CEstado" Type="bit" />
+    <Property Name="CExistenciaActual" Type="bit" />
+    <Property Name="CFotoProducto" Type="bit" />
+    <Property Name="CUltimaVentaA" Type="bit" />
+    <Property Name="CPAnterior" Type="bit" />
+    <Property Name="CNotificar" Type="bit" />
+    <Property Name="CMostraNotificar" Type="bit" />
+    <Property Name="CFechaExpiracion" Type="bit" />
+    <Property Name="CEnBodega" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'gm_mmercado.dbo.VistaFacturaCompra' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VistaFacturaCompra">
+    <Key>
+      <PropertyRef Name="IDFactura" />
+    </Key>
+    <Property Name="IDFactura" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Cedula" Type="varchar" MaxLength="13" />
+    <Property Name="Numero" Type="varchar" MaxLength="17" />
+    <Property Name="Monto" Type="decimal" Precision="38" Scale="3" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+    <Property Name="Siclo" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'gm_mmercado.dbo.VistaFacturaVenta' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VistaFacturaVenta">
+    <Key>
+      <PropertyRef Name="IDFactura" />
+    </Key>
+    <Property Name="IDFactura" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Cedula" Type="varchar" MaxLength="13" />
+    <Property Name="Numero" Type="varchar" MaxLength="17" />
+    <Property Name="Monto" Type="decimal" Precision="38" Scale="3" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'gm_mmercado.dbo.VistaKardex' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VistaKardex">
+    <Key>
+      <PropertyRef Name="IDKardex" />
+    </Key>
+    <Property Name="IDKardex" Type="bigint" Nullable="false" />
+    <Property Name="IDProducto" Type="bigint" />
+    <Property Name="Producto" Type="varchar" MaxLength="100" />
+    <Property Name="ProductoEntra" Type="int" />
+    <Property Name="ProductoEntraPrecio" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="PrecioReal" Type="decimal" Precision="18" Scale="4" />
+    <Property Name="ProductoSale" Type="int" />
+    <Property Name="ProductoSalePrecio" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="IVA" Type="int" />
+    <Property Name="Fecha" Type="date" />
+    <Property Name="Estado" Type="char" MaxLength="1" />
+    <Property Name="Medida" Type="varchar" MaxLength="20" />
+    <Property Name="Siclo" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'gm_mmercado.dbo.VistaVenta' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VistaVenta">
+    <Key>
+      <PropertyRef Name="IDProducto" />
+    </Key>
+    <Property Name="IDProducto" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" />
+    <Property Name="Salio" Type="int" />
+    <Property Name="Vendio" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Ganancia" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Fecha" Type="date" />
+  </EntityType>
+  <Association Name="FK__FacturaDe__IdMed__3FD07829">
+    <End Role="MedidaMetrica" Type="Self.MedidaMetrica" Multiplicity="0..1" />
+    <End Role="FacturaDetalle" Type="Self.FacturaDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MedidaMetrica">
+        <PropertyRef Name="IdMedidaMetrica" />
+      </Principal>
+      <Dependent Role="FacturaDetalle">
+        <PropertyRef Name="IdMedidaMetrica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Kardex__IdMedida__40C49C62">
+    <End Role="MedidaMetrica" Type="Self.MedidaMetrica" Multiplicity="0..1" />
+    <End Role="Kardex" Type="Self.Kardex" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MedidaMetrica">
+        <PropertyRef Name="IdMedidaMetrica" />
+      </Principal>
+      <Dependent Role="Kardex">
+        <PropertyRef Name="IdMedidaMetrica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Producto__IDMarc__75035A77">
+    <End Role="Marca" Type="Self.Marca" Multiplicity="0..1" />
+    <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Marca">
+        <PropertyRef Name="IDMarca" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="IDMarca" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Producto__IDMedi__062DE679">
+    <End Role="MedidaMetrica" Type="Self.MedidaMetrica" Multiplicity="0..1" />
+    <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MedidaMetrica">
+        <PropertyRef Name="IdMedidaMetrica" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="IDMedidaMetrica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Producto__IDUbic__269AB60B">
+    <End Role="Ubicacion" Type="Self.Ubicacion" Multiplicity="0..1" />
+    <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ubicacion">
+        <PropertyRef Name="IDUbicacion" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="IDUbicacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_A_Factura">
+    <End Role="Factura" Type="Self.Factura" Multiplicity="1" />
+    <End Role="Cellar" Type="Self.Cellar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="IDFactura" />
+      </Principal>
+      <Dependent Role="Cellar">
+        <PropertyRef Name="IDFactura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_A_Producto">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+    <End Role="Cellar" Type="Self.Cellar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IDProducto" />
+      </Principal>
+      <Dependent Role="Cellar">
+        <PropertyRef Name="IDProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_C_Factura">
+    <End Role="Factura" Type="Self.Factura" Multiplicity="0..1" />
+    <End Role="Credito" Type="Self.Credito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="IDFactura" />
+      </Principal>
+      <Dependent Role="Credito">
+        <PropertyRef Name="IDFactura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_C_Usuario">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Credito" Type="Self.Credito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="IDUsuario" />
+      </Principal>
+      <Dependent Role="Credito">
+        <PropertyRef Name="IDUsaurio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_F_Cliente">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="0..1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="IDCliente" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="IDCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FD_Factura">
+    <End Role="Factura" Type="Self.Factura" Multiplicity="0..1" />
+    <End Role="FacturaDetalle" Type="Self.FacturaDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="IDFactura" />
+      </Principal>
+      <Dependent Role="FacturaDetalle">
+        <PropertyRef Name="IDFactura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FD_Producto">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="0..1" />
+    <End Role="FacturaDetalle" Type="Self.FacturaDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IDProducto" />
+      </Principal>
+      <Dependent Role="FacturaDetalle">
+        <PropertyRef Name="IDProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_K_Producto">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="0..1" />
+    <End Role="Kardex" Type="Self.Kardex" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IDProducto" />
+      </Principal>
+      <Dependent Role="Kardex">
+        <PropertyRef Name="IDProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_P_Grupo">
+    <End Role="Grupo" Type="Self.Grupo" Multiplicity="0..1" />
+    <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="IDGrupo" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="IDGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_P_Producto">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="0..1" />
+    <End Role="Traslados" Type="Self.Traslados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IDProducto" />
+      </Principal>
+      <Dependent Role="Traslados">
+        <PropertyRef Name="IDProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_P_Usuario">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Traslados" Type="Self.Traslados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="IDUsuario" />
+      </Principal>
+      <Dependent Role="Traslados">
+        <PropertyRef Name="IDUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="p_ReinicioTablas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Sp_AjusteKardex" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdProducto" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Sp_Existencia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Sp_FacturaDetalleGrabar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDProducto" Type="int" Mode="In" />
+    <Parameter Name="Costo" Type="decimal" Mode="In" />
+    <Parameter Name="Unidades" Type="int" Mode="In" />
+    <Parameter Name="IDFactura" Type="int" Mode="In" />
+    <Parameter Name="Tipo" Type="char" Mode="In" />
+    <Parameter Name="Iva" Type="int" Mode="In" />
+    <Parameter Name="IdMedida" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Sp_MovimientoFactura" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Sp_ProcedureKardex" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Sp_ResumenVentas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Fecha" Type="date" Mode="In" />
+  </Function>
+  <Function Name="UpdateAcceso" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdUsuario" Type="bigint" Mode="In" />
+    <Parameter Name="IDModulo" Type="bigint" Mode="In" />
+    <Parameter Name="Estado" Type="bit" Mode="In" />
+  </Function>
+  <EntityContainer Name="gm_mmercadoModelStoreContainer">
+    <EntitySet Name="Acceso" EntityType="Self.Acceso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cellar" EntityType="Self.Cellar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Credito" EntityType="Self.Credito" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Devolucion" EntityType="Self.Devolucion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Factura" EntityType="Self.Factura" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FacturaDetalle" EntityType="Self.FacturaDetalle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Grupo" EntityType="Self.Grupo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kardex" EntityType="Self.Kardex" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KardexBodega" EntityType="Self.KardexBodega" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Marca" EntityType="Self.Marca" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MedidaMetrica" EntityType="Self.MedidaMetrica" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Modulos" EntityType="Self.Modulos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Parametros" EntityType="Self.Parametros" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Proveedor" EntityType="Self.Proveedor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reservacion" EntityType="Self.Reservacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Terminal" EntityType="Self.Terminal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Traslados" EntityType="Self.Traslados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ubicacion" EntityType="Self.Ubicacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VistaFacturaCompra" EntityType="Self.VistaFacturaCompra" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VistaFacturaCompra].[IDFactura] AS [IDFactura], 
+    [VistaFacturaCompra].[Nombre] AS [Nombre], 
+    [VistaFacturaCompra].[Cedula] AS [Cedula], 
+    [VistaFacturaCompra].[Numero] AS [Numero], 
+    [VistaFacturaCompra].[Monto] AS [Monto], 
+    [VistaFacturaCompra].[Fecha] AS [Fecha], 
+    [VistaFacturaCompra].[Estado] AS [Estado], 
+    [VistaFacturaCompra].[Siclo] AS [Siclo]
+    FROM [dbo].[VistaFacturaCompra] AS [VistaFacturaCompra]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VistaFacturaVenta" EntityType="Self.VistaFacturaVenta" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VistaFacturaVenta].[IDFactura] AS [IDFactura], 
+    [VistaFacturaVenta].[Nombre] AS [Nombre], 
+    [VistaFacturaVenta].[Cedula] AS [Cedula], 
+    [VistaFacturaVenta].[Numero] AS [Numero], 
+    [VistaFacturaVenta].[Monto] AS [Monto], 
+    [VistaFacturaVenta].[Fecha] AS [Fecha], 
+    [VistaFacturaVenta].[Estado] AS [Estado]
+    FROM [dbo].[VistaFacturaVenta] AS [VistaFacturaVenta]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VistaKardex" EntityType="Self.VistaKardex" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VistaKardex].[IDKardex] AS [IDKardex], 
+    [VistaKardex].[IDProducto] AS [IDProducto], 
+    [VistaKardex].[Producto] AS [Producto], 
+    [VistaKardex].[ProductoEntra] AS [ProductoEntra], 
+    [VistaKardex].[ProductoEntraPrecio] AS [ProductoEntraPrecio], 
+    [VistaKardex].[PrecioReal] AS [PrecioReal], 
+    [VistaKardex].[ProductoSale] AS [ProductoSale], 
+    [VistaKardex].[ProductoSalePrecio] AS [ProductoSalePrecio], 
+    [VistaKardex].[IVA] AS [IVA], 
+    [VistaKardex].[Fecha] AS [Fecha], 
+    [VistaKardex].[Estado] AS [Estado], 
+    [VistaKardex].[Medida] AS [Medida], 
+    [VistaKardex].[Siclo] AS [Siclo]
+    FROM [dbo].[VistaKardex] AS [VistaKardex]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VistaVenta" EntityType="Self.VistaVenta" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VistaVenta].[IDProducto] AS [IDProducto], 
+    [VistaVenta].[Nombre] AS [Nombre], 
+    [VistaVenta].[Salio] AS [Salio], 
+    [VistaVenta].[Vendio] AS [Vendio], 
+    [VistaVenta].[Ganancia] AS [Ganancia], 
+    [VistaVenta].[Fecha] AS [Fecha]
+    FROM [dbo].[VistaVenta] AS [VistaVenta]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__FacturaDe__IdMed__3FD07829" Association="Self.FK__FacturaDe__IdMed__3FD07829">
+      <End Role="MedidaMetrica" EntitySet="MedidaMetrica" />
+      <End Role="FacturaDetalle" EntitySet="FacturaDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Kardex__IdMedida__40C49C62" Association="Self.FK__Kardex__IdMedida__40C49C62">
+      <End Role="MedidaMetrica" EntitySet="MedidaMetrica" />
+      <End Role="Kardex" EntitySet="Kardex" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Producto__IDMarc__75035A77" Association="Self.FK__Producto__IDMarc__75035A77">
+      <End Role="Marca" EntitySet="Marca" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Producto__IDMedi__062DE679" Association="Self.FK__Producto__IDMedi__062DE679">
+      <End Role="MedidaMetrica" EntitySet="MedidaMetrica" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Producto__IDUbic__269AB60B" Association="Self.FK__Producto__IDUbic__269AB60B">
+      <End Role="Ubicacion" EntitySet="Ubicacion" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_A_Factura" Association="Self.FK_A_Factura">
+      <End Role="Factura" EntitySet="Factura" />
+      <End Role="Cellar" EntitySet="Cellar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_A_Producto" Association="Self.FK_A_Producto">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="Cellar" EntitySet="Cellar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_C_Factura" Association="Self.FK_C_Factura">
+      <End Role="Factura" EntitySet="Factura" />
+      <End Role="Credito" EntitySet="Credito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_C_Usuario" Association="Self.FK_C_Usuario">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Credito" EntitySet="Credito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_F_Cliente" Association="Self.FK_F_Cliente">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Factura" EntitySet="Factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FD_Factura" Association="Self.FK_FD_Factura">
+      <End Role="Factura" EntitySet="Factura" />
+      <End Role="FacturaDetalle" EntitySet="FacturaDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FD_Producto" Association="Self.FK_FD_Producto">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="FacturaDetalle" EntitySet="FacturaDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_K_Producto" Association="Self.FK_K_Producto">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="Kardex" EntitySet="Kardex" />
+    </AssociationSet>
+    <AssociationSet Name="FK_P_Grupo" Association="Self.FK_P_Grupo">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_P_Producto" Association="Self.FK_P_Producto">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="Traslados" EntitySet="Traslados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_P_Usuario" Association="Self.FK_P_Usuario">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Traslados" EntitySet="Traslados" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

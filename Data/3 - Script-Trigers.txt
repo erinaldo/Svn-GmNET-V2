@@ -1,0 +1,107 @@
+Create trigger InsertCellar on Cellar
+AFTER INSERT
+As
+begin
+	SET NOCOUNT ON;
+
+	Declare @idP int
+	Declare @idF int
+	Declare @Fe date
+	
+	Select @idP = inserted.IDProducto From inserted;
+	Select @idF = inserted.IDFactura From inserted;
+
+	Select @Fe = Fecha From Factura Where IDFactura=@idF
+
+	Update Kardex set Siclo='I'
+		where IDProducto=@idP and IDFactura=CONCAT('C',@idF)
+		-- and Fecha = @Fe
+end
+go
+-----------------------------------------------------------------------------------------------------------------
+
+
+create trigger UpdateFactura on Factura
+for update
+As
+Begin
+	Set Nocount on;
+
+	Declare @id int
+	Declare @Es char
+	select @id = ins.IDFactura from inserted ins;
+	select @Es = ins.Estado from inserted ins;
+
+	if EXISTS (select * from Kardex where IDFactura=CONCAT('V',@id))
+		begin
+			update Kardex set Estado=@Es
+				where IDFactura=CONCAT('V',@id)	
+		end
+	else
+		begin
+			update Kardex set Estado=@Es
+				where IDFactura=CONCAT('C',@id)
+		end
+end
+go
+-----------------------------------------------------------------------------------------------------------------
+
+
+--create trigger InserUsuario on Usuarios
+--after Insert
+--As
+--Begin
+--	Set Nocount on;
+
+--	Declare @id int
+--	select @id = [IDUsuario] from Usuarios
+
+--	Insert into Acceso
+--		Select @id, IDModulo, 0 from Modulos
+--end
+--go
+
+-----------------------------------------------------------------------------------------------------------------
+--Create trigger InsertKardex on Kardex
+--AFTER INSERT
+--As
+--begin
+--	SET NOCOUNT ON;
+
+--	Declare @idP int
+--	Declare @idF varchar(10)
+--	Declare @iT char(1)
+--	Declare @Cantidad int
+
+--	select @idP = inserted.IDProducto from inserted;
+--	select @idF = inserted.IDFactura from inserted;
+--	select @Cantidad = inserted.ProductoSale from inserted;
+--	select @iT = SUBSTRING(@idF, 1, 1);
+
+--	declare @t table(
+--		IdProducto int,
+--		col2 varchar(20),
+--		col3 date, 
+--		col4 int, 
+--		col5 int, 
+--		col6 varchar(50),
+--		Unidades int,
+--		col8 varchar(20)
+--		)
+
+--	insert @t
+--			EXEC Sp_MovimientoFactura
+
+
+--	declare @total int
+
+--	Select @total = sum(Unidades) from @t As T Where T.IdProducto =@idP
+	
+--	if(@iT = 'V')
+--		Begin
+--			declare @IdV int
+--			Select @IdV = IDFactura from Factura where Concat('V',IDFactura) = @idF
+
+--			Update Producto set ExistenciaActual = @total, FechaUltimaVenta=GETDATE(), IDUltimaVenta=@IdV where IDProducto = @idP 
+--		End
+--end

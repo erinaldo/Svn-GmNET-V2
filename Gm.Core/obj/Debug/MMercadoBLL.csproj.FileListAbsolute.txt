@@ -1,0 +1,75 @@
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\MMercadoBLL.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\MMercadoBLL.pdb
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\MMercadoDAL.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\MMercadoEntities.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\EntityFramework.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\MMercadoDAL.pdb
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\MMercadoDAL.dll.config
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\MMercadoEntities.pdb
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\MMercadoEntities.dll.config
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\EntityFramework.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\obj\Debug\MMercadoBLL.csprojAssemblyReference.cache
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\obj\Debug\MMercadoBLL.csproj.CoreCompileInputs.cache
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\obj\Debug\MMercadoBLL.csproj.CopyComplete
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\obj\Debug\MMercadoBLL.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\obj\Debug\MMercadoBLL.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\MMercadoBLL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\MMercadoBLL.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\MMercadoDAL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\MMercadoEntities.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\EntityFramework.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\MMercadoDAL.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\MMercadoDAL.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\MMercadoEntities.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\MMercadoEntities.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Debug\EntityFramework.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\obj\Debug\MMercadoBLL.csprojAssemblyReference.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\obj\Debug\MMercadoBLL.csproj.CoreCompileInputs.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\obj\Debug\MMercadoBLL.csproj.CopyComplete
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\obj\Debug\MMercadoBLL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\obj\Debug\MMercadoBLL.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoBLL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoBLL.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoDAL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoEntities.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\EntityFramework.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoDAL.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoDAL.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoEntities.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoEntities.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\EntityFramework.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoBLL\obj\Debug\MMercadoBLL.csprojAssemblyReference.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoBLL\obj\Debug\MMercadoBLL.csproj.CoreCompileInputs.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoBLL\obj\Debug\MMercadoBLL.csproj.CopyComplete
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoBLL\obj\Debug\MMercadoBLL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoBLL\obj\Debug\MMercadoBLL.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoBLL.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoBLL.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoDAL.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoEntities.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\EntityFramework.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoDAL.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoDAL.dll.config
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoEntities.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoEntities.dll.config
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\EntityFramework.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\obj\Debug\MMercadoBLL.csprojAssemblyReference.cache
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\obj\Debug\MMercadoBLL.csproj.CoreCompileInputs.cache
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\obj\Debug\MMercadoBLL.csproj.CopyComplete
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\obj\Debug\MMercadoBLL.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\obj\Debug\MMercadoBLL.pdb
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoBLL.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoBLL.pdb
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoDAL.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoEntities.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\EntityFramework.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoDAL.pdb
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoDAL.dll.config
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoEntities.pdb
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\MMercadoEntities.dll.config
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoBLL\bin\Debug\EntityFramework.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoBLL\obj\Debug\MMercadoBLL.csprojAssemblyReference.cache
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoBLL\obj\Debug\MMercadoBLL.csproj.CoreCompileInputs.cache
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoBLL\obj\Debug\MMercadoBLL.csproj.CopyComplete
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoBLL\obj\Debug\MMercadoBLL.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoBLL\obj\Debug\MMercadoBLL.pdb

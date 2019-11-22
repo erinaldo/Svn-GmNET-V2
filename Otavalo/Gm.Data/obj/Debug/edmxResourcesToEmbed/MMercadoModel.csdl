@@ -1,0 +1,787 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="gm_mmercadoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cellar">
+    <Key>
+      <PropertyRef Name="IdCellar" />
+    </Key>
+    <Property Name="IdCellar" Type="Int64" Nullable="false" />
+    <Property Name="IDProducto" Type="Int64" Nullable="false" />
+    <Property Name="IDFactura" Type="Int64" Nullable="false" />
+    <Property Name="PorMayor" Type="Int32" />
+    <Property Name="PorMenor" Type="Int32" />
+    <Property Name="PrPorMayor" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PrPorMenor" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="SalePorMayor" Type="Int32" />
+    <Property Name="SalePorMenor" Type="Int32" />
+    <Property Name="IdPorMayorMedida" Type="Int64" />
+    <Property Name="IdPorMenorMedida" Type="Int64" />
+    <Property Name="Sate" Type="Boolean" />
+    <Property Name="PVentaMayor" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PVentaMenor" Type="Decimal" Precision="18" Scale="4" />
+    <NavigationProperty Name="Factura" Relationship="Self.FK_A_Factura" FromRole="Cellar" ToRole="Factura" />
+    <NavigationProperty Name="Producto" Relationship="gm_mmercadoModel.FK_A_Producto" FromRole="Cellar" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="IDCliente" />
+    </Key>
+    <Property Name="IDCliente" Type="Int64" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Cedula" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="FechaSistema" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Factura" Relationship="Self.FK_F_Cliente" FromRole="Cliente" ToRole="Factura" />
+    <Property Name="Tipo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="NombreContacto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TelefonoContacto" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DireccionContacto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreditoMaximo" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Observaciones" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PrecioAplicado" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Credito">
+    <Key>
+      <PropertyRef Name="IDCredito" />
+    </Key>
+    <Property Name="IDCredito" Type="Int64" Nullable="false" />
+    <Property Name="IDFactura" Type="Int64" />
+    <Property Name="IDUsaurio" Type="Int64" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+    <Property Name="Abona" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="State" Type="Boolean" />
+    <NavigationProperty Name="Factura" Relationship="Self.FK_C_Factura" FromRole="Credito" ToRole="Factura" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK_C_Usuario" FromRole="Credito" ToRole="Usuarios" />
+    <Property Name="FechaVence" Type="DateTime" Precision="0" />
+    <Property Name="Abonador" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Factura">
+    <Key>
+      <PropertyRef Name="IDFactura" />
+    </Key>
+    <Property Name="IDFactura" Type="Int64" Nullable="false" />
+    <Property Name="Numero" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+    <Property Name="IDCliente" Type="Int64" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="FechaSistema" Type="DateTime" Precision="3" />
+    <Property Name="IDTerminal" Type="Int32" />
+    <Property Name="Flete" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Observacion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Cellar" Relationship="Self.FK_A_Factura" FromRole="Factura" ToRole="Cellar" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK_F_Cliente" FromRole="Factura" ToRole="Cliente" />
+    <NavigationProperty Name="Credito" Relationship="Self.FK_C_Factura" FromRole="Factura" ToRole="Credito" />
+    <NavigationProperty Name="FacturaDetalle" Relationship="Self.FK_FD_Factura" FromRole="Factura" ToRole="FacturaDetalle" />
+    <Property Name="Tipo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Siclo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="FacturaDetalle">
+    <Key>
+      <PropertyRef Name="IDFacturaDetalle" />
+    </Key>
+    <Property Name="IDFacturaDetalle" Type="Int64" Nullable="false" />
+    <Property Name="IDProducto" Type="Int64" />
+    <Property Name="Costo" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="Unidades" Type="Int32" />
+    <Property Name="IDFactura" Type="Int64" />
+    <Property Name="FechaSistema" Type="DateTime" Precision="3" />
+    <Property Name="IdMedidaMetrica" Type="Int64" />
+    <Property Name="IDKardex" Type="Int64" />
+    <NavigationProperty Name="Factura" Relationship="Self.FK_FD_Factura" FromRole="FacturaDetalle" ToRole="Factura" />
+    <NavigationProperty Name="MedidaMetrica" Relationship="Self.FK__FacturaDe__IdMed__3FD07829" FromRole="FacturaDetalle" ToRole="MedidaMetrica" />
+    <Property Name="Iva" Type="Int32" />
+    <Property Name="FleteAplicado" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Estado" Type="Boolean" />
+    <Property Name="Siclo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="EnAlmacen" Type="Int32" />
+    <Property Name="EnBodega" Type="Int32" />
+    <Property Name="EnDevolucion" Type="Int32" />
+    <Property Name="Movimiento" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="Producto" Relationship="gm_mmercadoModel.FK_FD_Producto" FromRole="FacturaDetalle" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="IDGrupo" />
+    </Key>
+    <Property Name="IDGrupo" Type="Int64" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="FechaSistema" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Producto" Relationship="gm_mmercadoModel.FK_P_Grupo" FromRole="Grupo" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Kardex">
+    <Key>
+      <PropertyRef Name="IDKardex" />
+    </Key>
+    <Property Name="IDKardex" Type="Int64" Nullable="false" />
+    <Property Name="IDProducto" Type="Int64" />
+    <Property Name="ProductoEntra" Type="Int32" />
+    <Property Name="ProductoEntraPrecio" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ProductoSale" Type="Int32" />
+    <Property Name="ProductoSalePrecio" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="IDFactura" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="IVA" Type="Int32" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="FechaSistema" Type="DateTime" Precision="3" />
+    <Property Name="Equivalencia" Type="Int32" />
+    <Property Name="Referencia" Type="Int64" />
+    <Property Name="Siclo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="IdMedidaMetrica" Type="Int64" />
+    <NavigationProperty Name="MedidaMetrica" Relationship="Self.FK__Kardex__IdMedida__40C49C62" FromRole="Kardex" ToRole="MedidaMetrica" />
+    <Property Name="Residuo" Type="Int32" />
+    <Property Name="Movimiento" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="PrecioReal" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IDKardexBodega" Type="Int64" />
+    <Property Name="IDUbicacion" Type="Int64" />
+    <Property Name="FacturaDevolucion" Type="Int64" />
+    <Property Name="Flete" Type="Decimal" Precision="18" Scale="4" />
+    <NavigationProperty Name="Producto" Relationship="gm_mmercadoModel.FK_K_Producto" FromRole="Kardex" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="MedidaMetrica">
+    <Key>
+      <PropertyRef Name="IdMedidaMetrica" />
+    </Key>
+    <Property Name="IdMedidaMetrica" Type="Int64" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="Boolean" />
+    <Property Name="Nivel" Type="Int32" />
+    <NavigationProperty Name="FacturaDetalle" Relationship="Self.FK__FacturaDe__IdMed__3FD07829" FromRole="MedidaMetrica" ToRole="FacturaDetalle" />
+    <NavigationProperty Name="Kardex" Relationship="Self.FK__Kardex__IdMedida__40C49C62" FromRole="MedidaMetrica" ToRole="Kardex" />
+    <NavigationProperty Name="Producto" Relationship="gm_mmercadoModel.FK__Producto__IDMedi__062DE679" FromRole="MedidaMetrica" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Modulos">
+    <Key>
+      <PropertyRef Name="IDModulo" />
+    </Key>
+    <Property Name="IDModulo" Type="Int64" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Comando" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Imagen" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IsMDI" Type="Boolean" />
+    <Property Name="Estado" Type="Boolean" />
+    <Property Name="Color" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Parametros">
+    <Key>
+      <PropertyRef Name="Station" />
+    </Key>
+    <Property Name="Station" Type="Int64" Nullable="false" />
+    <Property Name="NumFactura" Type="Int32" />
+    <Property Name="Iva" Type="Decimal" Precision="8" Scale="3" />
+    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Terminal">
+    <Key>
+      <PropertyRef Name="Mac" />
+    </Key>
+    <Property Name="IDTerminal" Type="Int32" />
+    <Property Name="Mac" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Maquina" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Oficina" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="IDUsuario" />
+    </Key>
+    <Property Name="IDUsuario" Type="Int64" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Cedula" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Login" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Pasword" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" />
+    <NavigationProperty Name="Credito" Relationship="Self.FK_C_Usuario" FromRole="Usuarios" ToRole="Credito" />
+    <NavigationProperty Name="Traslados" Relationship="gm_mmercadoModel.FK_P_Usuario" FromRole="Usuarios" ToRole="Traslados" />
+    <Property Name="CCodBarra" Type="Boolean" />
+    <Property Name="CIvaA" Type="Boolean" />
+    <Property Name="CPCAnterior" Type="Boolean" />
+    <Property Name="CPv2A" Type="Boolean" />
+    <Property Name="CPv3A" Type="Boolean" />
+    <Property Name="CEqui1A" Type="Boolean" />
+    <Property Name="CEqui2A" Type="Boolean" />
+    <Property Name="CEqui3A" Type="Boolean" />
+    <Property Name="CActivo2A" Type="Boolean" />
+    <Property Name="CActivo3A" Type="Boolean" />
+    <Property Name="CUltimaCompraA" Type="Boolean" />
+    <Property Name="CPrecioAnteriorVenta1" Type="Boolean" />
+    <Property Name="CPrecioAnteriorVenta2" Type="Boolean" />
+    <Property Name="CPrecioAnteriorVenta3" Type="Boolean" />
+    <Property Name="CNombreAnterior" Type="Boolean" />
+    <Property Name="CCodigoRapido" Type="Boolean" />
+    <Property Name="CExistenciaMinima" Type="Boolean" />
+    <Property Name="CMarca" Type="Boolean" />
+    <Property Name="CCategoria" Type="Boolean" />
+    <Property Name="CEstado" Type="Boolean" />
+    <Property Name="CExistenciaActual" Type="Boolean" />
+    <Property Name="CFotoProducto" Type="Boolean" />
+    <Property Name="CUltimaVentaA" Type="Boolean" />
+    <Property Name="CPAnterior" Type="Boolean" />
+    <Property Name="CNotificar" Type="Boolean" />
+    <Property Name="CMostraNotificar" Type="Boolean" />
+    <Property Name="CFechaExpiracion" Type="Boolean" />
+    <Property Name="CEnBodega" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Proveedor">
+    <Key>
+      <PropertyRef Name="IDCliente" />
+      <PropertyRef Name="IDProducto" />
+    </Key>
+    <Property Name="IDCliente" Type="Int64" Nullable="false" />
+    <Property Name="IDProducto" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VistaFacturaCompra">
+    <Key>
+      <PropertyRef Name="IDFactura" />
+    </Key>
+    <Property Name="IDFactura" Type="Int64" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Cedula" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="Numero" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+    <Property Name="Monto" Type="Decimal" Precision="38" Scale="3" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Siclo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VistaFacturaVenta">
+    <Key>
+      <PropertyRef Name="IDFactura" />
+    </Key>
+    <Property Name="IDFactura" Type="Int64" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Cedula" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="Numero" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+    <Property Name="Monto" Type="Decimal" Precision="38" Scale="3" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VistaKardex">
+    <Key>
+      <PropertyRef Name="IDKardex" />
+    </Key>
+    <Property Name="IDKardex" Type="Int64" Nullable="false" />
+    <Property Name="IDProducto" Type="Int64" />
+    <Property Name="Producto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ProductoEntra" Type="Int32" />
+    <Property Name="ProductoEntraPrecio" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ProductoSale" Type="Int32" />
+    <Property Name="ProductoSalePrecio" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="IVA" Type="Int32" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Medida" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PrecioReal" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Siclo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VistaVenta">
+    <Key>
+      <PropertyRef Name="IDProducto" />
+    </Key>
+    <Property Name="IDProducto" Type="Int64" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Salio" Type="Int32" />
+    <Property Name="Vendio" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Ganancia" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+  </EntityType>
+  <Association Name="FK_A_Factura">
+    <End Role="Factura" Type="Self.Factura" Multiplicity="1" />
+    <End Role="Cellar" Type="Self.Cellar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="IDFactura" />
+      </Principal>
+      <Dependent Role="Cellar">
+        <PropertyRef Name="IDFactura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_F_Cliente">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="0..1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="IDCliente" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="IDCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_C_Factura">
+    <End Role="Factura" Type="Self.Factura" Multiplicity="0..1" />
+    <End Role="Credito" Type="Self.Credito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="IDFactura" />
+      </Principal>
+      <Dependent Role="Credito">
+        <PropertyRef Name="IDFactura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_C_Usuario">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Credito" Type="Self.Credito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="IDUsuario" />
+      </Principal>
+      <Dependent Role="Credito">
+        <PropertyRef Name="IDUsaurio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FD_Factura">
+    <End Role="Factura" Type="Self.Factura" Multiplicity="0..1" />
+    <End Role="FacturaDetalle" Type="Self.FacturaDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="IDFactura" />
+      </Principal>
+      <Dependent Role="FacturaDetalle">
+        <PropertyRef Name="IDFactura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FacturaDe__IdMed__3FD07829">
+    <End Role="MedidaMetrica" Type="Self.MedidaMetrica" Multiplicity="0..1" />
+    <End Role="FacturaDetalle" Type="Self.FacturaDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MedidaMetrica">
+        <PropertyRef Name="IdMedidaMetrica" />
+      </Principal>
+      <Dependent Role="FacturaDetalle">
+        <PropertyRef Name="IdMedidaMetrica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Kardex__IdMedida__40C49C62">
+    <End Role="MedidaMetrica" Type="Self.MedidaMetrica" Multiplicity="0..1" />
+    <End Role="Kardex" Type="Self.Kardex" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MedidaMetrica">
+        <PropertyRef Name="IdMedidaMetrica" />
+      </Principal>
+      <Dependent Role="Kardex">
+        <PropertyRef Name="IdMedidaMetrica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="gm_mmercadoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cellar" EntityType="Self.Cellar" />
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+    <EntitySet Name="Credito" EntityType="Self.Credito" />
+    <EntitySet Name="Factura" EntityType="Self.Factura" />
+    <EntitySet Name="FacturaDetalle" EntityType="Self.FacturaDetalle" />
+    <EntitySet Name="Grupo" EntityType="Self.Grupo" />
+    <EntitySet Name="Kardex" EntityType="Self.Kardex" />
+    <EntitySet Name="MedidaMetrica" EntityType="Self.MedidaMetrica" />
+    <EntitySet Name="Modulos" EntityType="Self.Modulos" />
+    <EntitySet Name="Parametros" EntityType="Self.Parametros" />
+    <EntitySet Name="Terminal" EntityType="Self.Terminal" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+    <EntitySet Name="Proveedor" EntityType="Self.Proveedor" />
+    <EntitySet Name="VistaFacturaCompra" EntityType="Self.VistaFacturaCompra" />
+    <EntitySet Name="VistaFacturaVenta" EntityType="Self.VistaFacturaVenta" />
+    <EntitySet Name="VistaKardex" EntityType="Self.VistaKardex" />
+    <EntitySet Name="VistaVenta" EntityType="Self.VistaVenta" />
+    <AssociationSet Name="FK_A_Factura" Association="Self.FK_A_Factura">
+      <End Role="Factura" EntitySet="Factura" />
+      <End Role="Cellar" EntitySet="Cellar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_F_Cliente" Association="Self.FK_F_Cliente">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Factura" EntitySet="Factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_C_Factura" Association="Self.FK_C_Factura">
+      <End Role="Factura" EntitySet="Factura" />
+      <End Role="Credito" EntitySet="Credito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_C_Usuario" Association="Self.FK_C_Usuario">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Credito" EntitySet="Credito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FD_Factura" Association="Self.FK_FD_Factura">
+      <End Role="Factura" EntitySet="Factura" />
+      <End Role="FacturaDetalle" EntitySet="FacturaDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FacturaDe__IdMed__3FD07829" Association="Self.FK__FacturaDe__IdMed__3FD07829">
+      <End Role="MedidaMetrica" EntitySet="MedidaMetrica" />
+      <End Role="FacturaDetalle" EntitySet="FacturaDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Kardex__IdMedida__40C49C62" Association="Self.FK__Kardex__IdMedida__40C49C62">
+      <End Role="MedidaMetrica" EntitySet="MedidaMetrica" />
+      <End Role="Kardex" EntitySet="Kardex" />
+    </AssociationSet>
+    <FunctionImport Name="p_ReinicioTablas" />
+    <FunctionImport Name="Sp_Existencia" ReturnType="Collection(gm_mmercadoModel.Sp_Existencia_Result)" />
+    <FunctionImport Name="Sp_FacturaDetalleGrabar">
+      <Parameter Name="IDProducto" Mode="In" Type="Int32" />
+      <Parameter Name="Costo" Mode="In" Type="Decimal" />
+      <Parameter Name="Unidades" Mode="In" Type="Int32" />
+      <Parameter Name="IDFactura" Mode="In" Type="Int32" />
+      <Parameter Name="Tipo" Mode="In" Type="String" />
+      <Parameter Name="Iva" Mode="In" Type="Int32" />
+      <Parameter Name="IdMedida" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateAcceso">
+      <Parameter Name="IdUsuario" Mode="In" Type="Int64" />
+      <Parameter Name="IDModulo" Mode="In" Type="Int64" />
+      <Parameter Name="Estado" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_AjusteKardex">
+      <Parameter Name="IdProducto" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_ResumenVentas" ReturnType="Collection(gm_mmercadoModel.Sp_ResumenVentas_Result)">
+      <Parameter Name="Fecha" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_ProcedureKardex" ReturnType="Collection(gm_mmercadoModel.Sp_ProcedureKardex_Result)" />
+    <FunctionImport Name="Sp_MovimientoFactura" ReturnType="Collection(gm_mmercadoModel.Sp_MovimientoFactura_Result)" />
+    <EntitySet Name="Reservacion" EntityType="gm_mmercadoModel.Reservacion" />
+    <EntitySet Name="Marca" EntityType="gm_mmercadoModel.Marca" />
+    <EntitySet Name="Acceso" EntityType="gm_mmercadoModel.Acceso" />
+    <EntitySet Name="KardexBodega" EntityType="gm_mmercadoModel.KardexBodega" />
+    <EntitySet Name="Ubicacion" EntityType="gm_mmercadoModel.Ubicacion" />
+    <EntitySet Name="Traslados" EntityType="gm_mmercadoModel.Traslados" />
+    <AssociationSet Name="FK_P_Usuario" Association="gm_mmercadoModel.FK_P_Usuario">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Traslados" EntitySet="Traslados" />
+    </AssociationSet>
+    <EntitySet Name="Devolucion" EntityType="gm_mmercadoModel.Devolucion" />
+    <EntitySet Name="Producto" EntityType="gm_mmercadoModel.Producto" />
+    <AssociationSet Name="FK_A_Producto" Association="gm_mmercadoModel.FK_A_Producto">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="Cellar" EntitySet="Cellar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FD_Producto" Association="gm_mmercadoModel.FK_FD_Producto">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="FacturaDetalle" EntitySet="FacturaDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_P_Grupo" Association="gm_mmercadoModel.FK_P_Grupo">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_K_Producto" Association="gm_mmercadoModel.FK_K_Producto">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="Kardex" EntitySet="Kardex" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Producto__IDMarc__75035A77" Association="gm_mmercadoModel.FK__Producto__IDMarc__75035A77">
+      <End Role="Marca" EntitySet="Marca" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Producto__IDMedi__062DE679" Association="gm_mmercadoModel.FK__Producto__IDMedi__062DE679">
+      <End Role="MedidaMetrica" EntitySet="MedidaMetrica" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Producto__IDUbic__269AB60B" Association="gm_mmercadoModel.FK__Producto__IDUbic__269AB60B">
+      <End Role="Ubicacion" EntitySet="Ubicacion" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_P_Producto" Association="gm_mmercadoModel.FK_P_Producto">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="Traslados" EntitySet="Traslados" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="Sp_Existencia_Result">
+    <Property Type="Int32" Name="IDProducto" Nullable="true" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="Existencia" Nullable="true" />
+    <Property Type="Boolean" Name="Actualizado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Sp_ResumenVentas_Result">
+    <Property Type="Int64" Name="IDFactura" Nullable="false" />
+    <Property Type="String" Name="Cliente" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Cedula" Nullable="true" MaxLength="13" />
+    <Property Type="String" Name="Numero" Nullable="true" MaxLength="17" />
+    <Property Type="DateTime" Name="Fecha" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="Precio" Nullable="true" Precision="38" Scale="3" />
+    <Property Type="Decimal" Name="Costo" Nullable="true" Precision="18" Scale="3" />
+    <Property Type="Int32" Name="Cantidad" Nullable="true" />
+    <Property Type="String" Name="Detalle" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Medida" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="IVA" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Sp_ProcedureKardex_Result">
+    <Property Type="Int64" Name="IDKardex" Nullable="true" />
+    <Property Type="Int64" Name="IDProducto" Nullable="true" />
+    <Property Type="String" Name="Producto" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="ProductoEntra" Nullable="true" />
+    <Property Type="Decimal" Name="ProductoEntraPrecio" Nullable="true" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="ProductoSale" Nullable="true" />
+    <Property Type="Decimal" Name="ProductoSalePrecio" Nullable="true" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="IVA" Nullable="true" />
+    <Property Type="DateTime" Name="Fecha" Nullable="true" />
+    <Property Type="String" Name="Estado" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="Medida" Nullable="true" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="Sp_MovimientoFactura_Result">
+    <Property Type="Int32" Name="IdProducto" Nullable="true" />
+    <Property Type="String" Name="Factura" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="fecha" Nullable="true" />
+    <Property Type="Int32" Name="Entro" Nullable="true" />
+    <Property Type="Int32" Name="Salio" Nullable="true" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="Unidades" Nullable="true" />
+    <Property Type="String" Name="Medida" Nullable="true" MaxLength="10" />
+  </ComplexType>
+  <EntityType Name="Reservacion">
+    <Key>
+      <PropertyRef Name="IDReservacion" />
+      <PropertyRef Name="IDProducto" />
+      <PropertyRef Name="AplicaIva" />
+      <PropertyRef Name="IDCliente" />
+    </Key>
+    <Property Name="IDReservacion" Type="Int64" Nullable="false" />
+    <Property Name="IDProducto" Type="Int64" Nullable="false" />
+    <Property Name="Precio" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="AplicaIva" Type="Boolean" Nullable="false" />
+    <Property Name="IDCliente" Type="Int64" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="IDUsuario" Type="Int64" />
+    <Property Name="Comentario" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="IDMedida" Type="Int64" />
+  </EntityType>
+  <EntityType Name="Marca">
+    <Key>
+      <PropertyRef Name="IDMarca" />
+    </Key>
+    <Property Name="IDMarca" Type="Int64" Nullable="false" />
+    <Property Name="NombreMarca" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" />
+    <Property Name="IdUsuario" Type="Int64" />
+    <Property Name="FechaSistema" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Producto" Relationship="gm_mmercadoModel.FK__Producto__IDMarc__75035A77" FromRole="Marca" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Acceso">
+    <Key>
+      <PropertyRef Name="IDUsuario" />
+      <PropertyRef Name="IDModulo" />
+    </Key>
+    <Property Name="IDUsuario" Type="Int64" Nullable="false" />
+    <Property Name="IDModulo" Type="Int64" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="KardexBodega">
+    <Key>
+      <PropertyRef Name="IDKardexBodega" />
+    </Key>
+    <Property Name="IDKardexBodega" Type="Int64" Nullable="false" />
+    <Property Name="IDProducto" Type="Int64" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="ManoDeObra" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Precio" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Entra" Type="Int32" />
+    <Property Name="Sale" Type="Int32" />
+    <Property Name="Movimiento" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="IDUsuario" Type="Int64" />
+    <Property Name="FechaSystema" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Ubicacion">
+    <Key>
+      <PropertyRef Name="IDUbicacion" />
+    </Key>
+    <Property Name="IDUbicacion" Type="Int64" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" />
+    <Property Name="IDUsuario" Type="Int64" />
+    <Property Name="FechaSystema" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Producto" Relationship="gm_mmercadoModel.FK__Producto__IDUbic__269AB60B" FromRole="Ubicacion" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Traslados">
+    <Key>
+      <PropertyRef Name="IDTraslado" />
+    </Key>
+    <Property Name="IDTraslado" Type="Int64" Nullable="false" />
+    <Property Name="IDProducto" Type="Int64" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="TrasladoDe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FechaSistema" Type="DateTime" Precision="3" />
+    <Property Name="IDUsuario" Type="Int64" />
+    <NavigationProperty Name="Usuarios" Relationship="gm_mmercadoModel.FK_P_Usuario" FromRole="Traslados" ToRole="Usuarios" />
+    <NavigationProperty Name="Producto" Relationship="gm_mmercadoModel.FK_P_Producto" FromRole="Traslados" ToRole="Producto" />
+  </EntityType>
+  <Association Name="FK_P_Usuario">
+    <End Type="gm_mmercadoModel.Usuarios" Role="Usuarios" Multiplicity="0..1" />
+    <End Type="gm_mmercadoModel.Traslados" Role="Traslados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="IDUsuario" />
+      </Principal>
+      <Dependent Role="Traslados">
+        <PropertyRef Name="IDUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Devolucion">
+    <Key>
+      <PropertyRef Name="IDDevolucion" />
+      <PropertyRef Name="IDProducto" />
+      <PropertyRef Name="IDFactura" />
+    </Key>
+    <Property Name="IDDevolucion" Type="Int64" Nullable="false" />
+    <Property Name="IDProducto" Type="Int64" Nullable="false" />
+    <Property Name="Costo" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Unidad" Type="Int32" />
+    <Property Name="IDFactura" Type="Int64" Nullable="false" />
+    <Property Name="IDMedida" Type="Int64" />
+    <Property Name="IDKardex" Type="Int64" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="IDProducto" />
+    </Key>
+    <Property Name="IDProducto" Type="Int64" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CodBarra" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Iva" Type="Boolean" />
+    <Property Name="PVenta1" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PVenta2" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PVenta3" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PVenta4" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Equivalencia1" Type="Int32" />
+    <Property Name="Equivalencia2" Type="Int32" />
+    <Property Name="Equivalencia3" Type="Int32" />
+    <Property Name="StateMedida2" Type="Boolean" />
+    <Property Name="StateMedida3" Type="Boolean" />
+    <Property Name="IDMedidaMetrica" Type="Int64" />
+    <Property Name="FechaUltimaVenta" Type="DateTime" Precision="3" />
+    <Property Name="FechaUltimaCompra" Type="DateTime" Precision="3" />
+    <Property Name="IDUltimaVenta" Type="Int64" />
+    <Property Name="IDUtimaCompra" Type="Int64" />
+    <Property Name="PCAnterior" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PVAnterior1" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PVAnterior2" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PVAnterior3" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="NombreAnterior" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CodRapido" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ExistenciaMinima" Type="Int32" />
+    <Property Name="IDMarca" Type="Int64" />
+    <Property Name="IDGrupo" Type="Int64" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="EdPVenta1" Type="Boolean" />
+    <Property Name="EdPVenta2" Type="Boolean" />
+    <Property Name="EdPVenta3" Type="Boolean" />
+    <Property Name="ExistenciaActual" Type="Int32" />
+    <Property Name="FechaSistema" Type="DateTime" Precision="3" />
+    <Property Name="IDUsuario" Type="Int64" />
+    <Property Name="FotoProducto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="FechaExpiracion" Type="DateTime" Precision="0" />
+    <Property Name="IDUbicacion" Type="Int64" />
+    <Property Name="EnBodega" Type="Int32" />
+    <NavigationProperty Name="Cellar" Relationship="gm_mmercadoModel.FK_A_Producto" FromRole="Producto" ToRole="Cellar" />
+    <NavigationProperty Name="FacturaDetalle" Relationship="gm_mmercadoModel.FK_FD_Producto" FromRole="Producto" ToRole="FacturaDetalle" />
+    <NavigationProperty Name="Grupo" Relationship="gm_mmercadoModel.FK_P_Grupo" FromRole="Producto" ToRole="Grupo" />
+    <NavigationProperty Name="Kardex" Relationship="gm_mmercadoModel.FK_K_Producto" FromRole="Producto" ToRole="Kardex" />
+    <NavigationProperty Name="Marca" Relationship="gm_mmercadoModel.FK__Producto__IDMarc__75035A77" FromRole="Producto" ToRole="Marca" />
+    <NavigationProperty Name="MedidaMetrica" Relationship="gm_mmercadoModel.FK__Producto__IDMedi__062DE679" FromRole="Producto" ToRole="MedidaMetrica" />
+    <NavigationProperty Name="Ubicacion" Relationship="gm_mmercadoModel.FK__Producto__IDUbic__269AB60B" FromRole="Producto" ToRole="Ubicacion" />
+    <NavigationProperty Name="Traslados" Relationship="gm_mmercadoModel.FK_P_Producto" FromRole="Producto" ToRole="Traslados" />
+    <Property Name="Notificar" Type="Boolean" />
+    <Property Name="EdNombre" Type="Boolean" />
+    <Property Name="MostraNotificar" Type="Boolean" />
+  </EntityType>
+  <Association Name="FK_A_Producto">
+    <End Type="gm_mmercadoModel.Producto" Role="Producto" Multiplicity="1" />
+    <End Type="gm_mmercadoModel.Cellar" Role="Cellar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IDProducto" />
+      </Principal>
+      <Dependent Role="Cellar">
+        <PropertyRef Name="IDProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FD_Producto">
+    <End Type="gm_mmercadoModel.Producto" Role="Producto" Multiplicity="0..1" />
+    <End Type="gm_mmercadoModel.FacturaDetalle" Role="FacturaDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IDProducto" />
+      </Principal>
+      <Dependent Role="FacturaDetalle">
+        <PropertyRef Name="IDProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_P_Grupo">
+    <End Type="gm_mmercadoModel.Grupo" Role="Grupo" Multiplicity="0..1" />
+    <End Type="gm_mmercadoModel.Producto" Role="Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="IDGrupo" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="IDGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_K_Producto">
+    <End Type="gm_mmercadoModel.Producto" Role="Producto" Multiplicity="0..1" />
+    <End Type="gm_mmercadoModel.Kardex" Role="Kardex" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IDProducto" />
+      </Principal>
+      <Dependent Role="Kardex">
+        <PropertyRef Name="IDProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Producto__IDMarc__75035A77">
+    <End Type="gm_mmercadoModel.Marca" Role="Marca" Multiplicity="0..1" />
+    <End Type="gm_mmercadoModel.Producto" Role="Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Marca">
+        <PropertyRef Name="IDMarca" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="IDMarca" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Producto__IDMedi__062DE679">
+    <End Type="gm_mmercadoModel.MedidaMetrica" Role="MedidaMetrica" Multiplicity="0..1" />
+    <End Type="gm_mmercadoModel.Producto" Role="Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MedidaMetrica">
+        <PropertyRef Name="IdMedidaMetrica" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="IDMedidaMetrica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Producto__IDUbic__269AB60B">
+    <End Type="gm_mmercadoModel.Ubicacion" Role="Ubicacion" Multiplicity="0..1" />
+    <End Type="gm_mmercadoModel.Producto" Role="Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ubicacion">
+        <PropertyRef Name="IDUbicacion" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="IDUbicacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_P_Producto">
+    <End Type="gm_mmercadoModel.Producto" Role="Producto" Multiplicity="0..1" />
+    <End Type="gm_mmercadoModel.Traslados" Role="Traslados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IDProducto" />
+      </Principal>
+      <Dependent Role="Traslados">
+        <PropertyRef Name="IDProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

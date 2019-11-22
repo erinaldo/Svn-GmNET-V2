@@ -1,0 +1,24 @@
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Release\MMercadoEntities.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Release\MMercadoEntities.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Release\MMercadoEntities.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Release\EntityFramework.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Release\EntityFramework.SqlServer.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Release\EntityFramework.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Release\EntityFramework.SqlServer.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\obj\Release\MMercadoEntities.csprojAssemblyReference.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\obj\Release\MMercadoEntities.csproj.CoreCompileInputs.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\obj\Release\MMercadoEntities.csproj.CopyComplete
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\obj\Release\MMercadoEntities.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\obj\Release\MMercadoEntities.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\bin\Release\MMercadoEntities.dll.config
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\bin\Release\MMercadoEntities.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\bin\Release\MMercadoEntities.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\bin\Release\EntityFramework.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\bin\Release\EntityFramework.SqlServer.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\bin\Release\EntityFramework.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\bin\Release\EntityFramework.SqlServer.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\obj\Release\MMercadoEntities.csprojAssemblyReference.cache
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\obj\Release\MMercadoEntities.csproj.CoreCompileInputs.cache
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\obj\Release\MMercadoEntities.csproj.CopyComplete
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\obj\Release\MMercadoEntities.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\obj\Release\MMercadoEntities.pdb

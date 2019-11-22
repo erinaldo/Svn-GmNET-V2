@@ -1,0 +1,394 @@
+create table Marca
+(
+	IDMarca bigint not null,
+	NombreMarca varchar(50),
+	Estado bit,
+	IdUsuario bigint,
+	FechaSistema datetime,
+	Constraint PK_Marca Primary Key (IDMarca),
+);
+
+
+
+create Table MedidaMetrica
+(
+	IdMedidaMetrica bigint not null,
+	Name varchar(20),
+	State bit,
+	Nivel int,
+	Constraint PK_MedidaMetrica Primary Key (IdMedidaMetrica),
+);
+
+
+
+create Table Usuarios
+(
+	IDUsuario bigint not null,
+	Nombre varchar(50),
+	Cedula varchar(10),
+	Login varchar(20),
+	Pasword varchar(20),
+	Estado bit,
+	CCodBarra bit ,
+	CIvaA bit ,
+	CPCAnterior bit ,
+	CPv2A bit ,
+	CPv3A bit ,
+	CEqui1A bit ,
+	CEqui2A bit ,
+	CEqui3A bit ,
+	CActivo2A bit ,
+	CActivo3A bit ,
+	CUltimaCompraA bit ,
+	CPrecioAnteriorVenta1 bit ,
+	CPrecioAnteriorVenta2 bit ,
+	CPrecioAnteriorVenta3 bit ,
+	CNombreAnterior bit ,
+	CCodigoRapido bit ,
+	CExistenciaMinima bit ,
+	CMarca bit ,
+	CCategoria bit ,
+	CEstado bit ,
+	CExistenciaActual bit ,
+	CFotoProducto bit ,
+	CUltimaVentaA bit ,
+	CPAnterior bit ,
+	CNotificar bit,
+	CMostraNotificar bit ,
+	CFechaExpiracion bit ,
+	CEnBodega bit
+	Constraint PK_Usuarios Primary Key (IDUsuario)
+);
+
+
+create table Modulos
+(
+	IDModulo bigint not null,
+	Nombre varchar(50),
+	Comando varchar(100),
+	Imagen image,
+	IsMDI bit,
+	Estado bit,
+	Color varchar(50),
+	Constraint PK_Modulos Primary Key (IDModulo)
+);
+
+
+
+create table Acceso
+(
+	IDUsuario bigint not null,
+	IDModulo bigint not null,
+	Estado bit,
+	Constraint PK_Acceso Primary Key (IDUsuario, IDModulo)
+);
+
+
+create table Cliente
+(
+	IDCliente bigint not null,
+	Nombre varchar(50),
+	Cedula varchar(13),
+	Direccion varchar(60),
+	Telefono varchar(10),
+	Correo varchar(50),
+	Estado char(1),
+	Tipo char(1),
+	NombreContacto varchar(50),
+	TelefonoContacto varchar(10),
+	DireccionContacto varchar(50),
+	CreditoMaximo decimal(18,4),
+	Observaciones varchar(50),
+	PrecioAplicado int,
+	FechaSistema datetime,
+	Constraint PK_Cliente Primary key (IDCliente)
+);
+
+
+
+create table Grupo
+(
+	IDGrupo bigint not null,
+	Nombre varchar(50),
+	Estado char(1),
+	FechaSistema datetime,
+	Constraint PK_Grupo Primary Key (IDGrupo)
+);
+
+
+
+create table Ubicacion
+(
+	IDUbicacion bigint not null,
+	Nombre varchar(50),
+	Direccion varchar(100),
+	Estado bit,
+	IDUsuario bigint,
+	FechaSystema datetime,
+	Constraint PK_Bodega Primary Key (IDUbicacion)
+);
+
+
+create table Producto
+(
+	IDProducto bigint NOT NULL,
+	Nombre varchar(100),
+	CodBarra varchar(50),
+	Iva bit ,
+	PVenta1 decimal(18, 4),
+	PVenta2 decimal(18, 4),
+	PVenta3 decimal(18, 4),
+	PVenta4 decimal(18,4),
+	Equivalencia1 int ,
+	Equivalencia2 int ,
+	Equivalencia3 int ,
+	StateMedida2 bit ,
+	StateMedida3 bit ,
+	IDMedidaMetrica bigint ,
+	FechaUltimaVenta datetime ,
+	FechaUltimaCompra datetime ,
+	IDUltimaVenta bigint ,
+	IDUtimaCompra bigint ,
+	PCAnterior decimal(18, 4) ,
+	PVAnterior1 decimal(18, 4) ,
+	PVAnterior2 decimal(18, 4) ,
+	PVAnterior3 decimal(18, 4) ,
+	NombreAnterior varchar(50) ,
+	CodRapido varchar(10) ,
+	ExistenciaMinima int ,
+	IDMarca bigint ,
+	IDGrupo bigint ,
+	Estado char(1) ,
+	EdPVenta1 bit ,
+	EdPVenta2 bit ,
+	EdPVenta3 bit ,
+	ExistenciaActual int ,
+	FechaSistema datetime ,
+	IDUsuario bigint ,
+	FotoProducto image ,
+	Notificar bit ,
+	MostraNotificar bit ,
+	FechaExpiracion date ,
+	IDUbicacion bigint,
+	EnBodega int,
+	EdNombre bit,
+	Constraint PK_Producto Primary key (IDProducto),
+	Constraint FK_P_Grupo Foreign key (IDGrupo) references Grupo(IDGrupo),
+	Constraint FK_P_MedidaMetrica Foreign key (IDMedidaMetrica) references MedidaMetrica(IDMedidaMetrica),
+	Constraint FK_P_Marca Foreign key (IDMarca) references Marca(IDMarca),
+	Constraint FK_P_Ubicacion Foreign key (IDUbicacion) REFERENCES Ubicacion(IDUbicacion)
+);
+
+create table Factura
+(
+	IDFactura bigint not null,
+	Numero varchar(17),
+	IDCliente bigint,
+	Fecha datetime,
+	Estado char(1),
+	IDTerminal int,
+	Flete decimal(18,4),
+	Observacion varchar(100),
+	Tipo char(1),
+	Siclo char(1),
+	FechaSistema datetime,
+	Constraint PK_Factura Primary Key (IDFactura),
+	Constraint FK_F_Cliente Foreign Key (IDCliente) references Cliente(IDCliente)
+);
+
+
+
+create table FacturaDetalle
+(
+	IDFacturaDetalle bigint not null,
+	IDProducto bigint,
+	Costo decimal(18,3),
+	Unidades int,
+	IDFactura bigint,
+	IdMedidaMetrica bigint,
+	IDKardex bigint,
+	Iva int,
+	FleteAplicado decimal(18,4),
+	Estado bit,
+	Siclo char(1),
+	EnAlmacen int,
+	EnBodega int,
+	EnDevolucion int,
+	Movimiento char(1),
+	FechaSistema datetime,
+	Constraint PK_FacturaDetalle Primary Key (IDFacturaDetalle),
+	Constraint FK_FD_Producto Foreign Key (IDProducto) references Producto(IDProducto),
+	Constraint FK_FD_Factura Foreign Key (IDFactura) references Factura(IDFactura),
+	Constraint FK_FD_MedidaMetrica Foreign Key (IdMedidaMetrica) references MedidaMetrica(IdMedidaMetrica)
+);
+
+
+create table Credito
+(
+	IDCredito bigint not null,
+	IDFactura bigint,
+	IDUsaurio bigint,
+	Fecha date,
+	Abona decimal(18,3),
+	State bit,
+	FechaVence date,
+	Abonador varchar(50),
+	Estado char(1),
+	Constraint PK_Credito Primary key (IDCredito),
+	Constraint FK_C_Factura Foreign key (IDFactura) references Factura(IDFactura),
+	Constraint FK_C_Usuario Foreign key (IDUsaurio) references Usuarios(IDUsuario)
+);
+
+
+create table Kardex
+(
+	IDKardex bigint not null,
+	IDProducto bigint,
+	ProductoEntra int,
+	ProductoEntraPrecio decimal(18,3),
+	ProductoSale int,
+	ProductoSalePrecio decimal(18,3),
+	IDFactura varchar(10),
+	IVA int,
+	Fecha datetime,
+	Estado char(1),
+	Equivalencia int,
+	Referencia bigint,
+	Siclo char(1),
+	IdMedidaMetrica bigint,
+	Residuo int,
+	Movimiento char(1),
+	PrecioReal decimal(18,4),
+	IDKardexBodega bigint,
+	IDUbicacion bigint,
+	FacturaDevolucion bigint,
+	Flete decimal(18,4),
+	FechaSistema datetime,
+	Constraint PK_Kardex Primary Key (IDKardex DESC),
+	Constraint FK_K_Producto Foreign key (IDProducto) references Producto(IDProducto),
+	Constraint FK_K_MedidaMetrica Foreign Key (IdMedidaMetrica) references MedidaMetrica(IdMedidaMetrica)
+);
+
+
+
+create table LogProducto
+(
+	IdProducto bigint not null,
+	Name varchar(50),
+	CodBarra varchar(30),
+	IVA bit,
+	PCompra decimal(18,3),
+	PVenta decimal(18,3),
+	Estado char(1),
+	IdGrupo bigint,
+	Equivalencia bigint,
+	Referencia bigint,
+	IdUnidad bigint,
+	FechaSistema datetime,
+	Constraint PK_LogProducto Primary Key (IdProducto)
+);
+
+
+create table Parametros
+(
+	Station bigint not null,
+	NumFactura int,
+	Iva decimal(8,3),
+	Foto image,
+	Constraint PK_Paramtros Primary Key (Station)
+);
+
+
+create Table Proveedor
+(
+	IDCliente bigint not null,
+	IDProducto bigint not null,
+	Constraint PK_Proveedor Primary Key (IDCliente, IDProducto)
+);
+
+
+create table Terminal
+(
+	IDTerminal int,
+	Mac varchar(50),
+	Maquina varchar(50),
+	Oficina varchar(50),
+	Estado char(1),
+	Constraint PK_Terminal Primary Key (Mac)
+);
+
+
+create table Cellar
+(
+	IdCellar bigint not null,
+	IDProducto bigint not null,
+	IDFactura bigint not null,
+	PrecioCaja decimal(18,4),
+	PrecioUnidad decimal(18,4),
+	Caja decimal(18,2),
+	Unidad int,
+	Sate bit,
+	Constraint PK_Cellar Primary Key (IdCellar),
+	Constraint FK_A_Producto Foreign Key (IDProducto) References Producto(IDProducto),
+	Constraint FK_A_Factura Foreign Key (IDFactura) References Factura(IDFactura)
+);
+
+
+create Table Reservacion
+(
+	IDReservacion bigint,
+	IDProducto bigint,
+	Precio decimal(18,4),
+	Cantidad int,
+	AplicaIva bit,
+	IDCliente bigint,
+	Fecha datetime,
+	Estado char,
+	IDUsuario bigint,
+	Comentario varchar(30),
+	IDMedida bigint,
+	Constraint PK_Reservacion Primary Key (IdReservacion,IDProducto,AplicaIva,IDCliente)
+);
+
+
+create table KardexBodega
+(
+	IDKardexBodega bigint not null,
+	IDProducto bigint,
+	Cantidad int,
+	ManoDeObra decimal(18,4),
+	Precio decimal(18,4),
+	Entra int,
+	Sale int,
+	Movimiento char(1),
+	IDUsuario bigint,
+	FechaSystema datetime,
+	Constraint PK_KardexBodega Primary Key (IDKardexBodega),
+);
+
+
+create table Traslados
+(
+	IDTraslado bigint,
+	IDProducto bigint,
+	Nombre varchar(50),
+	Cantidad int,
+	TrasladoDe varchar(50),
+	FechaSistema datetime,
+	IDUsuario bigint,
+	Constraint PK_Traslados Primary key (IDTraslado),
+	Constraint FK_P_Producto Foreign key (IDProducto) references Producto(IDProducto),
+	Constraint FK_P_Usuario Foreign key (IDUsuario) references Usuarios(IDUsuario),
+);
+
+create table Devolucion
+(
+	IDDevolucion bigint not null,
+	IDProducto bigint not null,
+	Costo decimal(18,4),
+	Unidad int,
+	IDFactura bigint not null,
+	IDMedida bigint,
+	IDKardex bigint,
+	Constraint PK_Devolucion Primary Key (IDDevolucion,IDProducto,IDFactura)
+);

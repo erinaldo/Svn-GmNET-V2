@@ -1,0 +1,16 @@
+D:\Guajan\Svn-GmNET-V1\Otavalo\Gm.Entities\bin\Debug\Gm.Entities.dll.config
+D:\Guajan\Svn-GmNET-V1\Otavalo\Gm.Entities\bin\Debug\Gm.Entities.dll
+D:\Guajan\Svn-GmNET-V1\Otavalo\Gm.Entities\bin\Debug\Gm.Entities.pdb
+D:\Guajan\Svn-GmNET-V1\Otavalo\Gm.Entities\obj\Debug\Gm.Entities.csprojAssemblyReference.cache
+D:\Guajan\Svn-GmNET-V1\Otavalo\Gm.Entities\obj\Debug\Gm.Entities.csproj.CoreCompileInputs.cache
+D:\Guajan\Svn-GmNET-V1\Otavalo\Gm.Entities\obj\Debug\Gm.Entities.csproj.CopyComplete
+D:\Guajan\Svn-GmNET-V1\Otavalo\Gm.Entities\obj\Debug\Gm.Entities.dll
+D:\Guajan\Svn-GmNET-V1\Otavalo\Gm.Entities\obj\Debug\Gm.Entities.pdb
+D:\Guajan\Svn-GmNET-V2\Otavalo\Gm.Entities\bin\Debug\Gm.Entities.dll.config
+D:\Guajan\Svn-GmNET-V2\Otavalo\Gm.Entities\bin\Debug\Gm.Entities.dll
+D:\Guajan\Svn-GmNET-V2\Otavalo\Gm.Entities\bin\Debug\Gm.Entities.pdb
+D:\Guajan\Svn-GmNET-V2\Otavalo\Gm.Entities\obj\Debug\Gm.Entities.csprojAssemblyReference.cache
+D:\Guajan\Svn-GmNET-V2\Otavalo\Gm.Entities\obj\Debug\Gm.Entities.csproj.CoreCompileInputs.cache
+D:\Guajan\Svn-GmNET-V2\Otavalo\Gm.Entities\obj\Debug\Gm.Entities.csproj.CopyComplete
+D:\Guajan\Svn-GmNET-V2\Otavalo\Gm.Entities\obj\Debug\Gm.Entities.dll
+D:\Guajan\Svn-GmNET-V2\Otavalo\Gm.Entities\obj\Debug\Gm.Entities.pdb

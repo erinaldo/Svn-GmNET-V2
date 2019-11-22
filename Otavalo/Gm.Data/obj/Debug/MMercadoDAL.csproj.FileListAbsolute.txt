@@ -1,0 +1,117 @@
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\MMercadoDAL.dll.config
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\MMercadoDAL.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\MMercadoDAL.pdb
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\DevExpress.XtraBars.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\EntityFramework.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\MMercadoEntities.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\DevExpress.Utils.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\DevExpress.XtraEditors.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\DevExpress.Data.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\DevExpress.Printing.v17.1.Core.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\DevExpress.Sparkline.v17.1.Core.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\DevExpress.Pdf.v17.1.Core.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\MMercadoEntities.pdb
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\MMercadoEntities.dll.config
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\DevExpress.XtraBars.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\EntityFramework.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\DevExpress.Utils.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\DevExpress.XtraEditors.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\DevExpress.Data.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\DevExpress.Printing.v17.1.Core.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\DevExpress.Sparkline.v17.1.Core.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\de\DevExpress.XtraBars.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\es\DevExpress.XtraBars.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\ja\DevExpress.XtraBars.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\ru\DevExpress.XtraBars.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\de\DevExpress.Utils.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\es\DevExpress.Utils.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\ja\DevExpress.Utils.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\ru\DevExpress.Utils.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\de\DevExpress.XtraEditors.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\es\DevExpress.XtraEditors.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\ja\DevExpress.XtraEditors.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\ru\DevExpress.XtraEditors.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\de\DevExpress.Printing.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\es\DevExpress.Printing.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\ja\DevExpress.Printing.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\ru\DevExpress.Printing.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\de\DevExpress.Sparkline.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\es\DevExpress.Sparkline.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\ja\DevExpress.Sparkline.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\ru\DevExpress.Sparkline.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\de\DevExpress.Pdf.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\obj\Debug\MMercadoDAL.csprojAssemblyReference.cache
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\obj\Debug\MMercadoDAL.csproj.CoreCompileInputs.cache
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\obj\Debug\MMercadoDAL.csproj.CopyComplete
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\obj\Debug\MMercadoDAL.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\obj\Debug\MMercadoDAL.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\MMercadoDAL.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\MMercadoDAL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\MMercadoDAL.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\EntityFramework.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\MMercadoEntities.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\MMercadoEntities.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\MMercadoEntities.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\EntityFramework.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\obj\Debug\MMercadoDAL.csprojAssemblyReference.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\obj\Debug\MMercadoDAL.csproj.CoreCompileInputs.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\obj\Debug\MMercadoDAL.csproj.CopyComplete
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\obj\Debug\MMercadoDAL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoDAL\obj\Debug\MMercadoDAL.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoDAL.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoDAL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoDAL.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\EntityFramework.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoEntities.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoEntities.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoEntities.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\EntityFramework.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoDAL\obj\Debug\MMercadoDAL.csprojAssemblyReference.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoDAL\obj\Debug\MMercadoDAL.csproj.CoreCompileInputs.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoDAL\obj\Debug\MMercadoDAL.csproj.CopyComplete
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoDAL\obj\Debug\MMercadoDAL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoDAL\obj\Debug\MMercadoDAL.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoDAL.dll.config
+D:\Programacion\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoDAL.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoDAL.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\EntityFramework.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoEntities.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoEntities.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoEntities.dll.config
+D:\Programacion\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\EntityFramework.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoDAL\obj\Debug\MMercadoDAL.csprojAssemblyReference.cache
+D:\Programacion\C#\PC_MMercado V2\MMercadoDAL\obj\Debug\MMercadoDAL.csproj.CoreCompileInputs.cache
+D:\Programacion\C#\PC_MMercado V2\MMercadoDAL\obj\Debug\MMercadoDAL.csproj.CopyComplete
+D:\Programacion\C#\PC_MMercado V2\MMercadoDAL\obj\Debug\MMercadoDAL.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoDAL\obj\Debug\MMercadoDAL.pdb
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoDAL.dll.config
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoDAL.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoDAL.pdb
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\EntityFramework.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoEntities.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoEntities.pdb
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\MMercadoEntities.dll.config
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\EntityFramework.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoDAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoDAL\obj\Debug\MMercadoDAL.csprojAssemblyReference.cache
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoDAL\obj\Debug\MMercadoDAL.csproj.CoreCompileInputs.cache
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoDAL\obj\Debug\MMercadoDAL.csproj.CopyComplete
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoDAL\obj\Debug\MMercadoDAL.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoDAL\obj\Debug\MMercadoDAL.pdb

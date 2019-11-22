@@ -1,0 +1,1052 @@
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoAPU.exe.config
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoAPU.exe
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoAPU.pdb
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.BonusSkins.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Charts.v17.1.Core.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Data.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.PivotGrid.v17.1.Core.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Printing.v17.1.Core.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraBars.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.UI.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.Wizard.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraEditors.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraGrid.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraLayout.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraPivotGrid.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraPrinting.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraTreeList.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraVerticalGrid.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\EntityFramework.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\EntityFramework.SqlServer.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoBLL.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoDAL.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoEntities.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Pdf.v17.1.Core.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.UI.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraNavBar.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Sparkline.v17.1.Core.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.RichEdit.v17.1.Core.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraRichEdit.v17.1.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Office.v17.1.Core.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoBLL.pdb
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoDAL.pdb
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoDAL.dll.config
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoEntities.pdb
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoEntities.dll.config
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Data.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.PivotGrid.v17.1.Core.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Printing.v17.1.Core.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraBars.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.UI.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.Wizard.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraEditors.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraGrid.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraLayout.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraPivotGrid.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraPrinting.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraTreeList.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraVerticalGrid.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\EntityFramework.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\EntityFramework.SqlServer.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.UI.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraNavBar.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Sparkline.v17.1.Core.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.RichEdit.v17.1.Core.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraRichEdit.v17.1.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Office.v17.1.Core.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.PivotGrid.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.PivotGrid.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.PivotGrid.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.PivotGrid.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.Printing.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.Printing.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.Printing.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.Printing.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.Utils.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.Utils.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.Utils.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.Utils.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraBars.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraBars.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraBars.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraBars.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraCharts.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraCharts.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraCharts.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraCharts.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraEditors.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraEditors.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraEditors.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraEditors.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraGrid.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraGrid.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraGrid.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraGrid.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraLayout.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraLayout.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraLayout.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraLayout.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraPivotGrid.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraPivotGrid.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraPivotGrid.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraPivotGrid.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraPrinting.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraPrinting.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraPrinting.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraPrinting.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraTreeList.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraTreeList.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraTreeList.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraTreeList.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.Pdf.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.Utils.v17.1.UI.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.Utils.v17.1.UI.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.Utils.v17.1.UI.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.Utils.v17.1.UI.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraNavBar.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraNavBar.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraNavBar.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraNavBar.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.Sparkline.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.Sparkline.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.Sparkline.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.Sparkline.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.RichEdit.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.RichEdit.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.RichEdit.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.RichEdit.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraRichEdit.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraRichEdit.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraRichEdit.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraRichEdit.v17.1.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.Office.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.Office.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.Office.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.Office.v17.1.Core.resources.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.csprojAssemblyReference.cache
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.SplashScreen1.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormLogin.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormFecha.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormCaja.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormMovimiento.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormMovimientoProduto.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormVistaExistencia.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.xfConfiguracion.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormAforo.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormAyuda.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormCompra.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormFactura.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormKardex.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormProductoAdmin.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormProveedor.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormVenta.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormVistaVenta.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuGrupos.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuModulos.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuTerminal.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuUsuarios.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Properties.Resources.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.RibbonFormMenu.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormMain.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormMenu.resources
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.csproj.GenerateResource.cache
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.exe.licenses
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.csproj.CoreCompileInputs.cache
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.csproj.CopyComplete
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.exe
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.pdb
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormCliente.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoAPU.exe.config
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoAPU.exe
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoAPU.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.BonusSkins.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Charts.v17.1.Core.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Data.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Images.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Office.v17.1.Core.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Pdf.v17.1.Core.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.PivotGrid.v17.1.Core.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Printing.v17.1.Core.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.RichEdit.v17.1.Core.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraBars.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.UI.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.Wizard.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraEditors.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraGrid.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraLayout.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraNavBar.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraPivotGrid.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraPrinting.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraReports.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraRichEdit.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraTreeList.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraVerticalGrid.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\EntityFramework.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\EntityFramework.SqlServer.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoBLL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoDAL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoEntities.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.UI.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Sparkline.v17.1.Core.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.DataAccess.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraGauges.v17.1.Core.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Xpo.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.CodeParser.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoBLL.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoDAL.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoDAL.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoEntities.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\MMercadoEntities.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Data.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Office.v17.1.Core.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.PivotGrid.v17.1.Core.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Printing.v17.1.Core.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.RichEdit.v17.1.Core.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraBars.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.UI.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.Wizard.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraEditors.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraGrid.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraLayout.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraNavBar.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraPivotGrid.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraPrinting.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraReports.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraRichEdit.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraTreeList.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraVerticalGrid.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\EntityFramework.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\EntityFramework.SqlServer.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.UI.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Sparkline.v17.1.Core.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.DataAccess.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.XtraGauges.v17.1.Core.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\DevExpress.Xpo.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.Office.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.Office.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.Office.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.Office.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.PivotGrid.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.PivotGrid.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.PivotGrid.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.PivotGrid.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.RichEdit.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.RichEdit.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.RichEdit.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.RichEdit.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.Utils.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.Utils.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.Utils.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.Utils.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraBars.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraBars.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraBars.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraBars.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraCharts.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraCharts.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraCharts.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraCharts.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraLayout.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraLayout.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraLayout.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraLayout.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraNavBar.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraNavBar.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraNavBar.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraNavBar.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraPivotGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraPivotGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraPivotGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraPivotGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraPrinting.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraPrinting.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraPrinting.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraPrinting.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraReports.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraReports.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraReports.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraReports.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraRichEdit.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraRichEdit.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraRichEdit.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraRichEdit.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraTreeList.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraTreeList.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraTreeList.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraTreeList.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.Utils.v17.1.UI.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.Utils.v17.1.UI.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.Utils.v17.1.UI.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.Utils.v17.1.UI.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.DataAccess.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.DataAccess.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.DataAccess.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.DataAccess.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.XtraGauges.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.XtraGauges.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.XtraGauges.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.XtraGauges.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\de\DevExpress.Xpo.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\es\DevExpress.Xpo.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ja\DevExpress.Xpo.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\bin\Debug\ru\DevExpress.Xpo.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.csprojAssemblyReference.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.frmWaitFrom.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.SplashScreen1.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.Accesos.SplashScreenWelcome.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.xfCambiarConexion.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.Accesos.xfCargaBasica.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormLogin.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.VentaCompra.xfClientEditQuick.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfClientNew.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormFecha.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormR.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.Productos.xfProductEditQuick.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.xfProviderNew.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfProductNew.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfInventarioProvider.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfBill.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormCaja.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.xfClientAdmin.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.xfComprasVSVentas.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormMovimientoProduto.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.xfInventarioAdmin.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.xfConfiguracion.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormAforo.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormAyuda.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormFactura.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormKardex.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.xfProductAdmin.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.xfProviderAdmin.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormVenta.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormVistaVenta.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuGrupos.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuModulos.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuTerminal.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuUsuarios.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Properties.Resources.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.RibbonFormMenu.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormMain.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormMenu.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.csproj.GenerateResource.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.exe.licenses
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.csproj.CoreCompileInputs.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.csproj.CopyComplete
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.exe
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xfCopiaBDD.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.xfMessageThankYou.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoAPU\obj\Debug\MMercadoAPU.xfCompras.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoAPU.exe.config
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoAPU.exe
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoAPU.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.BonusSkins.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Charts.v17.1.Core.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Data.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Images.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Office.v17.1.Core.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Pdf.v17.1.Core.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.PivotGrid.v17.1.Core.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Printing.v17.1.Core.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.RichEdit.v17.1.Core.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraBars.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.UI.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.Wizard.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraEditors.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraGrid.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraLayout.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraNavBar.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraPivotGrid.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraPrinting.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraReports.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraRichEdit.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraTreeList.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraVerticalGrid.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\EntityFramework.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\EntityFramework.SqlServer.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoBLL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoDAL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoEntities.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.UI.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Sparkline.v17.1.Core.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.DataAccess.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraGauges.v17.1.Core.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Xpo.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.CodeParser.v17.1.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoBLL.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoDAL.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoDAL.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoEntities.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoEntities.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Data.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Office.v17.1.Core.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.PivotGrid.v17.1.Core.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Printing.v17.1.Core.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.RichEdit.v17.1.Core.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraBars.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.UI.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.Wizard.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraEditors.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraGrid.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraLayout.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraNavBar.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraPivotGrid.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraPrinting.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraReports.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraRichEdit.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraTreeList.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraVerticalGrid.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\EntityFramework.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\EntityFramework.SqlServer.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.UI.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Sparkline.v17.1.Core.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.DataAccess.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraGauges.v17.1.Core.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Xpo.v17.1.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Office.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Office.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Office.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Office.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.PivotGrid.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.PivotGrid.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.PivotGrid.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.PivotGrid.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.RichEdit.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.RichEdit.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.RichEdit.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.RichEdit.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Utils.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Utils.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Utils.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Utils.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraBars.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraBars.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraBars.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraBars.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraCharts.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraCharts.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraCharts.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraCharts.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraLayout.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraLayout.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraLayout.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraLayout.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraNavBar.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraNavBar.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraNavBar.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraNavBar.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraPivotGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraPivotGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraPivotGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraPivotGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraPrinting.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraPrinting.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraPrinting.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraPrinting.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraReports.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraReports.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraReports.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraReports.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraRichEdit.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraRichEdit.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraRichEdit.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraRichEdit.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraTreeList.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraTreeList.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraTreeList.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraTreeList.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Utils.v17.1.UI.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Utils.v17.1.UI.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Utils.v17.1.UI.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Utils.v17.1.UI.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.DataAccess.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.DataAccess.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.DataAccess.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.DataAccess.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraGauges.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraGauges.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraGauges.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraGauges.v17.1.Core.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Xpo.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Xpo.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Xpo.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Xpo.v17.1.resources.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.csprojAssemblyReference.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.frmWaitFrom.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.SplashScreen1.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.Accesos.SplashScreenWelcome.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfCambiarConexion.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.Accesos.xfCargaBasica.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormLogin.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfMessageThankYou.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.VentaCompra.xfClientEditQuick.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfClientNew.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormFecha.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormR.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.Productos.xfProductEditQuick.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfProviderNew.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfProductNew.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfInventarioProvider.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfBill.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormCaja.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfClientAdmin.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfComprasVSVentas.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormMovimientoProduto.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfInventarioAdmin.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfConfiguracion.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormAforo.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormAyuda.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfCompras.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormFactura.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormKardex.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfProductAdmin.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfProviderAdmin.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormVenta.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormVistaVenta.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xfCopiaBDD.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuGrupos.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuModulos.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuTerminal.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuUsuarios.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Properties.Resources.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.RibbonFormMenu.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormMain.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormMenu.resources
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.csproj.GenerateResource.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.exe.licenses
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.csproj.CoreCompileInputs.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.csproj.CopyComplete
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.exe
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoAPU.exe.config
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoAPU.exe
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoAPU.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.BonusSkins.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Charts.v17.1.Core.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Data.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Images.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Office.v17.1.Core.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Pdf.v17.1.Core.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.PivotGrid.v17.1.Core.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Printing.v17.1.Core.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.RichEdit.v17.1.Core.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraBars.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.UI.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.Wizard.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraEditors.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraGrid.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraLayout.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraNavBar.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraPivotGrid.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraPrinting.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraReports.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraRichEdit.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraTreeList.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraVerticalGrid.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\EntityFramework.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\EntityFramework.SqlServer.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoBLL.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoDAL.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoEntities.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.UI.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Sparkline.v17.1.Core.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.DataAccess.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraGauges.v17.1.Core.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Xpo.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.CodeParser.v17.1.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoBLL.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoDAL.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoDAL.dll.config
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoEntities.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoEntities.dll.config
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Data.v17.1.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Office.v17.1.Core.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.PivotGrid.v17.1.Core.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Printing.v17.1.Core.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.RichEdit.v17.1.Core.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraBars.v17.1.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.UI.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.Wizard.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraEditors.v17.1.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraGrid.v17.1.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraLayout.v17.1.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraNavBar.v17.1.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraPivotGrid.v17.1.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraPrinting.v17.1.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraReports.v17.1.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraRichEdit.v17.1.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraTreeList.v17.1.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraVerticalGrid.v17.1.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\EntityFramework.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\EntityFramework.SqlServer.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.UI.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Sparkline.v17.1.Core.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.DataAccess.v17.1.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraGauges.v17.1.Core.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Xpo.v17.1.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Office.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Office.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Office.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Office.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.PivotGrid.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.PivotGrid.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.PivotGrid.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.PivotGrid.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.RichEdit.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.RichEdit.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.RichEdit.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.RichEdit.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Utils.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Utils.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Utils.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Utils.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraBars.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraBars.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraBars.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraBars.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraCharts.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraCharts.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraCharts.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraCharts.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraGrid.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraGrid.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraGrid.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraGrid.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraLayout.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraLayout.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraLayout.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraLayout.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraNavBar.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraNavBar.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraNavBar.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraNavBar.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraPivotGrid.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraPivotGrid.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraPivotGrid.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraPivotGrid.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraPrinting.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraPrinting.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraPrinting.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraPrinting.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraReports.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraReports.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraReports.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraReports.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraRichEdit.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraRichEdit.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraRichEdit.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraRichEdit.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraTreeList.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraTreeList.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraTreeList.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraTreeList.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Utils.v17.1.UI.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Utils.v17.1.UI.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Utils.v17.1.UI.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Utils.v17.1.UI.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.DataAccess.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.DataAccess.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.DataAccess.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.DataAccess.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraGauges.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraGauges.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraGauges.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraGauges.v17.1.Core.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Xpo.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Xpo.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Xpo.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Xpo.v17.1.resources.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.csprojAssemblyReference.cache
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.frmWaitFrom.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.SplashScreen1.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.Accesos.SplashScreenWelcome.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfCambiarConexion.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.Accesos.xfCargaBasica.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormLogin.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfMessageThankYou.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.VentaCompra.xfClientEditQuick.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfClientNew.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormFecha.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormR.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.Productos.xfProductEditQuick.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfProviderNew.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfProductNew.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfInventarioProvider.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfBill.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormCaja.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfClientAdmin.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfComprasVSVentas.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormMovimientoProduto.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfInventarioAdmin.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfConfiguracion.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormAforo.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormAyuda.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfCompras.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormFactura.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormKardex.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfProductAdmin.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfProviderAdmin.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormVenta.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormVistaVenta.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xfCopiaBDD.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuGrupos.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuModulos.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuTerminal.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuUsuarios.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Properties.Resources.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.RibbonFormMenu.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormMain.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormMenu.resources
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.csproj.GenerateResource.cache
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.exe.licenses
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.csproj.CoreCompileInputs.cache
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.csproj.CopyComplete
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.exe
+D:\Programacion\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.pdb
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.csprojAssemblyReference.cache
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.frmWaitFrom.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.SplashScreen1.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.Accesos.SplashScreenWelcome.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfCambiarConexion.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.Accesos.xfCargaBasica.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormLogin.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfMessageThankYou.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.VentaCompra.xfClientEditQuick.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfClientNew.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormFecha.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormR.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfProductEditQuick.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfProviderNew.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfProductNew.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfInventarioProvider.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfBill.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormCaja.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfClientAdmin.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfComprasVSVentas.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormMovimientoProduto.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfInventarioAdmin.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfPurchases.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfConfiguracion.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormAforo.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormAyuda.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormFactura.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormKardex.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfProductAdmin.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.xfProviderAdmin.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormVistaVenta.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xfCopiaBDD.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuGrupos.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuModulos.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuTerminal.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Herramientas.xuUsuarios.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Properties.Resources.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.RibbonFormMenu.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormMain.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.XtraFormMenu.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.csproj.GenerateResource.cache
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.exe.licenses
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.csproj.CoreCompileInputs.cache
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoAPU.exe.config
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoAPU.exe
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoAPU.pdb
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.BonusSkins.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Charts.v17.1.Core.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Data.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Images.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Office.v17.1.Core.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Pdf.v17.1.Core.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.PivotGrid.v17.1.Core.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Printing.v17.1.Core.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.RichEdit.v17.1.Core.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraBars.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.UI.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.Wizard.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraEditors.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraGrid.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraLayout.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraNavBar.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraPivotGrid.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraPrinting.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraReports.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraRichEdit.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraTreeList.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraVerticalGrid.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\EntityFramework.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\EntityFramework.SqlServer.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoBLL.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoDAL.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoEntities.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.UI.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Sparkline.v17.1.Core.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.DataAccess.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraGauges.v17.1.Core.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Xpo.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.CodeParser.v17.1.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoBLL.pdb
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoDAL.pdb
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoDAL.dll.config
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoEntities.pdb
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\MMercadoEntities.dll.config
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Data.v17.1.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Office.v17.1.Core.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.PivotGrid.v17.1.Core.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Printing.v17.1.Core.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.RichEdit.v17.1.Core.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraBars.v17.1.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.UI.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraCharts.v17.1.Wizard.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraEditors.v17.1.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraGrid.v17.1.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraLayout.v17.1.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraNavBar.v17.1.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraPivotGrid.v17.1.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraPrinting.v17.1.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraReports.v17.1.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraRichEdit.v17.1.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraTreeList.v17.1.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraVerticalGrid.v17.1.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\EntityFramework.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\EntityFramework.SqlServer.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Utils.v17.1.UI.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Sparkline.v17.1.Core.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.DataAccess.v17.1.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.XtraGauges.v17.1.Core.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\DevExpress.Xpo.v17.1.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Office.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Office.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Office.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Office.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.PivotGrid.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.PivotGrid.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.PivotGrid.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.PivotGrid.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.RichEdit.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.RichEdit.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.RichEdit.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.RichEdit.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Utils.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Utils.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Utils.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Utils.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraBars.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraBars.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraBars.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraBars.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraCharts.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraCharts.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraCharts.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraCharts.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraGrid.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraGrid.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraGrid.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraGrid.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraLayout.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraLayout.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraLayout.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraLayout.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraNavBar.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraNavBar.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraNavBar.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraNavBar.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraPivotGrid.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraPivotGrid.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraPivotGrid.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraPivotGrid.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraPrinting.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraPrinting.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraPrinting.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraPrinting.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraReports.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraReports.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraReports.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraReports.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraRichEdit.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraRichEdit.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraRichEdit.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraRichEdit.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraTreeList.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraTreeList.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraTreeList.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraTreeList.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraVerticalGrid.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Utils.v17.1.UI.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Utils.v17.1.UI.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Utils.v17.1.UI.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Utils.v17.1.UI.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.DataAccess.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.DataAccess.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.DataAccess.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.DataAccess.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.XtraGauges.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.XtraGauges.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.XtraGauges.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.XtraGauges.v17.1.Core.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\de\DevExpress.Xpo.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\es\DevExpress.Xpo.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ja\DevExpress.Xpo.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\bin\Debug\ru\DevExpress.Xpo.v17.1.resources.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.csproj.CopyComplete
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.exe
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.pdb
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfAbono.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfAbonoAdmin.resources
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoAPU\obj\Debug\MMercadoAPU.Formularios.xfAbonoHistorial.resources

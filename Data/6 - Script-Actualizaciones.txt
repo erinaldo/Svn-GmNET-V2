@@ -1,0 +1,120 @@
+update FacturaDetalle set estado = 1
+
+
+insert into Ubicacion(IDUbicacion,Nombre,Direccion,IDUsuario,Estado)
+values(1,'ALMACEN','OTAVALO',1,1);
+
+insert into Ubicacion(IDUbicacion,Nombre,Direccion,IDUsuario,Estado)
+values(2,'BODEGA 1','OTAVALO',1,1);
+
+update Producto set IDUbicacion=1;
+
+
+-- actualizaciones 18/11/2019
+
+create table Devolucion
+(
+IDDevolucion bigint,
+IDProducto bigint,
+Costo decimal(18,4),
+Unidad int,
+IDFactura bigint,
+IDMedida bigint,
+IDKardex bigint,
+Constraint PK_Devolucion Primary Key (IDDevolucion,IDProducto,IDFactura)
+);
+
+alter table FacturaDetalle
+add EnAlmacen int;
+
+alter table FacturaDetalle
+add EnBodega int;
+
+alter table FacturaDetalle
+add EnDevolucion int;
+
+alter table FacturaDetalle
+add Movimiento char(1);
+
+--actualizaciones por comprobar 21/11/2019
+alter table Marca
+Add IDUsuario bigint;
+
+alter table MedidaMetrica
+Add FechaSistema datetime;
+alter table MedidaMetrica
+Add IDUsuario bigint;
+
+alter table Usuarios
+Add FechaSistema datetime;
+alter table Usuarios
+Add IDUsuario bigint;
+
+alter table Modulos
+Add FechaSistema datetime;
+alter table Modulos
+Add IDUsuario bigint;
+
+alter table Acceso
+Add FechaSistema datetime;
+alter table Acceso
+Add IDUsuario bigint;
+
+alter table Cliente
+Add IDUsuario bigint;
+
+alter table Grupo
+Add IDUsuario bigint;
+
+alter table Ubicacion
+Add IDUsuario bigint;
+
+alter table Factura
+Add IDUsuario bigint;
+
+alter table FacturaDetalle
+Add IDUsuario bigint;
+
+alter table Credito
+Add FechaSistema datetime;
+alter table Credito
+Add IDUsuario bigint;
+
+alter table Kardex
+Add IDUsuario bigint;
+
+alter table LogProducto
+Add IDUsuario bigint;
+
+alter table Parametros
+Add FechaSistema bigint;
+alter table Parametros
+Add IDUsuario bigint;
+
+alter table Proveedor
+Add FechaSistema bigint;
+alter table Proveedor
+Add IDUsuario bigint;
+
+alter table Terminal
+Add FechaSistema bigint;
+alter table Terminal
+Add IDUsuario bigint;
+
+alter table Cellar
+Add FechaSistema bigint;
+alter table Cellar
+Add IDUsuario bigint;
+
+alter table Reservacion
+Add FechaSistema bigint;
+alter table Reservacion
+Add IDUsuario bigint;
+
+alter table Devolucion
+Add FechaSistema bigint;
+alter table Devolucion
+Add IDUsuario bigint;
+
+
+

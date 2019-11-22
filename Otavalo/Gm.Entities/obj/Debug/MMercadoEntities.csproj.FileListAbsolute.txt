@@ -1,0 +1,58 @@
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Debug\MMercadoEntities.dll.config
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Debug\MMercadoEntities.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Debug\MMercadoEntities.pdb
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Debug\EntityFramework.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Debug\EntityFramework.SqlServer.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Debug\EntityFramework.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Debug\EntityFramework.SqlServer.xml
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\obj\Debug\MMercadoEntities.csprojAssemblyReference.cache
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\obj\Debug\MMercadoEntities.csproj.CoreCompileInputs.cache
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\obj\Debug\MMercadoEntities.csproj.CopyComplete
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\obj\Debug\MMercadoEntities.dll
+E:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\obj\Debug\MMercadoEntities.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Debug\MMercadoEntities.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Debug\MMercadoEntities.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Debug\MMercadoEntities.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Debug\EntityFramework.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Debug\EntityFramework.SqlServer.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Debug\EntityFramework.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\bin\Debug\EntityFramework.SqlServer.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\obj\Debug\MMercadoEntities.csproj.CoreCompileInputs.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\obj\Debug\MMercadoEntities.csproj.CopyComplete
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\obj\Debug\MMercadoEntities.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\obj\Debug\MMercadoEntities.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoEntities\obj\Debug\MMercadoEntities.csprojAssemblyReference.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\MMercadoEntities.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\MMercadoEntities.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\MMercadoEntities.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\EntityFramework.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\EntityFramework.SqlServer.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\EntityFramework.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\EntityFramework.SqlServer.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoEntities\obj\Debug\MMercadoEntities.csprojAssemblyReference.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoEntities\obj\Debug\MMercadoEntities.csproj.CoreCompileInputs.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoEntities\obj\Debug\MMercadoEntities.csproj.CopyComplete
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoEntities\obj\Debug\MMercadoEntities.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado V2\MMercadoEntities\obj\Debug\MMercadoEntities.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\MMercadoEntities.dll.config
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\MMercadoEntities.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\MMercadoEntities.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\EntityFramework.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\EntityFramework.SqlServer.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\EntityFramework.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\EntityFramework.SqlServer.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\obj\Debug\MMercadoEntities.csproj.CoreCompileInputs.cache
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\obj\Debug\MMercadoEntities.csproj.CopyComplete
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\obj\Debug\MMercadoEntities.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoEntities\obj\Debug\MMercadoEntities.pdb
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\MMercadoEntities.dll.config
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\MMercadoEntities.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\MMercadoEntities.pdb
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\EntityFramework.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\EntityFramework.SqlServer.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\EntityFramework.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoEntities\bin\Debug\EntityFramework.SqlServer.xml
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoEntities\obj\Debug\MMercadoEntities.csproj.CoreCompileInputs.cache
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoEntities\obj\Debug\MMercadoEntities.csproj.CopyComplete
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoEntities\obj\Debug\MMercadoEntities.dll
+D:\Desarrollo\C#\PC_MMercado V2\MMercadoEntities\obj\Debug\MMercadoEntities.pdb

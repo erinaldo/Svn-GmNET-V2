@@ -1,0 +1,30 @@
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Release\MMercadoBLL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Release\MMercadoBLL.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Release\MMercadoDAL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Release\MMercadoEntities.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Release\EntityFramework.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Release\MMercadoDAL.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Release\MMercadoDAL.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Release\MMercadoEntities.pdb
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Release\MMercadoEntities.dll.config
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\bin\Release\EntityFramework.xml
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\obj\Release\MMercadoBLL.csprojAssemblyReference.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\obj\Release\MMercadoBLL.csproj.CoreCompileInputs.cache
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\obj\Release\MMercadoBLL.csproj.CopyComplete
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\obj\Release\MMercadoBLL.dll
+D:\Diseño y Desarrollo\C#\PC_MMercado\MMercadoBLL\obj\Release\MMercadoBLL.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Release\MMercadoBLL.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Release\MMercadoBLL.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Release\MMercadoDAL.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Release\MMercadoEntities.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Release\EntityFramework.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Release\MMercadoDAL.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Release\MMercadoDAL.dll.config
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Release\MMercadoEntities.pdb
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Release\MMercadoEntities.dll.config
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\bin\Release\EntityFramework.xml
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\obj\Release\MMercadoBLL.csprojAssemblyReference.cache
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\obj\Release\MMercadoBLL.csproj.CoreCompileInputs.cache
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\obj\Release\MMercadoBLL.csproj.CopyComplete
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\obj\Release\MMercadoBLL.dll
+D:\Programacion\C#\PC_MMercado V2\MMercadoBLL\obj\Release\MMercadoBLL.pdb

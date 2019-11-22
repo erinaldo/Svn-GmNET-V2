@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_MMercadoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="IDCliente" />
+    </Key>
+    <Property Name="IDCliente" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Cedula" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="FechaSistema" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Factura" Relationship="Self.FK__Factura__IDClien__1BFD2C07" FromRole="Cliente" ToRole="Factura" />
+  </EntityType>
+  <EntityType Name="Factura">
+    <Key>
+      <PropertyRef Name="IDFactura" />
+    </Key>
+    <Property Name="IDFactura" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Numero" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+    <Property Name="IDCliente" Type="Int64" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="FechaSistema" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK__Factura__IDClien__1BFD2C07" FromRole="Factura" ToRole="Cliente" />
+    <NavigationProperty Name="FacturaDetalle" Relationship="Self.FK__FacturaDe__IDFac__20C1E124" FromRole="Factura" ToRole="FacturaDetalle" />
+    <Property Name="IDTerminal" Type="Int32" />
+  </EntityType>
+  <EntityType Name="FacturaDetalle">
+    <Key>
+      <PropertyRef Name="IDFacturaDetalle" />
+    </Key>
+    <Property Name="IDFacturaDetalle" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDProducto" Type="Int64" />
+    <Property Name="Costo" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Unidades" Type="Int32" />
+    <Property Name="IDFactura" Type="Int64" />
+    <Property Name="FechaSistema" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Factura" Relationship="Self.FK__FacturaDe__IDFac__20C1E124" FromRole="FacturaDetalle" ToRole="Factura" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__FacturaDe__IDPro__1FCDBCEB" FromRole="FacturaDetalle" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="IDGrupo" />
+    </Key>
+    <Property Name="IDGrupo" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="FechaSistema" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__Producto__IDGrup__37A5467C" FromRole="Grupo" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Kardex">
+    <Key>
+      <PropertyRef Name="IDKardex" />
+    </Key>
+    <Property Name="IDKardex" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDProducto" Type="Int64" />
+    <Property Name="ProductoEntra" Type="Int32" />
+    <Property Name="ProductoEntraPrecio" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ProductoSale" Type="Int32" />
+    <Property Name="ProductoSalePrecio" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="IDFactura" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="IVA" Type="Int32" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="FechaSistema" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__Kardex__IDProduc__15502E78" FromRole="Kardex" ToRole="Producto" />
+    <Property Name="Equivalencia" Type="Int32" />
+    <Property Name="Referencia" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="IDProducto" />
+    </Key>
+    <Property Name="IDProducto" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CodBarra" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IVASIoNO" Type="Boolean" />
+    <Property Name="PCompra" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PVenta" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="FechaSistema" Type="DateTime" Precision="3" />
+    <Property Name="IDGrupo" Type="Int64" />
+    <NavigationProperty Name="FacturaDetalle" Relationship="Self.FK__FacturaDe__IDPro__1FCDBCEB" FromRole="Producto" ToRole="FacturaDetalle" />
+    <NavigationProperty Name="Grupo" Relationship="Self.FK__Producto__IDGrup__37A5467C" FromRole="Producto" ToRole="Grupo" />
+    <NavigationProperty Name="Kardex" Relationship="Self.FK__Kardex__IDProduc__15502E78" FromRole="Producto" ToRole="Kardex" />
+    <Property Name="Equivalencia" Type="Int32" />
+    <Property Name="Referencia" Type="Int32" />
+  </EntityType>
+  <Association Name="FK__Factura__IDClien__1BFD2C07">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="0..1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="IDCliente" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="IDCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FacturaDe__IDFac__20C1E124">
+    <End Role="Factura" Type="Self.Factura" Multiplicity="0..1" />
+    <End Role="FacturaDetalle" Type="Self.FacturaDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="IDFactura" />
+      </Principal>
+      <Dependent Role="FacturaDetalle">
+        <PropertyRef Name="IDFactura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FacturaDe__IDPro__1FCDBCEB">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="0..1" />
+    <End Role="FacturaDetalle" Type="Self.FacturaDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IDProducto" />
+      </Principal>
+      <Dependent Role="FacturaDetalle">
+        <PropertyRef Name="IDProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Producto__IDGrup__37A5467C">
+    <End Role="Grupo" Type="Self.Grupo" Multiplicity="0..1" />
+    <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="IDGrupo" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="IDGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Kardex__IDProduc__15502E78">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="0..1" />
+    <End Role="Kardex" Type="Self.Kardex" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IDProducto" />
+      </Principal>
+      <Dependent Role="Kardex">
+        <PropertyRef Name="IDProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_MMercadoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+    <EntitySet Name="Factura" EntityType="Self.Factura" />
+    <EntitySet Name="FacturaDetalle" EntityType="Self.FacturaDetalle" />
+    <EntitySet Name="Grupo" EntityType="Self.Grupo" />
+    <EntitySet Name="Kardex" EntityType="Self.Kardex" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" />
+    <AssociationSet Name="FK__Factura__IDClien__1BFD2C07" Association="Self.FK__Factura__IDClien__1BFD2C07">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Factura" EntitySet="Factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FacturaDe__IDFac__20C1E124" Association="Self.FK__FacturaDe__IDFac__20C1E124">
+      <End Role="Factura" EntitySet="Factura" />
+      <End Role="FacturaDetalle" EntitySet="FacturaDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FacturaDe__IDPro__1FCDBCEB" Association="Self.FK__FacturaDe__IDPro__1FCDBCEB">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="FacturaDetalle" EntitySet="FacturaDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Producto__IDGrup__37A5467C" Association="Self.FK__Producto__IDGrup__37A5467C">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Kardex__IDProduc__15502E78" Association="Self.FK__Kardex__IDProduc__15502E78">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="Kardex" EntitySet="Kardex" />
+    </AssociationSet>
+    <EntitySet Name="VistaKardex" EntityType="DB_MMercadoModel.VistaKardex" />
+    <EntitySet Name="VistaFacturaCompra" EntityType="DB_MMercadoModel.VistaFacturaCompra" />
+    <EntitySet Name="VistaFacturaVenta" EntityType="DB_MMercadoModel.VistaFacturaVenta" />
+    <EntitySet Name="VistaVenta" EntityType="DB_MMercadoModel.VistaVenta" />
+    <EntitySet Name="VistaExistencia" EntityType="DB_MMercadoModel.VistaExistencia" />
+    <FunctionImport Name="Sp_Existencia" ReturnType="Collection(DB_MMercadoModel.Sp_Existencia_Result)" />
+    <FunctionImport Name="Sp_FacturaDetalleGrabar">
+      <Parameter Name="IDProducto" Mode="In" Type="Int32" />
+      <Parameter Name="Costo" Mode="In" Type="Decimal" />
+      <Parameter Name="Unidades" Mode="In" Type="Int32" />
+      <Parameter Name="IDFactura" Mode="In" Type="Int32" />
+      <Parameter Name="Tipo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_FacturaDetalleGrabar1">
+      <Parameter Name="IDProducto" Mode="In" Type="Int32" />
+      <Parameter Name="Costo" Mode="In" Type="Decimal" />
+      <Parameter Name="Unidades" Mode="In" Type="Int32" />
+      <Parameter Name="IDFactura" Mode="In" Type="Int32" />
+      <Parameter Name="Tipo" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="Modulos" EntityType="DB_MMercadoModel.Modulos" />
+    <EntitySet Name="Usuarios" EntityType="DB_MMercadoModel.Usuarios" />
+    <EntitySet Name="Acceso" EntityType="DB_MMercadoModel.Acceso" />
+    <AssociationSet Name="FK__Acceso__IDModulo__44CA3770" Association="DB_MMercadoModel.FK__Acceso__IDModulo__44CA3770">
+      <End Role="Modulos" EntitySet="Modulos" />
+      <End Role="Acceso" EntitySet="Acceso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Acceso__IDUsuari__43D61337" Association="DB_MMercadoModel.FK__Acceso__IDUsuari__43D61337">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Acceso" EntitySet="Acceso" />
+    </AssociationSet>
+    <FunctionImport Name="Sp_ReinicioTablas" />
+    <EntitySet Name="Proveedor" EntityType="DB_MMercadoModel.Proveedor" />
+    <EntitySet Name="Terminal" EntityType="DB_MMercadoModel.Terminal" />
+  </EntityContainer>
+  <EntityType Name="VistaKardex">
+    <Key>
+      <PropertyRef Name="IDKardex" />
+    </Key>
+    <Property Name="IDKardex" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDProducto" Type="Int64" />
+    <Property Name="Producto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ProductoEntra" Type="Int32" />
+    <Property Name="ProductoEntraPrecio" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ProductoSale" Type="Int32" />
+    <Property Name="ProductoSalePrecio" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="IVA" Type="Int32" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VistaFacturaCompra">
+    <Key>
+      <PropertyRef Name="IDFactura" />
+    </Key>
+    <Property Name="IDFactura" Type="Int64" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Cedula" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="Numero" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+    <Property Name="Monto" Type="Decimal" Precision="38" Scale="2" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VistaFacturaVenta">
+    <Key>
+      <PropertyRef Name="IDFactura" />
+    </Key>
+    <Property Name="IDFactura" Type="Int64" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Cedula" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="Numero" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+    <Property Name="Monto" Type="Decimal" Precision="38" Scale="2" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VistaVenta">
+    <Key>
+      <PropertyRef Name="IDProducto" />
+    </Key>
+    <Property Name="IDProducto" Type="Int64" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Salio" Type="Int32" />
+    <Property Name="Vendio" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Ganancia" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="VistaExistencia">
+    <Key>
+      <PropertyRef Name="IDProducto" />
+    </Key>
+    <Property Name="IDProducto" Type="Int64" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Existencia" Type="Int32" />
+  </EntityType>
+  <ComplexType Name="Sp_Existencia_Result">
+    <Property Type="Int32" Name="IDProducto" Nullable="true" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="Existencia" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="Modulos">
+    <Key>
+      <PropertyRef Name="IDModulo" />
+    </Key>
+    <Property Name="IDModulo" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Comando" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Imagen" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IsMDI" Type="Boolean" />
+    <Property Name="Estado" Type="Boolean" />
+    <Property Name="Color" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Acceso" Relationship="DB_MMercadoModel.FK__Acceso__IDModulo__44CA3770" FromRole="Modulos" ToRole="Acceso" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="IDUsuario" />
+    </Key>
+    <Property Name="IDUsuario" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Cedula" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Login" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Pasword" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" />
+    <NavigationProperty Name="Acceso" Relationship="DB_MMercadoModel.FK__Acceso__IDUsuari__43D61337" FromRole="Usuarios" ToRole="Acceso" />
+  </EntityType>
+  <EntityType Name="Acceso">
+    <Key>
+      <PropertyRef Name="IDUsuario" />
+      <PropertyRef Name="IDModulo" />
+    </Key>
+    <Property Name="IDUsuario" Type="Int64" Nullable="false" />
+    <Property Name="IDModulo" Type="Int64" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" />
+    <NavigationProperty Name="Modulos" Relationship="DB_MMercadoModel.FK__Acceso__IDModulo__44CA3770" FromRole="Acceso" ToRole="Modulos" />
+    <NavigationProperty Name="Usuarios" Relationship="DB_MMercadoModel.FK__Acceso__IDUsuari__43D61337" FromRole="Acceso" ToRole="Usuarios" />
+  </EntityType>
+  <Association Name="FK__Acceso__IDModulo__44CA3770">
+    <End Type="DB_MMercadoModel.Modulos" Role="Modulos" Multiplicity="1" />
+    <End Type="DB_MMercadoModel.Acceso" Role="Acceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Modulos">
+        <PropertyRef Name="IDModulo" />
+      </Principal>
+      <Dependent Role="Acceso">
+        <PropertyRef Name="IDModulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Acceso__IDUsuari__43D61337">
+    <End Type="DB_MMercadoModel.Usuarios" Role="Usuarios" Multiplicity="1" />
+    <End Type="DB_MMercadoModel.Acceso" Role="Acceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="IDUsuario" />
+      </Principal>
+      <Dependent Role="Acceso">
+        <PropertyRef Name="IDUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Proveedor">
+    <Key>
+      <PropertyRef Name="IDCliente" />
+      <PropertyRef Name="IDProducto" />
+    </Key>
+    <Property Name="IDCliente" Type="Int64" Nullable="false" />
+    <Property Name="IDProducto" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Terminal">
+    <Key>
+      <PropertyRef Name="Mac" />
+    </Key>
+    <Property Name="IDTerminal" Type="Int32" />
+    <Property Name="Mac" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Maquina" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Oficina" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+</Schema>
